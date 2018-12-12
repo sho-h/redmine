@@ -12,7 +12,7 @@ begin
                     'doc/RUNNING_TESTS',
                     'doc/UPGRADING'].join(',')
 
-    t.options += ['--no-private', '--output-dir', './doc/app', '--files', static_files]
+    t.options += ['--no-private', '--output-dir', './doc/app', '--files', static_files, '--template-path', './doc/yardoc/templates', '--template', 'rich_reference']
   end
 
 rescue LoadError
