@@ -69,12 +69,12 @@
   <dl>
     <dt>Inherits:</dt>
     <dd>
-      <span class="inheritName"><span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></span>
+      <span class="inheritName"><span class='object_link'>AbstractAdapter</span></span>
       
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next"><span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></li>
+            <li class="next"><span class='object_link'>AbstractAdapter</span></li>
           
             <li class="next">Redmine::Scm::Adapters::FilesystemAdapter</li>
           
@@ -320,11 +320,6 @@
   
   
   
-  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="AbstractAdapter.html#adapter_name-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#adapter_name (method)">#adapter_name</a></span>, <span class='object_link'><a href="AbstractAdapter.html#branches-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#branches (method)">#branches</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_command-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_command (method)">client_command</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_version-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_version (method)">client_version</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_version_above%3F-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_version_above? (method)">client_version_above?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_version_string-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_version_string (method)">client_version_string</a></span>, <span class='object_link'><a href="AbstractAdapter.html#default_branch-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#default_branch (method)">#default_branch</a></span>, <span class='object_link'><a href="AbstractAdapter.html#diff-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#diff (method)">#diff</a></span>, <span class='object_link'><a href="AbstractAdapter.html#entry-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#entry (method)">#entry</a></span>, <span class='object_link'><a href="AbstractAdapter.html#properties-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#properties (method)">#properties</a></span>, <span class='object_link'><a href="AbstractAdapter.html#revisions-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#revisions (method)">#revisions</a></span>, <span class='object_link'><a href="AbstractAdapter.html#root_url-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#root_url (method)">#root_url</a></span>, <span class='object_link'><a href="AbstractAdapter.html#shell_quote-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.shell_quote (method)">shell_quote</a></span>, <span class='object_link'><a href="AbstractAdapter.html#shell_quote_command-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.shell_quote_command (method)">shell_quote_command</a></span>, <span class='object_link'><a href="AbstractAdapter.html#supports_annotate%3F-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#supports_annotate? (method)">#supports_annotate?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#supports_cat%3F-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#supports_cat? (method)">#supports_cat?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#tags-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#tags (method)">#tags</a></span>, <span class='object_link'><a href="AbstractAdapter.html#url-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#url (method)">#url</a></span>, <span class='object_link'><a href="AbstractAdapter.html#with_leading_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#with_leading_slash (method)">#with_leading_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#with_trailling_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#with_trailling_slash (method)">#with_trailling_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#without_leading_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#without_leading_slash (method)">#without_leading_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#without_trailling_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#without_trailling_slash (method)">#without_trailling_slash</a></span></p>
-
-  
-  
   
   
   
@@ -480,7 +475,7 @@
   <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_p'>p</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rb</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span>
 <span class='kw'>rescue</span>  <span class='op'>=&gt;</span> <span class='id identifier rubyid_err'>err</span>
   <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_error'>error</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>scm: filesystem: error: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>CommandFailed</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -572,7 +567,7 @@
   <span class='id identifier rubyid_entries'>entries</span><span class='period'>.</span><span class='id identifier rubyid_sort_by_name'>sort_by_name</span>
 <span class='kw'>rescue</span>  <span class='op'>=&gt;</span> <span class='id identifier rubyid_err'>err</span>
   <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_error'>error</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>scm: filesystem: error: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
-  <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>CommandFailed</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_err'>err</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -647,7 +642,7 @@
                     <span class='symbol'>:lastrev</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span>
                   <span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_info'>info</span>
-<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></span>
+<span class='kw'>rescue</span> <span class='const'>CommandFailed</span>
   <span class='kw'>return</span> <span class='kw'>nil</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -715,7 +710,7 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 09:45:54 2018 by
+  Generated on Fri Dec 14 22:34:50 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.16 (ruby-2.5.3).
 </div>

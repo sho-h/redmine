@@ -1431,7 +1431,7 @@ Smith” =&gt; { :commits =&gt; 45, :changes =&gt; 324 },   “Bob” =&gt; { �
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SafeAttributes.html" title="Redmine::SafeAttributes (module)">Redmine::SafeAttributes</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Redmine/SafeAttributes.html#delete_unsafe_attributes-instance_method" title="Redmine::SafeAttributes#delete_unsafe_attributes (method)">#delete_unsafe_attributes</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#included-class_method" title="Redmine::SafeAttributes.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute%3F-instance_method" title="Redmine::SafeAttributes#safe_attribute? (method)">#safe_attribute?</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute_names-instance_method" title="Redmine::SafeAttributes#safe_attribute_names (method)">#safe_attribute_names</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attributes=-instance_method" title="Redmine::SafeAttributes#safe_attributes= (method)">#safe_attributes=</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SafeAttributes.html#delete_unsafe_attributes-instance_method" title="Redmine::SafeAttributes#delete_unsafe_attributes (method)">#delete_unsafe_attributes</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute%3F-instance_method" title="Redmine::SafeAttributes#safe_attribute? (method)">#safe_attribute?</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute_names-instance_method" title="Redmine::SafeAttributes#safe_attribute_names (method)">#safe_attribute_names</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attributes=-instance_method" title="Redmine::SafeAttributes#safe_attributes= (method)">#safe_attributes=</a></span></p>
 
   
   
@@ -1442,7 +1442,7 @@ Smith” =&gt; { :commits =&gt; 45, :changes =&gt; 324 },   “Bob” =&gt; { �
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Ciphering.html" title="Redmine::Ciphering (module)">Redmine::Ciphering</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Redmine/Ciphering.html#cipher_key-class_method" title="Redmine::Ciphering.cipher_key (method)">cipher_key</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#decrypt_text-class_method" title="Redmine::Ciphering.decrypt_text (method)">decrypt_text</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#encrypt_text-class_method" title="Redmine::Ciphering.encrypt_text (method)">encrypt_text</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#included-class_method" title="Redmine::Ciphering.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#logger-class_method" title="Redmine::Ciphering.logger (method)">logger</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Ciphering.html#cipher_key-class_method" title="Redmine::Ciphering.cipher_key (method)">cipher_key</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#decrypt_text-class_method" title="Redmine::Ciphering.decrypt_text (method)">decrypt_text</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#encrypt_text-class_method" title="Redmine::Ciphering.encrypt_text (method)">encrypt_text</a></span>, <span class='object_link'><a href="Redmine/Ciphering.html#logger-class_method" title="Redmine::Ciphering.logger (method)">logger</a></span></p>
 
   
 
@@ -1624,7 +1624,7 @@ called periodically by an external script eg. ruby script/runner
     <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_repositories'>repositories</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_repository'>repository</span><span class='op'>|</span>
       <span class='kw'>begin</span>
         <span class='id identifier rubyid_repository'>repository</span><span class='period'>.</span><span class='id identifier rubyid_fetch_changesets'>fetch_changesets</span>
-      <span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Scm.html" title="Redmine::Scm (module)">Scm</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Scm/Adapters.html" title="Redmine::Scm::Adapters (module)">Adapters</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Scm/Adapters/CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+      <span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Scm.html" title="Redmine::Scm (module)">Scm</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Scm/Adapters.html" title="Redmine::Scm::Adapters (module)">Adapters</a></span></span><span class='op'>::</span><span class='const'>CommandFailed</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
         <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_error'>error</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>scm: error during fetching changesets: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
       <span class='kw'>end</span>
     <span class='kw'>end</span>
@@ -4847,7 +4847,7 @@ changeset in different repositories that point to the same backend</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 09:45:19 2018 by
+  Generated on Fri Dec 14 22:34:20 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.16 (ruby-2.5.3).
 </div>

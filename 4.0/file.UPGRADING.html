@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: UPGRADING
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "UPGRADING";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: UPGRADING</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h2 id="label-Redmine+upgrade">Redmine upgrade</h2>
+
+<p>Redmine - project management software Copyright (C) 2006-2017 
+Jean-Philippe Lang <a href="http://www.redmine.org">www.redmine.org</a>/</p>
+
+<h2 id="label-Upgrading">Upgrading</h2>
+<ol><li>
+<p>Uncompress the program archive in a new directory</p>
+</li><li>
+<p>Copy your database settings (RAILS_ROOT/config/database.yml) and your
+configuration file (RAILS_ROOT/config/configuration.yml) into the new
+config directory Note: before Redmine 1.2, SMTP configuration was stored in
+config/email.yml. It should now be stored in config/configuration.yml.</p>
+</li><li>
+<p>Copy the RAILS_ROOT/files directory content into your new installation This
+directory contains all the attached files.</p>
+</li><li>
+<p>Copy the folders of the installed plugins and themes into new installation
+Plugins must be stored in the [redmine_root]/plugins directory Themes must
+be stored in the [redmine_root]/public/themes directory</p>
+
+<p>WARNING: plugins from your previous Redmine version may not be compatible
+with the Redmine version you&#39;re upgrading to.</p>
+</li><li>
+<p>Install the required gems by running:</p>
+
+<pre class="code ruby"><code class="ruby">bundle install --without development test
+</code></pre>
+
+<p>If ImageMagick is not installed on your system, you should skip the
+installation of the rmagick gem using:</p>
+
+<pre class="code ruby"><code class="ruby">bundle install --without development test rmagick
+</code></pre>
+
+<p>Only the gems that are needed by the adapters you&#39;ve specified in your
+database configuration file are actually installed (eg. if your
+config/database.yml uses the &#39;mysql2&#39; adapter, then only the mysql2
+gem will be installed). Don&#39;t forget to re-run `bundle install` when
+you change config/database.yml for using other database adapters.</p>
+
+<p>If you need to load some gems that are not required by Redmine core (eg.
+fcgi), you can create a file named Gemfile.local at the root of your
+redmine directory. It will be loaded automatically when running `bundle
+install`.</p>
+</li><li>
+<p>Generate a session store secret</p>
+
+<p>If you&#39;re upgrading from Redmine 2.x or below, remove the following
+file if it exists: config/initializers/secret_token.rb</p>
+
+<p>Then generate a new secret by running the following command under the
+application directory:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_exec'>exec</span> <span class='id identifier rubyid_rake'>rake</span> <span class='id identifier rubyid_generate_secret_token'>generate_secret_token</span>
+</code></pre>
+
+<p>Alternatively, you can store this secret in config/secrets.yml: <a
+href="http://guides.rubyonrails.org/upgrading_ruby_on_rails.html#config-secrets-yml">guides.rubyonrails.org/upgrading_ruby_on_rails.html#config-secrets-yml</a></p>
+
+<p>DO NOT REPLACE OR EDIT ANY OTHER FILES.</p>
+</li><li>
+<p>Migrate your database</p>
+
+<p>If you are upgrading to Rails 2.3.14 as part of this migration, you need to
+upgrade the plugin migrations before running the plugin migrations using:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec rake db:migrate:upgrade_plugin_migrations RAILS_ENV=&quot;production&quot;
+</code></pre>
+
+<p>Please make a backup before doing this! Under the new application directory
+run:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec rake db:migrate RAILS_ENV=&quot;production&quot;
+</code></pre>
+
+<p>If you have installed any plugins, you should also run their database
+migrations using:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec rake db:migrate_plugins RAILS_ENV=&quot;production&quot;
+</code></pre>
+</li><li>
+<p>Clear the cache and the existing sessions by running:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec rake tmp:cache:clear tmp:sessions:clear
+</code></pre>
+</li><li>
+<p>Restart the application server (e.g. mongrel, thin, passenger)</p>
+</li><li>
+<p>Finally go to “Administration -&gt; Roles &amp; permissions” to check/set
+permissions for new features, if any</p>
+</li></ol>
+
+<h2 id="label-References">References</h2>
+<ul><li>
+<p><a
+href="http://www.redmine.org/wiki/redmine/RedmineUpgrade">www.redmine.org/wiki/redmine/RedmineUpgrade</a></p>
+</li></ul>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 22:33:58 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

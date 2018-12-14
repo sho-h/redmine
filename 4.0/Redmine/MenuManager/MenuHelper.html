@@ -442,7 +442,7 @@
     <li>
       
       
-        <span class='type'>(<tt><span class='object_link'><a href="MenuError.html" title="Redmine::MenuManager::MenuError (class)">MenuError</a></span></tt>)</span>
+        <span class='type'>(<tt><span class='object_link'>MenuError</span></tt>)</span>
       
       
       
@@ -481,7 +481,7 @@
       <pre class="code"><span class="info file"># File 'lib/redmine/menu_manager.rb', line 225</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allowed_node?'>allowed_node?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="MenuError.html" title="Redmine::MenuManager::MenuError (class)">MenuError</a></span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'><span class='object_link'><a href="MenuItem.html" title="Redmine::MenuManager::MenuItem (class)">MenuItem</a></span></span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>MenuError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'><span class='object_link'><a href="MenuItem.html" title="Redmine::MenuManager::MenuItem (class)">MenuItem</a></span></span>
   <span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_allowed?'>allowed?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -1150,7 +1150,7 @@
         <span class='id identifier rubyid_child_html'>child_html</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='symbol'>:li</span><span class='comma'>,</span> <span class='id identifier rubyid_render_unattached_menu_item'>render_unattached_menu_item</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_allowed_node?'>allowed_node?</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="../../User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="../../User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
       <span class='kw'>end</span>
     <span class='kw'>else</span>
-      <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="MenuError.html" title="Redmine::MenuManager::MenuError (class)">MenuError</a></span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>MenuError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span>
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
@@ -1182,7 +1182,7 @@
     <li>
       
       
-        <span class='type'>(<tt><span class='object_link'><a href="MenuError.html" title="Redmine::MenuManager::MenuError (class)">MenuError</a></span></tt>)</span>
+        <span class='type'>(<tt><span class='object_link'>MenuError</span></tt>)</span>
       
       
       
@@ -1224,7 +1224,7 @@
       <pre class="code"><span class="info file"># File 'lib/redmine/menu_manager.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_render_unattached_menu_item'>render_unattached_menu_item</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item'>menu_item</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="MenuError.html" title="Redmine::MenuManager::MenuError (class)">MenuError</a></span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'><span class='object_link'><a href="MenuItem.html" title="Redmine::MenuManager::MenuItem (class)">MenuItem</a></span></span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>MenuError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:child_menus must be an array of MenuItems</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'><span class='object_link'><a href="MenuItem.html" title="Redmine::MenuManager::MenuItem (class)">MenuItem</a></span></span>
 
   <span class='kw'>if</span> <span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_allowed?'>allowed?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="../../User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
     <span class='id identifier rubyid_link_to'>link_to</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_caption'>caption</span><span class='comma'>,</span> <span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_menu_item'>menu_item</span><span class='period'>.</span><span class='id identifier rubyid_html_options'>html_options</span><span class='rparen'>)</span>
@@ -1240,7 +1240,7 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 09:44:58 2018 by
+  Generated on Fri Dec 14 22:34:07 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.16 (ruby-2.5.3).
 </div>

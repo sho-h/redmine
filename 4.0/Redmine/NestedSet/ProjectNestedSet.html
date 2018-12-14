@@ -130,97 +130,12 @@
 
 
 
-  
-    <h2>
-      Class Method Summary
-      <small><a href="#" class="summary_toggle">collapse</a></small>
-    </h2>
 
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#included-class_method" title="included (class method)">.<strong>included</strong>(base)  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-
-
-
-  <div id="class_method_details" class="method_details_list">
-    <h2>Class Method Details</h2>
-
-    
-      <div class="method_details first">
-  <h3 class="signature first" id="included-class_method">
-  
-    .<strong>included</strong>(base)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/redmine/nested_set/project_nested_set.rb', line 21</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_included'>included</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_class_eval'>class_eval</span> <span class='kw'>do</span>
-    <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:parent</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
-
-    <span class='id identifier rubyid_before_create'>before_create</span> <span class='symbol'>:add_to_nested_set</span>
-    <span class='id identifier rubyid_before_update'>before_update</span> <span class='symbol'>:move_in_nested_set</span><span class='comma'>,</span> <span class='symbol'>:if</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_lambda'>lambda</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_project'>project</span><span class='op'>|</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_parent_id_changed?'>parent_id_changed?</span> <span class='op'>||</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_name_changed?'>name_changed?</span><span class='rbrace'>}</span>
-    <span class='id identifier rubyid_before_destroy'>before_destroy</span> <span class='symbol'>:destroy_children</span>
-  <span class='kw'>end</span>
-  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span> <span class='const'><span class='object_link'><a href="ProjectNestedSet/ClassMethods.html" title="Redmine::NestedSet::ProjectNestedSet::ClassMethods (module)">ClassMethods</a></span></span>
-  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span> <span class='symbol'>:include</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../NestedSet.html" title="Redmine::NestedSet (module)">NestedSet</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Traversing.html" title="Redmine::NestedSet::Traversing (module)">Traversing</a></span></span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-  </div>
 
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 09:45:05 2018 by
+  Generated on Fri Dec 14 22:34:07 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.16 (ruby-2.5.3).
 </div>
