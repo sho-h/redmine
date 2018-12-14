@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: TimelogHelper
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "TimelogHelper";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">TimelogHelper</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: TimelogHelper
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="ApplicationHelper.html" title="ApplicationHelper (module)">ApplicationHelper</a></span></dd>
+  </dl>
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="TimelogController.html" title="TimelogController (class)">TimelogController</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/helpers/timelog_helper.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Redmine - project management software Copyright (C) 2006-2016 
+Jean-Philippe Lang</p>
+
+<p>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="ApplicationHelper.html" title="ApplicationHelper (module)">ApplicationHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationHelper.html#HEADING_RE-constant" title="ApplicationHelper::HEADING_RE (constant)">ApplicationHelper::HEADING_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#MACROS_RE-constant" title="ApplicationHelper::MACROS_RE (constant)">ApplicationHelper::MACROS_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#MACRO_SUB_RE-constant" title="ApplicationHelper::MACRO_SUB_RE (constant)">ApplicationHelper::MACRO_SUB_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#TOC_RE-constant" title="ApplicationHelper::TOC_RE (constant)">ApplicationHelper::TOC_RE</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#activity_collection_for_select_options-instance_method" title="#activity_collection_for_select_options (instance method)">#<strong>activity_collection_for_select_options</strong>(time_entry = nil, project = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a collection of activities for a select field.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#format_criteria_value-instance_method" title="#format_criteria_value (instance method)">#<strong>format_criteria_value</strong>(criteria_options, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_timelog_breadcrumb-instance_method" title="#render_timelog_breadcrumb (instance method)">#<strong>render_timelog_breadcrumb</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#report_criteria_to_csv-instance_method" title="#report_criteria_to_csv (instance method)">#<strong>report_criteria_to_csv</strong>(csv, available_criteria, columns, criteria, periods, hours, level = 0)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#report_to_csv-instance_method" title="#report_to_csv (instance method)">#<strong>report_to_csv</strong>(report)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select_hours-instance_method" title="#select_hours (instance method)">#<strong>select_hours</strong>(data, criteria, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sum_hours-instance_method" title="#sum_hours (instance method)">#<strong>sum_hours</strong>(data)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ApplicationHelper.html" title="ApplicationHelper (module)">ApplicationHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationHelper.html#accesskey-instance_method" title="ApplicationHelper#accesskey (method)">#accesskey</a></span>, <span class='object_link'><a href="ApplicationHelper.html#anchor-instance_method" title="ApplicationHelper#anchor (method)">#anchor</a></span>, <span class='object_link'><a href="ApplicationHelper.html#api_meta-instance_method" title="ApplicationHelper#api_meta (method)">#api_meta</a></span>, <span class='object_link'><a href="ApplicationHelper.html#authoring-instance_method" title="ApplicationHelper#authoring (method)">#authoring</a></span>, <span class='object_link'><a href="ApplicationHelper.html#authorize_for-instance_method" title="ApplicationHelper#authorize_for (method)">#authorize_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#avatar-instance_method" title="ApplicationHelper#avatar (method)">#avatar</a></span>, <span class='object_link'><a href="ApplicationHelper.html#avatar_edit_link-instance_method" title="ApplicationHelper#avatar_edit_link (method)">#avatar_edit_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#back_url-instance_method" title="ApplicationHelper#back_url (method)">#back_url</a></span>, <span class='object_link'><a href="ApplicationHelper.html#back_url_hidden_field_tag-instance_method" title="ApplicationHelper#back_url_hidden_field_tag (method)">#back_url_hidden_field_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#body_css_classes-instance_method" title="ApplicationHelper#body_css_classes (method)">#body_css_classes</a></span>, <span class='object_link'><a href="ApplicationHelper.html#breadcrumb-instance_method" title="ApplicationHelper#breadcrumb (method)">#breadcrumb</a></span>, <span class='object_link'><a href="ApplicationHelper.html#calendar_for-instance_method" title="ApplicationHelper#calendar_for (method)">#calendar_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#catch_macros-instance_method" title="ApplicationHelper#catch_macros (method)">#catch_macros</a></span>, <span class='object_link'><a href="ApplicationHelper.html#check_all_links-instance_method" title="ApplicationHelper#check_all_links (method)">#check_all_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#checked_image-instance_method" title="ApplicationHelper#checked_image (method)">#checked_image</a></span>, <span class='object_link'><a href="ApplicationHelper.html#context_menu-instance_method" title="ApplicationHelper#context_menu (method)">#context_menu</a></span>, <span class='object_link'><a href="ApplicationHelper.html#delete_link-instance_method" title="ApplicationHelper#delete_link (method)">#delete_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#due_date_distance_in_words-instance_method" title="ApplicationHelper#due_date_distance_in_words (method)">#due_date_distance_in_words</a></span>, <span class='object_link'><a href="ApplicationHelper.html#email_delivery_enabled%3F-instance_method" title="ApplicationHelper#email_delivery_enabled? (method)">#email_delivery_enabled?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#error_messages_for-instance_method" title="ApplicationHelper#error_messages_for (method)">#error_messages_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon-instance_method" title="ApplicationHelper#favicon (method)">#favicon</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon_path-instance_method" title="ApplicationHelper#favicon_path (method)">#favicon_path</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon_url-instance_method" title="ApplicationHelper#favicon_url (method)">#favicon_url</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_day-instance_method" title="ApplicationHelper#format_activity_day (method)">#format_activity_day</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_description-instance_method" title="ApplicationHelper#format_activity_description (method)">#format_activity_description</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_title-instance_method" title="ApplicationHelper#format_activity_title (method)">#format_activity_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_object-instance_method" title="ApplicationHelper#format_object (method)">#format_object</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_version_name-instance_method" title="ApplicationHelper#format_version_name (method)">#format_version_name</a></span>, <span class='object_link'><a href="ApplicationHelper.html#generate_csv-instance_method" title="ApplicationHelper#generate_csv (method)">#generate_csv</a></span>, <span class='object_link'><a href="ApplicationHelper.html#html_hours-instance_method" title="ApplicationHelper#html_hours (method)">#html_hours</a></span>, <span class='object_link'><a href="ApplicationHelper.html#html_title-instance_method" title="ApplicationHelper#html_title (method)">#html_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#image_tag-instance_method" title="ApplicationHelper#image_tag (method)">#image_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#include_calendar_headers_tags-instance_method" title="ApplicationHelper#include_calendar_headers_tags (method)">#include_calendar_headers_tags</a></span>, <span class='object_link'><a href="ApplicationHelper.html#include_in_api_response%3F-instance_method" title="ApplicationHelper#include_in_api_response? (method)">#include_in_api_response?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#inject_macros-instance_method" title="ApplicationHelper#inject_macros (method)">#inject_macros</a></span>, <span class='object_link'><a href="ApplicationHelper.html#javascript_heads-instance_method" title="ApplicationHelper#javascript_heads (method)">#javascript_heads</a></span>, <span class='object_link'><a href="ApplicationHelper.html#javascript_include_tag-instance_method" title="ApplicationHelper#javascript_include_tag (method)">#javascript_include_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#labelled_fields_for-instance_method" title="ApplicationHelper#labelled_fields_for (method)">#labelled_fields_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#labelled_form_for-instance_method" title="ApplicationHelper#labelled_form_for (method)">#labelled_form_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#lang_options_for_select-instance_method" title="ApplicationHelper#lang_options_for_select (method)">#lang_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_attachment-instance_method" title="ApplicationHelper#link_to_attachment (method)">#link_to_attachment</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_function-instance_method" title="ApplicationHelper#link_to_function (method)">#link_to_function</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_if_authorized-instance_method" title="ApplicationHelper#link_to_if_authorized (method)">#link_to_if_authorized</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_issue-instance_method" title="ApplicationHelper#link_to_issue (method)">#link_to_issue</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_message-instance_method" title="ApplicationHelper#link_to_message (method)">#link_to_message</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_project-instance_method" title="ApplicationHelper#link_to_project (method)">#link_to_project</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_project_settings-instance_method" title="ApplicationHelper#link_to_project_settings (method)">#link_to_project_settings</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_revision-instance_method" title="ApplicationHelper#link_to_revision (method)">#link_to_revision</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_user-instance_method" title="ApplicationHelper#link_to_user (method)">#link_to_user</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_version-instance_method" title="ApplicationHelper#link_to_version (method)">#link_to_version</a></span>, <span class='object_link'><a href="ApplicationHelper.html#option_tag-instance_method" title="ApplicationHelper#option_tag (method)">#option_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#other_formats_links-instance_method" title="ApplicationHelper#other_formats_links (method)">#other_formats_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#page_header_title-instance_method" title="ApplicationHelper#page_header_title (method)">#page_header_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_headings-instance_method" title="ApplicationHelper#parse_headings (method)">#parse_headings</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_inline_attachments-instance_method" title="ApplicationHelper#parse_inline_attachments (method)">#parse_inline_attachments</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_non_pre_blocks-instance_method" title="ApplicationHelper#parse_non_pre_blocks (method)">#parse_non_pre_blocks</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_redmine_links-instance_method" title="ApplicationHelper#parse_redmine_links (method)">#parse_redmine_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_sections-instance_method" title="ApplicationHelper#parse_sections (method)">#parse_sections</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_wiki_links-instance_method" title="ApplicationHelper#parse_wiki_links (method)">#parse_wiki_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#preview_link-instance_method" title="ApplicationHelper#preview_link (method)">#preview_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#principals_check_box_tags-instance_method" title="ApplicationHelper#principals_check_box_tags (method)">#principals_check_box_tags</a></span>, <span class='object_link'><a href="ApplicationHelper.html#principals_options_for_select-instance_method" title="ApplicationHelper#principals_options_for_select (method)">#principals_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#progress_bar-instance_method" title="ApplicationHelper#progress_bar (method)">#progress_bar</a></span>, <span class='object_link'><a href="ApplicationHelper.html#project_tree-instance_method" title="ApplicationHelper#project_tree (method)">#project_tree</a></span>, <span class='object_link'><a href="ApplicationHelper.html#project_tree_options_for_select-instance_method" title="ApplicationHelper#project_tree_options_for_select (method)">#project_tree_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#raw_json-instance_method" title="ApplicationHelper#raw_json (method)">#raw_json</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_error_messages-instance_method" title="ApplicationHelper#render_error_messages (method)">#render_error_messages</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_flash_messages-instance_method" title="ApplicationHelper#render_flash_messages (method)">#render_flash_messages</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_page_hierarchy-instance_method" title="ApplicationHelper#render_page_hierarchy (method)">#render_page_hierarchy</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_project_jump_box-instance_method" title="ApplicationHelper#render_project_jump_box (method)">#render_project_jump_box</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_project_nested_lists-instance_method" title="ApplicationHelper#render_project_nested_lists (method)">#render_project_nested_lists</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_tabs-instance_method" title="ApplicationHelper#render_tabs (method)">#render_tabs</a></span>, <span class='object_link'><a href="ApplicationHelper.html#reorder_handle-instance_method" title="ApplicationHelper#reorder_handle (method)">#reorder_handle</a></span>, <span class='object_link'><a href="ApplicationHelper.html#reorder_links-instance_method" title="ApplicationHelper#reorder_links (method)">#reorder_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#replace_toc-instance_method" title="ApplicationHelper#replace_toc (method)">#replace_toc</a></span>, <span class='object_link'><a href="ApplicationHelper.html#robot_exclusion_tag-instance_method" title="ApplicationHelper#robot_exclusion_tag (method)">#robot_exclusion_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#sanitize_anchor_name-instance_method" title="ApplicationHelper#sanitize_anchor_name (method)">#sanitize_anchor_name</a></span>, <span class='object_link'><a href="ApplicationHelper.html#sidebar_content%3F-instance_method" title="ApplicationHelper#sidebar_content? (method)">#sidebar_content?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#simple_format_without_paragraph-instance_method" title="ApplicationHelper#simple_format_without_paragraph (method)">#simple_format_without_paragraph</a></span>, <span class='object_link'><a href="ApplicationHelper.html#stylesheet_link_tag-instance_method" title="ApplicationHelper#stylesheet_link_tag (method)">#stylesheet_link_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#syntax_highlight-instance_method" title="ApplicationHelper#syntax_highlight (method)">#syntax_highlight</a></span>, <span class='object_link'><a href="ApplicationHelper.html#syntax_highlight_lines-instance_method" title="ApplicationHelper#syntax_highlight_lines (method)">#syntax_highlight_lines</a></span>, <span class='object_link'><a href="ApplicationHelper.html#textilizable-instance_method" title="ApplicationHelper#textilizable (method)">#textilizable</a></span>, <span class='object_link'><a href="ApplicationHelper.html#thumbnail_tag-instance_method" title="ApplicationHelper#thumbnail_tag (method)">#thumbnail_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#time_tag-instance_method" title="ApplicationHelper#time_tag (method)">#time_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#title-instance_method" title="ApplicationHelper#title (method)">#title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#to_path_param-instance_method" title="ApplicationHelper#to_path_param (method)">#to_path_param</a></span>, <span class='object_link'><a href="ApplicationHelper.html#toggle_checkboxes_link-instance_method" title="ApplicationHelper#toggle_checkboxes_link (method)">#toggle_checkboxes_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#toggle_link-instance_method" title="ApplicationHelper#toggle_link (method)">#toggle_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#truncate_lines-instance_method" title="ApplicationHelper#truncate_lines (method)">#truncate_lines</a></span>, <span class='object_link'><a href="ApplicationHelper.html#truncate_single_line_raw-instance_method" title="ApplicationHelper#truncate_single_line_raw (method)">#truncate_single_line_raw</a></span>, <span class='object_link'><a href="ApplicationHelper.html#view_layouts_base_sidebar_hook_response-instance_method" title="ApplicationHelper#view_layouts_base_sidebar_hook_response (method)">#view_layouts_base_sidebar_hook_response</a></span>, <span class='object_link'><a href="ApplicationHelper.html#wiki_page_path-instance_method" title="ApplicationHelper#wiki_page_path (method)">#wiki_page_path</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Helpers/URL.html" title="Redmine::Helpers::URL (module)">Redmine::Helpers::URL</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Helpers/URL.html#uri_with_safe_scheme%3F-instance_method" title="Redmine::Helpers::URL#uri_with_safe_scheme? (method)">#uri_with_safe_scheme?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Hook/Helper.html" title="Redmine::Hook::Helper (module)">Redmine::Hook::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Hook/Helper.html#call_hook-instance_method" title="Redmine::Hook::Helper#call_hook (method)">#call_hook</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Themes/Helper.html" title="Redmine::Themes::Helper (module)">Redmine::Themes::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Themes/Helper.html#current_theme-instance_method" title="Redmine::Themes::Helper#current_theme (method)">#current_theme</a></span>, <span class='object_link'><a href="Redmine/Themes/Helper.html#heads_for_theme-instance_method" title="Redmine::Themes::Helper#heads_for_theme (method)">#heads_for_theme</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SudoMode/Helper.html" title="Redmine::SudoMode::Helper (module)">Redmine::SudoMode::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SudoMode/Helper.html#hash_to_hidden_fields-instance_method" title="Redmine::SudoMode::Helper#hash_to_hidden_fields (method)">#hash_to_hidden_fields</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Pagination/Helper.html" title="Redmine::Pagination::Helper (module)">Redmine::Pagination::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Pagination/Helper.html#pagination_links_each-instance_method" title="Redmine::Pagination::Helper#pagination_links_each (method)">#pagination_links_each</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#pagination_links_full-instance_method" title="Redmine::Pagination::Helper#pagination_links_full (method)">#pagination_links_full</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#per_page_links-instance_method" title="Redmine::Pagination::Helper#per_page_links (method)">#per_page_links</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#per_page_options-instance_method" title="Redmine::Pagination::Helper#per_page_options (method)">#per_page_options</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/I18n.html" title="Redmine::I18n (module)">Redmine::I18n</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/I18n.html#current_language-instance_method" title="Redmine::I18n#current_language (method)">#current_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_letter-instance_method" title="Redmine::I18n#day_letter (method)">#day_letter</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_name-instance_method" title="Redmine::I18n#day_name (method)">#day_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#find_language-instance_method" title="Redmine::I18n#find_language (method)">#find_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_date-instance_method" title="Redmine::I18n#format_date (method)">#format_date</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_time-instance_method" title="Redmine::I18n#format_time (method)">#format_time</a></span>, <span class='object_link'><a href="Redmine/I18n.html#included-class_method" title="Redmine::I18n.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l-instance_method" title="Redmine::I18n#l (method)">#l</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours-instance_method" title="Redmine::I18n#l_hours (method)">#l_hours</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours_short-instance_method" title="Redmine::I18n#l_hours_short (method)">#l_hours_short</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_or_humanize-instance_method" title="Redmine::I18n#l_or_humanize (method)">#l_or_humanize</a></span>, <span class='object_link'><a href="Redmine/I18n.html#languages_options-instance_method" title="Redmine::I18n#languages_options (method)">#languages_options</a></span>, <span class='object_link'><a href="Redmine/I18n.html#ll-instance_method" title="Redmine::I18n#ll (method)">#ll</a></span>, <span class='object_link'><a href="Redmine/I18n.html#lu-instance_method" title="Redmine::I18n#lu (method)">#lu</a></span>, <span class='object_link'><a href="Redmine/I18n.html#month_name-instance_method" title="Redmine::I18n#month_name (method)">#month_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#set_language_if_valid-instance_method" title="Redmine::I18n#set_language_if_valid (method)">#set_language_if_valid</a></span>, <span class='object_link'><a href="Redmine/I18n.html#valid_languages-instance_method" title="Redmine::I18n#valid_languages (method)">#valid_languages</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="GravatarHelper/PublicMethods.html" title="GravatarHelper::PublicMethods (module)">GravatarHelper::PublicMethods</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar-instance_method" title="GravatarHelper::PublicMethods#gravatar (method)">#gravatar</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_api_url-instance_method" title="GravatarHelper::PublicMethods#gravatar_api_url (method)">#gravatar_api_url</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_for-instance_method" title="GravatarHelper::PublicMethods#gravatar_for (method)">#gravatar_for</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_url-instance_method" title="GravatarHelper::PublicMethods#gravatar_url (method)">#gravatar_url</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html" title="Redmine::WikiFormatting::Macros::Definitions (module)">Redmine::WikiFormatting::Macros::Definitions</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#exec_macro-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#exec_macro (method)">#exec_macro</a></span>, <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#extract_macro_options-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#extract_macro_options (method)">#extract_macro_options</a></span>, <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#macro_exists%3F-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#macro_exists? (method)">#macro_exists?</a></span></p>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="activity_collection_for_select_options-instance_method">
+  
+    #<strong>activity_collection_for_select_options</strong>(time_entry = nil, project = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a collection of activities for a select field.  time_entry is
+optional and will be used to check if the selected TimeEntryActivity is
+active.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_activity_collection_for_select_options'>activity_collection_for_select_options</span><span class='lparen'>(</span><span class='id identifier rubyid_time_entry'>time_entry</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_project'>project</span> <span class='op'>||=</span> <span class='id identifier rubyid_time_entry'>time_entry</span><span class='period'>.</span><span class='id identifier rubyid_try'>try</span><span class='lparen'>(</span><span class='symbol'>:project</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_project'>project</span> <span class='op'>||=</span> <span class='ivar'>@project</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_activities'>activities</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="TimeEntryActivity.html" title="TimeEntryActivity (class)">TimeEntryActivity</a></span></span><span class='period'>.</span><span class='id identifier rubyid_shared'>shared</span><span class='period'>.</span><span class='id identifier rubyid_active'>active</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_activities'>activities</span> <span class='op'>=</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_activities'>activities</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_collection'>collection</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_time_entry'>time_entry</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_time_entry'>time_entry</span><span class='period'>.</span><span class='id identifier rubyid_activity'>activity</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_time_entry'>time_entry</span><span class='period'>.</span><span class='id identifier rubyid_activity'>activity</span><span class='period'>.</span><span class='id identifier rubyid_active?'>active?</span>
+    <span class='id identifier rubyid_collection'>collection</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--- </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:actionview_instancetag_blank_option</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'> ---</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span> <span class='rbracket'>]</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_collection'>collection</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--- </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:actionview_instancetag_blank_option</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'> ---</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span> <span class='rbracket'>]</span> <span class='kw'>unless</span> <span class='id identifier rubyid_activities'>activities</span><span class='period'>.</span><span class='id identifier rubyid_detect'>detect</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:is_default</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_activities'>activities</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='op'>|</span> <span class='id identifier rubyid_collection'>collection</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_a'>a</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_a'>a</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_collection'>collection</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="format_criteria_value-instance_method">
+  
+    #<strong>format_criteria_value</strong>(criteria_options, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_format_criteria_value'>format_criteria_value</span><span class='lparen'>(</span><span class='id identifier rubyid_criteria_options'>criteria_options</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>[</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_none</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>]</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='id identifier rubyid_criteria_options'>criteria_options</span><span class='lbracket'>[</span><span class='symbol'>:klass</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_obj'>obj</span> <span class='op'>=</span> <span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_find_by_id'>find_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Issue.html" title="Issue (class)">Issue</a></span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_visible?'>visible?</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_tracker'>tracker</span><span class='embexpr_end'>}</span><span class='tstring_content'> #</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_subject'>subject</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_obj'>obj</span>
+    <span class='kw'>end</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_cf'>cf</span> <span class='op'>=</span> <span class='id identifier rubyid_criteria_options'>criteria_options</span><span class='lbracket'>[</span><span class='symbol'>:custom_field</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_format_value'>format_value</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_cf'>cf</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_timelog_breadcrumb-instance_method">
+  
+    #<strong>render_timelog_breadcrumb</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_timelog_breadcrumb'>render_timelog_breadcrumb</span>
+  <span class='id identifier rubyid_links'>links</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_links'>links</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_link_to'>link_to</span><span class='lparen'>(</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_project_all</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='symbol'>:project_id</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='symbol'>:issue_id</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_links'>links</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_link_to'>link_to</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='lparen'>(</span><span class='ivar'>@project</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='symbol'>:project_id</span> <span class='op'>=&gt;</span> <span class='ivar'>@project</span><span class='comma'>,</span> <span class='symbol'>:issue_id</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='rbrace'>}</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='ivar'>@project</span>
+  <span class='kw'>if</span> <span class='ivar'>@issue</span>
+    <span class='kw'>if</span> <span class='ivar'>@issue</span><span class='period'>.</span><span class='id identifier rubyid_visible?'>visible?</span>
+      <span class='id identifier rubyid_links'>links</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_link_to_issue'>link_to_issue</span><span class='lparen'>(</span><span class='ivar'>@issue</span><span class='comma'>,</span> <span class='symbol'>:subject</span> <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_links'>links</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#</span><span class='embexpr_beg'>#{</span><span class='ivar'>@issue</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_breadcrumb'>breadcrumb</span> <span class='id identifier rubyid_links'>links</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="report_criteria_to_csv-instance_method">
+  
+    #<strong>report_criteria_to_csv</strong>(csv, available_criteria, columns, criteria, periods, hours, level = 0)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 115</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_report_criteria_to_csv'>report_criteria_to_csv</span><span class='lparen'>(</span><span class='id identifier rubyid_csv'>csv</span><span class='comma'>,</span> <span class='id identifier rubyid_available_criteria'>available_criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span> <span class='id identifier rubyid_criteria'>criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_periods'>periods</span><span class='comma'>,</span> <span class='id identifier rubyid_hours'>hours</span><span class='comma'>,</span> <span class='id identifier rubyid_level'>level</span><span class='op'>=</span><span class='int'>0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_hours'>hours</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_h'>h</span><span class='op'>|</span> <span class='id identifier rubyid_h'>h</span><span class='lbracket'>[</span><span class='id identifier rubyid_criteria'>criteria</span><span class='lbracket'>[</span><span class='id identifier rubyid_level'>level</span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_hours_for_value'>hours_for_value</span> <span class='op'>=</span> <span class='id identifier rubyid_select_hours'>select_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_hours'>hours</span><span class='comma'>,</span> <span class='id identifier rubyid_criteria'>criteria</span><span class='lbracket'>[</span><span class='id identifier rubyid_level'>level</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+    <span class='kw'>next</span> <span class='kw'>if</span> <span class='id identifier rubyid_hours_for_value'>hours_for_value</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>*</span> <span class='id identifier rubyid_level'>level</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_format_criteria_value'>format_criteria_value</span><span class='lparen'>(</span><span class='id identifier rubyid_available_criteria'>available_criteria</span><span class='lbracket'>[</span><span class='id identifier rubyid_criteria'>criteria</span><span class='lbracket'>[</span><span class='id identifier rubyid_level'>level</span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>+=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='id identifier rubyid_criteria'>criteria</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='id identifier rubyid_level'>level</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_total'>total</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_periods'>periods</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_period'>period</span><span class='op'>|</span>
+      <span class='id identifier rubyid_sum'>sum</span> <span class='op'>=</span> <span class='id identifier rubyid_sum_hours'>sum_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_select_hours'>select_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_hours_for_value'>hours_for_value</span><span class='comma'>,</span> <span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span> <span class='id identifier rubyid_period'>period</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_total'>total</span> <span class='op'>+=</span> <span class='id identifier rubyid_sum'>sum</span>
+      <span class='id identifier rubyid_row'>row</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_sum'>sum</span> <span class='op'>&gt;</span> <span class='int'>0</span> <span class='op'>?</span> <span class='id identifier rubyid_sum'>sum</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_total'>total</span>
+    <span class='id identifier rubyid_csv'>csv</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_row'>row</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_criteria'>criteria</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_level'>level</span> <span class='op'>+</span> <span class='int'>1</span>
+      <span class='id identifier rubyid_report_criteria_to_csv'>report_criteria_to_csv</span><span class='lparen'>(</span><span class='id identifier rubyid_csv'>csv</span><span class='comma'>,</span> <span class='id identifier rubyid_available_criteria'>available_criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span> <span class='id identifier rubyid_criteria'>criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_periods'>periods</span><span class='comma'>,</span> <span class='id identifier rubyid_hours_for_value'>hours_for_value</span><span class='comma'>,</span> <span class='id identifier rubyid_level'>level</span> <span class='op'>+</span> <span class='int'>1</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="report_to_csv-instance_method">
+  
+    #<strong>report_to_csv</strong>(report)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_report_to_csv'>report_to_csv</span><span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Export.html" title="Redmine::Export (module)">Export</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Export/CSV.html" title="Redmine::Export::CSV (module)">CSV</a></span></span><span class='period'>.</span><span class='id identifier rubyid_generate'><span class='object_link'><a href="Redmine/Export/CSV.html#generate-class_method" title="Redmine::Export::CSV.generate (method)">generate</a></span></span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_csv'>csv</span><span class='op'>|</span>
+    <span class='comment'># Column headers
+</span>    <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_criteria'>criteria</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_criteria'>criteria</span><span class='op'>|</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_available_criteria'>available_criteria</span><span class='lbracket'>[</span><span class='id identifier rubyid_criteria'>criteria</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='symbol'>:label</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_headers'>headers</span> <span class='op'>+=</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_periods'>periods</span>
+    <span class='id identifier rubyid_headers'>headers</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_total_time</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_csv'>csv</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_headers'>headers</span>
+    <span class='comment'># Content
+</span>    <span class='id identifier rubyid_report_criteria_to_csv'>report_criteria_to_csv</span><span class='lparen'>(</span><span class='id identifier rubyid_csv'>csv</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_available_criteria'>available_criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_criteria'>criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_periods'>periods</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hours'>hours</span><span class='rparen'>)</span>
+    <span class='comment'># Total row
+</span>    <span class='id identifier rubyid_str_total'>str_total</span> <span class='op'>=</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_total_time</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>=</span> <span class='lbracket'>[</span> <span class='id identifier rubyid_str_total'>str_total</span> <span class='rbracket'>]</span> <span class='op'>+</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_criteria'>criteria</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_total'>total</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_periods'>periods</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_period'>period</span><span class='op'>|</span>
+      <span class='id identifier rubyid_sum'>sum</span> <span class='op'>=</span> <span class='id identifier rubyid_sum_hours'>sum_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_select_hours'>select_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hours'>hours</span><span class='comma'>,</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span> <span class='id identifier rubyid_period'>period</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_total'>total</span> <span class='op'>+=</span> <span class='id identifier rubyid_sum'>sum</span>
+      <span class='id identifier rubyid_row'>row</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_sum'>sum</span> <span class='op'>&gt;</span> <span class='int'>0</span> <span class='op'>?</span> <span class='id identifier rubyid_sum'>sum</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_row'>row</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_total'>total</span>
+    <span class='id identifier rubyid_csv'>csv</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_row'>row</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="select_hours-instance_method">
+  
+    #<strong>select_hours</strong>(data, criteria, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_select_hours'>select_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_criteria'>criteria</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_row'>row</span><span class='op'>|</span> <span class='id identifier rubyid_row'>row</span><span class='lbracket'>[</span><span class='id identifier rubyid_criteria'>criteria</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_row'>row</span><span class='op'>|</span> <span class='id identifier rubyid_row'>row</span><span class='lbracket'>[</span><span class='id identifier rubyid_criteria'>criteria</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>==</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sum_hours-instance_method">
+  
+    #<strong>sum_hours</strong>(data)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/timelog_helper.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sum_hours'>sum_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_sum'>sum</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_row'>row</span><span class='op'>|</span>
+    <span class='id identifier rubyid_sum'>sum</span> <span class='op'>+=</span> <span class='id identifier rubyid_row'>row</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hours</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_sum'>sum</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 22:45:33 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>
