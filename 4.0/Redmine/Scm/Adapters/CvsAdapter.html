@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Redmine::Scm::Adapters::CvsAdapter
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Redmine::Scm::Adapters::CvsAdapter";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Scm.html" title="Redmine::Scm (module)">Scm</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Adapters.html" title="Redmine::Scm::Adapters (module)">Adapters</a></span></span>
+     &raquo; 
+    <span class="title">CvsAdapter</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Redmine::Scm::Adapters::CvsAdapter
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></li>
+          
+            <li class="next">Redmine::Scm::Adapters::CvsAdapter</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/redmine/scm/adapters/cvs_adapter.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.5.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="CvsAdapter/Revision.html" title="Redmine::Scm::Adapters::CvsAdapter::Revision (class)">Revision</a></span>
+    
+  
+</p>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="CVS_BIN-constant" class="">CVS_BIN =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>CVS executable name</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Configuration.html" title="Redmine::Configuration (module)">Configuration</a></span></span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>scm_cvs_command</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cvs</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+      
+        <dt id="STARTLOG-constant" class="">STARTLOG =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>----------------------------</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+      
+        <dt id="ENDLOG-constant" class="">ENDLOG =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=============================================================================</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#client_available-class_method" title="client_available (class method)">.<strong>client_available</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#client_command-class_method" title="client_command (class method)">.<strong>client_command</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#client_version-class_method" title="client_version (class method)">.<strong>client_version</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scm_command_version-class_method" title="scm_command_version (class method)">.<strong>scm_command_version</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scm_version_from_command_line-class_method" title="scm_version_from_command_line (class method)">.<strong>scm_version_from_command_line</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sq_bin-class_method" title="sq_bin (class method)">.<strong>sq_bin</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#annotate-instance_method" title="#annotate (instance method)">#<strong>annotate</strong>(path, identifier = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cat-instance_method" title="#cat (instance method)">#<strong>cat</strong>(path, identifier = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#diff-instance_method" title="#diff (instance method)">#<strong>diff</strong>(path, identifier_from, identifier_to = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#entries-instance_method" title="#entries (instance method)">#<strong>entries</strong>(path = nil, identifier = nil, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an Entries collection or nil if the given path doesn&#39;t exist in
+the repository this method is used by the repository-browser (aka LIST).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_previous_revision-instance_method" title="#get_previous_revision (instance method)">#<strong>get_previous_revision</strong>(revision)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#info-instance_method" title="#info (instance method)">#<strong>info</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(url, root_url = nil, login = nil, password = nil, path_encoding = nil)  &#x21d2; CvsAdapter </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Guidelines for the input:  url      -&gt; the project-path, relative to the
+cvsroot (eg. module name)  root_url -&gt; the good old, sometimes damned,
+CVSROOT  login    -&gt; unnecessary  password -&gt; unnecessary too.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#path_encoding-instance_method" title="#path_encoding (instance method)">#<strong>path_encoding</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#revisions-instance_method" title="#revisions (instance method)">#<strong>revisions</strong>(path = nil, identifier_from = nil, identifier_to = nil, options = {}, &amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns all revisions found between identifier_from and identifier_to in
+the repository.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="AbstractAdapter.html" title="Redmine::Scm::Adapters::AbstractAdapter (class)">AbstractAdapter</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="AbstractAdapter.html#adapter_name-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#adapter_name (method)">#adapter_name</a></span>, <span class='object_link'><a href="AbstractAdapter.html#branches-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#branches (method)">#branches</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_version_above%3F-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_version_above? (method)">client_version_above?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#client_version_string-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.client_version_string (method)">client_version_string</a></span>, <span class='object_link'><a href="AbstractAdapter.html#default_branch-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#default_branch (method)">#default_branch</a></span>, <span class='object_link'><a href="AbstractAdapter.html#entry-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#entry (method)">#entry</a></span>, <span class='object_link'><a href="AbstractAdapter.html#properties-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#properties (method)">#properties</a></span>, <span class='object_link'><a href="AbstractAdapter.html#root_url-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#root_url (method)">#root_url</a></span>, <span class='object_link'><a href="AbstractAdapter.html#shell_quote-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.shell_quote (method)">shell_quote</a></span>, <span class='object_link'><a href="AbstractAdapter.html#shell_quote_command-class_method" title="Redmine::Scm::Adapters::AbstractAdapter.shell_quote_command (method)">shell_quote_command</a></span>, <span class='object_link'><a href="AbstractAdapter.html#supports_annotate%3F-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#supports_annotate? (method)">#supports_annotate?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#supports_cat%3F-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#supports_cat? (method)">#supports_cat?</a></span>, <span class='object_link'><a href="AbstractAdapter.html#tags-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#tags (method)">#tags</a></span>, <span class='object_link'><a href="AbstractAdapter.html#url-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#url (method)">#url</a></span>, <span class='object_link'><a href="AbstractAdapter.html#with_leading_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#with_leading_slash (method)">#with_leading_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#with_trailling_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#with_trailling_slash (method)">#with_trailling_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#without_leading_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#without_leading_slash (method)">#without_leading_slash</a></span>, <span class='object_link'><a href="AbstractAdapter.html#without_trailling_slash-instance_method" title="Redmine::Scm::Adapters::AbstractAdapter#without_trailling_slash (method)">#without_trailling_slash</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../../Utils/Shell.html" title="Redmine::Utils::Shell (module)">Utils::Shell</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../../Utils/Shell.html#shell_quote-class_method" title="Redmine::Utils::Shell.shell_quote (method)">shell_quote</a></span>, <span class='object_link'><a href="../../Utils/Shell.html#shell_quote_command-class_method" title="Redmine::Utils::Shell.shell_quote_command (method)">shell_quote_command</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(url, root_url = nil, login = nil, password = nil, path_encoding = nil)  &#x21d2; <tt><span class='object_link'><a href="" title="Redmine::Scm::Adapters::CvsAdapter (class)">CvsAdapter</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Guidelines for the input:</p>
+
+<pre class="code ruby"><code class="ruby">url      -&gt; the project-path, relative to the cvsroot (eg. module name)
+root_url -&gt; the good old, sometimes damned, CVSROOT
+login    -&gt; unnecessary
+password -&gt; unnecessary too
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_root_url'>root_url</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_login'>login</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span>
+               <span class='id identifier rubyid_path_encoding'>path_encoding</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@path_encoding</span> <span class='op'>=</span> <span class='id identifier rubyid_path_encoding'>path_encoding</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='id identifier rubyid_path_encoding'>path_encoding</span>
+  <span class='ivar'>@url</span>      <span class='op'>=</span> <span class='id identifier rubyid_url'>url</span>
+  <span class='comment'># TODO: better Exception here (IllegalArgumentException)
+</span>  <span class='id identifier rubyid_raise'>raise</span> <span class='const'><span class='object_link'><a href="CommandFailed.html" title="Redmine::Scm::Adapters::CommandFailed (class)">CommandFailed</a></span></span> <span class='kw'>if</span> <span class='id identifier rubyid_root_url'>root_url</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
+  <span class='ivar'>@root_url</span>  <span class='op'>=</span> <span class='id identifier rubyid_root_url'>root_url</span>
+
+  <span class='comment'># These are unused.
+</span>  <span class='ivar'>@login</span>    <span class='op'>=</span> <span class='id identifier rubyid_login'>login</span> <span class='kw'>if</span> <span class='id identifier rubyid_login'>login</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_login'>login</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+  <span class='ivar'>@password</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_password'>password</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='ivar'>@login</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="client_available-class_method">
+  
+    .<strong>client_available</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_client_available'>client_available</span>
+  <span class='id identifier rubyid_client_version_above?'>client_version_above?</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> <span class='int'>12</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="client_command-class_method">
+  
+    .<strong>client_command</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_client_command'>client_command</span>
+  <span class='cvar'>@@bin</span>    <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="#CVS_BIN-constant" title="Redmine::Scm::Adapters::CvsAdapter::CVS_BIN (constant)">CVS_BIN</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="client_version-class_method">
+  
+    .<strong>client_version</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_client_version'>client_version</span>
+  <span class='cvar'>@@client_version</span> <span class='op'>||=</span> <span class='lparen'>(</span><span class='id identifier rubyid_scm_command_version'>scm_command_version</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scm_command_version-class_method">
+  
+    .<strong>scm_command_version</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 45</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_scm_command_version'>scm_command_version</span>
+  <span class='id identifier rubyid_scm_version'>scm_version</span> <span class='op'>=</span> <span class='id identifier rubyid_scm_version_from_command_line'>scm_version_from_command_line</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='period'>.</span><span class='id identifier rubyid_force_encoding'>force_encoding</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ASCII-8BIT</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_scm_version'>scm_version</span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>%r{</span><span class='tstring_content'>\A(.*?)((\d+\.)+\d+)</span><span class='regexp_end'>}m</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_m'>m</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>%r{</span><span class='tstring_content'>\d+</span><span class='regexp_end'>}</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_i</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scm_version_from_command_line-class_method">
+  
+    .<strong>scm_version_from_command_line</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_scm_version_from_command_line'>scm_version_from_command_line</span>
+  <span class='id identifier rubyid_shellout'>shellout</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_sq_bin'>sq_bin</span><span class='embexpr_end'>}</span><span class='tstring_content'> --version</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span> <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sq_bin-class_method">
+  
+    .<strong>sq_bin</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sq_bin'>sq_bin</span>
+  <span class='cvar'>@@sq_bin</span> <span class='op'>||=</span> <span class='id identifier rubyid_shell_quote_command'>shell_quote_command</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="annotate-instance_method">
+  
+    #<strong>annotate</strong>(path, identifier = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 305</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_annotate'>annotate</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_identifier'>identifier</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_identifier'>identifier</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HEAD</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; annotate path:&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path'>path</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;,identifier </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier'>identifier</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>=</span> <span class='qwords_beg'>%w|</span><span class='tstring_content'>rannotate</span><span class='tstring_end'>|</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-D</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_time_to_cvstime'>time_to_cvstime</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_identifier'>identifier</span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_path_with_proj'>path_with_proj</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_blame'>blame</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Annotate.html" title="Redmine::Scm::Adapters::Annotate (class)">Annotate</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Annotate.html#initialize-instance_method" title="Redmine::Scm::Adapters::Annotate#initialize (method)">new</a></span></span>
+  <span class='id identifier rubyid_scm_cmd'>scm_cmd</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_cmd_args'>cmd_args</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span>
+    <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_each_line'>each_line</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_line'>line</span><span class='op'>|</span>
+      <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_line'>line</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>%r{</span><span class='tstring_content'>^([\d\.]+)\s+\(([^\)]+)\s+[^\)]+\):\s(.*)$</span><span class='regexp_end'>}</span></span>
+      <span class='id identifier rubyid_blame'>blame</span><span class='period'>.</span><span class='id identifier rubyid_add_line'>add_line</span><span class='lparen'>(</span>
+          <span class='backref'>$3</span><span class='period'>.</span><span class='id identifier rubyid_rstrip'>rstrip</span><span class='comma'>,</span>
+          <span class='const'><span class='object_link'><a href="CvsAdapter/Revision.html" title="Redmine::Scm::Adapters::CvsAdapter::Revision (class)">Revision</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Revision.html#initialize-instance_method" title="Redmine::Scm::Adapters::Revision#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+            <span class='symbol'>:revision</span>   <span class='op'>=&gt;</span> <span class='backref'>$1</span><span class='comma'>,</span>
+            <span class='symbol'>:identifier</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='comma'>,</span>
+            <span class='symbol'>:author</span>     <span class='op'>=&gt;</span> <span class='backref'>$2</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
+            <span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_blame'>blame</span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="AbstractAdapter/ScmCommandAborted.html" title="Redmine::Scm::Adapters::AbstractAdapter::ScmCommandAborted (class)">ScmCommandAborted</a></span></span>
+  <span class='const'><span class='object_link'><a href="Annotate.html" title="Redmine::Scm::Adapters::Annotate (class)">Annotate</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Annotate.html#initialize-instance_method" title="Redmine::Scm::Adapters::Annotate#initialize (method)">new</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cat-instance_method">
+  
+    #<strong>cat</strong>(path, identifier = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 289</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cat'>cat</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_identifier'>identifier</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_identifier'>identifier</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HEAD</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; cat path:&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path'>path</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;,identifier </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier'>identifier</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>=</span> <span class='qwords_beg'>%w|</span><span class='tstring_content'>-q</span><span class='words_sep'> </span><span class='tstring_content'>co</span><span class='tstring_end'>|</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-D</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_time_to_cvstime'>time_to_cvstime</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_identifier'>identifier</span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-p</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_path_with_proj'>path_with_proj</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_cat'>cat</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_scm_cmd'>scm_cmd</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_cmd_args'>cmd_args</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span>
+    <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_binmode'>binmode</span>
+    <span class='id identifier rubyid_cat'>cat</span> <span class='op'>=</span> <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_cat'>cat</span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="AbstractAdapter/ScmCommandAborted.html" title="Redmine::Scm::Adapters::AbstractAdapter::ScmCommandAborted (class)">ScmCommandAborted</a></span></span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="diff-instance_method">
+  
+    #<strong>diff</strong>(path, identifier_from, identifier_to = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 271</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_diff'>diff</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier_to'>identifier_to</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; diff path:&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path'>path</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>,identifier_from </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='embexpr_end'>}</span><span class='tstring_content'>, identifier_to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_to'>identifier_to</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>=</span> <span class='qwords_beg'>%w|</span><span class='tstring_content'>rdiff</span><span class='words_sep'> </span><span class='tstring_content'>-u</span><span class='tstring_end'>|</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-r</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_to'>identifier_to</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-r</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_path_with_proj'>path_with_proj</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_diff'>diff</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_scm_cmd'>scm_cmd</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_cmd_args'>cmd_args</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span>
+    <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_each_line'>each_line</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_line'>line</span><span class='op'>|</span>
+      <span class='id identifier rubyid_diff'>diff</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_line'>line</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_diff'>diff</span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="AbstractAdapter/ScmCommandAborted.html" title="Redmine::Scm::Adapters::AbstractAdapter::ScmCommandAborted (class)">ScmCommandAborted</a></span></span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="entries-instance_method">
+  
+    #<strong>entries</strong>(path = nil, identifier = nil, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an Entries collection or nil if the given path doesn&#39;t exist in
+the repository this method is used by the repository-browser (aka LIST)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_entries'>entries</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; entries &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path'>path</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39; with identifier &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier'>identifier</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_path_locale'>path_locale</span> <span class='op'>=</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_path_locale'>path_locale</span><span class='period'>.</span><span class='id identifier rubyid_force_encoding'>force_encoding</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ASCII-8BIT</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_entries'>entries</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Entries.html" title="Redmine::Scm::Adapters::Entries (class)">Entries</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>=</span> <span class='qwords_beg'>%w|</span><span class='tstring_content'>-q</span><span class='words_sep'> </span><span class='tstring_content'>rls</span><span class='words_sep'> </span><span class='tstring_content'>-e</span><span class='tstring_end'>|</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-D</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_time_to_cvstime_rlog'>time_to_cvstime_rlog</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_identifier'>identifier</span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_path_with_proj'>path_with_proj</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_scm_cmd'>scm_cmd</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_cmd_args'>cmd_args</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span>
+    <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_each_line'>each_line</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_line'>line</span><span class='op'>|</span>
+      <span class='id identifier rubyid_fields'>fields</span> <span class='op'>=</span> <span class='id identifier rubyid_line'>line</span><span class='period'>.</span><span class='id identifier rubyid_chop'>chop</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;&gt;InspectLine </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_fields'>fields</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='op'>!=</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>D</span><span class='tstring_end'>&quot;</span></span>
+        <span class='id identifier rubyid_time'>time</span> <span class='op'>=</span> <span class='kw'>nil</span>
+        <span class='comment'># Thu Dec 13 16:27:22 2007
+</span>        <span class='id identifier rubyid_time_l'>time_l</span> <span class='op'>=</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>3</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_time_l'>time_l</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>==</span> <span class='int'>5</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_time_l'>time_l</span><span class='lbracket'>[</span><span class='int'>4</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>==</span> <span class='int'>4</span>
+          <span class='kw'>begin</span>
+            <span class='id identifier rubyid_time'>time</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span>
+                     <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_time_l'>time_l</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_time_l'>time_l</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_time_l'>time_l</span><span class='lbracket'>[</span><span class='int'>3</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'> GMT </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_time_l'>time_l</span><span class='lbracket'>[</span><span class='int'>4</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+          <span class='kw'>rescue</span>
+          <span class='kw'>end</span>
+        <span class='kw'>end</span>
+        <span class='id identifier rubyid_entries'>entries</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="Entry.html" title="Redmine::Scm::Adapters::Entry (class)">Entry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Entry.html#initialize-instance_method" title="Redmine::Scm::Adapters::Entry#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+         <span class='lbrace'>{</span>
+          <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>5</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span>
+          <span class='comment'>#:path =&gt; fields[-4].include?(path)?fields[-4]:(path + &quot;/&quot;+ fields[-4]),
+</span>          <span class='symbol'>:path</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path_locale'>path_locale</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>5</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='comma'>,</span>
+          <span class='symbol'>:kind</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>file</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+          <span class='symbol'>:size</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='comma'>,</span>
+          <span class='symbol'>:lastrev</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="CvsAdapter/Revision.html" title="Redmine::Scm::Adapters::CvsAdapter::Revision (class)">Revision</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Revision.html#initialize-instance_method" title="Redmine::Scm::Adapters::Revision#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+              <span class='lbrace'>{</span>
+                <span class='symbol'>:revision</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+                <span class='symbol'>:name</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>4</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span>
+                <span class='symbol'>:time</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_time'>time</span><span class='comma'>,</span>
+                <span class='symbol'>:author</span>   <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+              <span class='rbrace'>}</span><span class='rparen'>)</span>
+          <span class='rbrace'>}</span><span class='rparen'>)</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_entries'>entries</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="Entry.html" title="Redmine::Scm::Adapters::Entry (class)">Entry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Entry.html#initialize-instance_method" title="Redmine::Scm::Adapters::Entry#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+         <span class='lbrace'>{</span>
+          <span class='symbol'>:name</span>    <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span>
+          <span class='symbol'>:path</span>    <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path_locale'>path_locale</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_fields'>fields</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='comma'>,</span>
+          <span class='symbol'>:kind</span>    <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>dir</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+          <span class='symbol'>:size</span>    <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='comma'>,</span>
+          <span class='symbol'>:lastrev</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span>
+         <span class='rbrace'>}</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_entries'>entries</span><span class='period'>.</span><span class='id identifier rubyid_sort_by_name'>sort_by_name</span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="AbstractAdapter/ScmCommandAborted.html" title="Redmine::Scm::Adapters::AbstractAdapter::ScmCommandAborted (class)">ScmCommandAborted</a></span></span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_previous_revision-instance_method">
+  
+    #<strong>get_previous_revision</strong>(revision)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 84</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_previous_revision'>get_previous_revision</span><span class='lparen'>(</span><span class='id identifier rubyid_revision'>revision</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="CvsRevisionHelper.html" title="Redmine::Scm::Adapters::CvsRevisionHelper (class)">CvsRevisionHelper</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="CvsRevisionHelper.html#initialize-instance_method" title="Redmine::Scm::Adapters::CvsRevisionHelper#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_revision'>revision</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_prevRev'><span class='object_link'><a href="CvsRevisionHelper.html#prevRev-instance_method" title="Redmine::Scm::Adapters::CvsRevisionHelper#prevRev (method)">prevRev</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="info-instance_method">
+  
+    #<strong>info</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_info'>info</span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; info</span><span class='tstring_end'>&quot;</span></span>
+  <span class='const'><span class='object_link'><a href="Info.html" title="Redmine::Scm::Adapters::Info (class)">Info</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Info.html#initialize-instance_method" title="Redmine::Scm::Adapters::Info#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:root_url</span> <span class='op'>=&gt;</span> <span class='ivar'>@root_url</span><span class='comma'>,</span> <span class='symbol'>:lastrev</span> <span class='op'>=&gt;</span> <span class='kw'>nil</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="path_encoding-instance_method">
+  
+    #<strong>path_encoding</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_path_encoding'>path_encoding</span>
+  <span class='ivar'>@path_encoding</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="revisions-instance_method">
+  
+    #<strong>revisions</strong>(path = nil, identifier_from = nil, identifier_to = nil, options = {}, &amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns all revisions found between identifier_from and identifier_to in
+the repository. both identifier have to be dates or nil. these method
+returns nothing but yield every result in block</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/scm/adapters/cvs_adapter.rb', line 152</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_revisions'>revisions</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier_to'>identifier_to</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_path_with_project_utf8'>path_with_project_utf8</span>   <span class='op'>=</span> <span class='id identifier rubyid_path_with_proj'>path_with_proj</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_path_with_project_locale'>path_with_project_locale</span> <span class='op'>=</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_with_project_utf8'>path_with_project_utf8</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;cvs&gt; revisions path:</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_path'>path</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;,identifier_from </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='embexpr_end'>}</span><span class='tstring_content'>, identifier_to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_identifier_to'>identifier_to</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>=</span> <span class='qwords_beg'>%w|</span><span class='tstring_content'>-q</span><span class='words_sep'> </span><span class='tstring_content'>rlog</span><span class='tstring_end'>|</span></span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-d</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_time_to_cvstime_rlog'>time_to_cvstime_rlog</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier_from'>identifier_from</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_identifier_from'>identifier_from</span>
+  <span class='id identifier rubyid_cmd_args'>cmd_args</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_path_with_project_utf8'>path_with_project_utf8</span>
+  <span class='id identifier rubyid_scm_cmd'>scm_cmd</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_cmd_args'>cmd_args</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_io'>io</span><span class='op'>|</span>
+    <span class='id identifier rubyid_state'>state</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>entry_start</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_revision'>revision</span>   <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_date'>date</span>       <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_author'>author</span>     <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_entry_path'>entry_path</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_entry_name'>entry_name</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_file_state'>file_state</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_branch_map'>branch_map</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_io'>io</span><span class='period'>.</span><span class='id identifier rubyid_each_line'>each_line</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_line'>line</span><span class='op'>|</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>!=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>revision</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&amp;&amp;</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ENDLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::ENDLOG (constant)">ENDLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+        <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+        <span class='id identifier rubyid_revision'>revision</span>   <span class='op'>=</span> <span class='kw'>nil</span>
+        <span class='id identifier rubyid_state'>state</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>entry_start</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>entry_start</span><span class='tstring_end'>&quot;</span></span>
+        <span class='id identifier rubyid_branch_map'>branch_map</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+        <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^RCS file: </span><span class='embexpr_beg'>#{</span><span class='const'>Regexp</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_root_url_path'>root_url_path</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\/</span><span class='embexpr_beg'>#{</span><span class='const'>Regexp</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_path_with_project_locale'>path_with_project_locale</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>(.+),v$</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_entry_path'>entry_path</span> <span class='op'>=</span> <span class='id identifier rubyid_normalize_cvs_path'>normalize_cvs_path</span><span class='lparen'>(</span><span class='backref'>$1</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_entry_name'>entry_name</span> <span class='op'>=</span> <span class='id identifier rubyid_normalize_path'>normalize_path</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='backref'>$1</span><span class='rparen'>)</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Path </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_entry_path'>entry_path</span><span class='embexpr_end'>}</span><span class='tstring_content'> &lt;=&gt; Name </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_entry_name'>entry_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^head: (.+)$</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_entry_headRev'>entry_headRev</span> <span class='op'>=</span> <span class='backref'>$1</span> <span class='comment'>#unless entry.nil?
+</span>        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^symbolic names:</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbolic</span><span class='tstring_end'>&quot;</span></span> <span class='comment'>#unless entry.nil?
+</span>        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#STARTLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::STARTLOG (constant)">STARTLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+          <span class='id identifier rubyid_state'>state</span>      <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>revision</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>end</span>
+        <span class='kw'>next</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbolic</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^(.*):\s(.*)</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='lparen'>(</span><span class='id identifier rubyid_line'>line</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_branch_map'>branch_map</span><span class='lbracket'>[</span><span class='backref'>$1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='backref'>$2</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>tags</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>next</span>
+        <span class='kw'>end</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>tags</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#STARTLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::STARTLOG (constant)">STARTLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+          <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>revision</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ENDLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::ENDLOG (constant)">ENDLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>head</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>end</span>
+        <span class='kw'>next</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>revision</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ENDLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::ENDLOG (constant)">ENDLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span> <span class='op'>||</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#STARTLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::STARTLOG (constant)">STARTLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='kw'>if</span> <span class='id identifier rubyid_revision'>revision</span>
+            <span class='id identifier rubyid_revHelper'>revHelper</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="CvsRevisionHelper.html" title="Redmine::Scm::Adapters::CvsRevisionHelper (class)">CvsRevisionHelper</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="CvsRevisionHelper.html#initialize-instance_method" title="Redmine::Scm::Adapters::CvsRevisionHelper#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_revision'>revision</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_revBranch'>revBranch</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HEAD</span><span class='tstring_end'>&quot;</span></span>
+            <span class='id identifier rubyid_branch_map'>branch_map</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_branch_name'>branch_name</span><span class='comma'>,</span> <span class='id identifier rubyid_branch_point'>branch_point</span><span class='op'>|</span>
+              <span class='kw'>if</span> <span class='id identifier rubyid_revHelper'>revHelper</span><span class='period'>.</span><span class='id identifier rubyid_is_in_branch_with_symbol'>is_in_branch_with_symbol</span><span class='lparen'>(</span><span class='id identifier rubyid_branch_point'>branch_point</span><span class='rparen'>)</span>
+                <span class='id identifier rubyid_revBranch'>revBranch</span> <span class='op'>=</span> <span class='id identifier rubyid_branch_name'>branch_name</span>
+              <span class='kw'>end</span>
+            <span class='kw'>end</span>
+            <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>********** YIELD Revision </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_revision'>revision</span><span class='embexpr_end'>}</span><span class='tstring_content'>::</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_revBranch'>revBranch</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+            <span class='kw'>yield</span> <span class='const'><span class='object_link'><a href="CvsAdapter/Revision.html" title="Redmine::Scm::Adapters::CvsAdapter::Revision (class)">Revision</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Revision.html#initialize-instance_method" title="Redmine::Scm::Adapters::Revision#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span>
+              <span class='symbol'>:time</span>    <span class='op'>=&gt;</span> <span class='id identifier rubyid_date'>date</span><span class='comma'>,</span>
+              <span class='symbol'>:author</span>  <span class='op'>=&gt;</span> <span class='id identifier rubyid_author'>author</span><span class='comma'>,</span>
+              <span class='symbol'>:message</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_commit_log'>commit_log</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span><span class='comma'>,</span>
+              <span class='symbol'>:paths</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='lbrace'>{</span>
+                <span class='symbol'>:revision</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='comma'>,</span>
+                <span class='symbol'>:branch</span>   <span class='op'>=&gt;</span> <span class='id identifier rubyid_revBranch'>revBranch</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='comma'>,</span>
+                <span class='symbol'>:path</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='id identifier rubyid_entry_path'>entry_path</span><span class='rparen'>)</span><span class='comma'>,</span>
+                <span class='symbol'>:name</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@path_encoding</span><span class='comma'>,</span> <span class='id identifier rubyid_entry_name'>entry_name</span><span class='rparen'>)</span><span class='comma'>,</span>
+                <span class='symbol'>:kind</span>     <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>file</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+                <span class='symbol'>:action</span>   <span class='op'>=&gt;</span> <span class='id identifier rubyid_file_state'>file_state</span>
+                   <span class='rbrace'>}</span><span class='rbracket'>]</span>
+                 <span class='rbrace'>}</span><span class='rparen'>)</span>
+          <span class='kw'>end</span>
+          <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../String.html" title="String (class)">String</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+          <span class='id identifier rubyid_revision'>revision</span>   <span class='op'>=</span> <span class='kw'>nil</span>
+          <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ENDLOG-constant" title="Redmine::Scm::Adapters::CvsAdapter::ENDLOG (constant)">ENDLOG</a></span></span><span class='embexpr_end'>}</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+            <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>entry_start</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>end</span>
+          <span class='kw'>next</span>
+        <span class='kw'>end</span>
+
+        <span class='kw'>if</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^branches: (.+)$</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='comment'># TODO: version.branch = $1
+</span>        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^revision (\d+(?:\.\d+)+).*$</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_revision'>revision</span> <span class='op'>=</span> <span class='backref'>$1</span>
+        <span class='kw'>elsif</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^date:\s+(\d+.\d+.\d+\s+\d+:\d+:\d+)</span><span class='regexp_end'>/</span></span> <span class='op'>=~</span> <span class='id identifier rubyid_line'>line</span>
+          <span class='id identifier rubyid_date'>date</span>       <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='backref'>$1</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_line_utf8'>line_utf8</span>    <span class='op'>=</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:log_encoding</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_line'>line</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_author_utf8'>author_utf8</span>  <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>author: ([^;]+)</span><span class='regexp_end'>/</span></span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='id identifier rubyid_line_utf8'>line_utf8</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+          <span class='id identifier rubyid_author'>author</span>       <span class='op'>=</span> <span class='id identifier rubyid_scm_iconv'>scm_iconv</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:log_encoding</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_author_utf8'>author_utf8</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_file_state'>file_state</span>   <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>state: ([^;]+)</span><span class='regexp_end'>/</span></span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='id identifier rubyid_line'>line</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+          <span class='comment'># TODO:
+</span>          <span class='comment'>#    linechanges only available in CVS....
+</span>          <span class='comment'>#    maybe a feature our SVN implementation.
+</span>          <span class='comment'>#    I&#39;m sure, they are useful for stats or something else
+</span>          <span class='comment'>#                linechanges =/lines: \+(\d+) -(\d+)/.match(line)
+</span>          <span class='comment'>#                unless linechanges.nil?
+</span>          <span class='comment'>#                  version.line_plus  = linechanges[1]
+</span>          <span class='comment'>#                  version.line_minus = linechanges[2]
+</span>          <span class='comment'>#                else
+</span>          <span class='comment'>#                  version.line_plus  = 0
+</span>          <span class='comment'>#                  version.line_minus = 0
+</span>          <span class='comment'>#                end
+</span>        <span class='kw'>else</span>
+          <span class='id identifier rubyid_commit_log'>commit_log</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_line'>line</span> <span class='kw'>unless</span> <span class='id identifier rubyid_line'>line</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^\*\*\* empty log message \*\*\*</span><span class='regexp_end'>/</span></span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="AbstractAdapter/ScmCommandAborted.html" title="Redmine::Scm::Adapters::AbstractAdapter::ScmCommandAborted (class)">ScmCommandAborted</a></span></span>
+  <span class='const'><span class='object_link'><a href="Revisions.html" title="Redmine::Scm::Adapters::Revisions (class)">Revisions</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:46 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

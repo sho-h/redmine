@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Redmine::Export::PDF::ITCPDF
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Redmine::Export::PDF::ITCPDF";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Export.html" title="Redmine::Export (module)">Export</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../PDF.html" title="Redmine::Export::PDF (module)">PDF</a></span></span>
+     &raquo; 
+    <span class="title">ITCPDF</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Redmine::Export::PDF::ITCPDF
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">RBPDF</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RBPDF</li>
+          
+            <li class="next">Redmine::Export::PDF::ITCPDF</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="../../I18n.html" title="Redmine::I18n (module)">I18n</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/redmine/export/pdf.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#footer_date-instance_method" title="#footer_date (instance method)">#<strong>footer_date</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute footer_date.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fix_text_encoding-instance_method" title="#fix_text_encoding (instance method)">#<strong>fix_text_encoding</strong>(txt)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#Footer-instance_method" title="#Footer (instance method)">#<strong>Footer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#formatted_text-instance_method" title="#formatted_text (instance method)">#<strong>formatted_text</strong>(text)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_image_filename-instance_method" title="#get_image_filename (instance method)">#<strong>get_image_filename</strong>(attrname)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_sever_url-instance_method" title="#get_sever_url (instance method)">#<strong>get_sever_url</strong>(url)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(lang, orientation = &#39;P&#39;)  &#x21d2; ITCPDF </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of ITCPDF.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#RDMCell-instance_method" title="#RDMCell (instance method)">#<strong>RDMCell</strong>(w, h = 0, txt = &#39;&#39;, border = 0, ln = 0, align = &#39;&#39;, fill = 0, link = &#39;&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#RDMMultiCell-instance_method" title="#RDMMultiCell (instance method)">#<strong>RDMMultiCell</strong>(w, h = 0, txt = &#39;&#39;, border = 0, align = &#39;&#39;, fill = 0, ln = 1)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#RDMwriteFormattedCell-instance_method" title="#RDMwriteFormattedCell (instance method)">#<strong>RDMwriteFormattedCell</strong>(w, h, x, y, txt = &#39;&#39;, attachments = [], border = 0, ln = 1, fill = 0)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#RDMwriteHTMLCell-instance_method" title="#RDMwriteHTMLCell (instance method)">#<strong>RDMwriteHTMLCell</strong>(w, h, x, y, txt = &#39;&#39;, attachments = [], border = 0, ln = 1, fill = 0)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#SetFont-instance_method" title="#SetFont (instance method)">#<strong>SetFont</strong>(family, style = &#39;&#39;, size = 0, fontfile = &#39;&#39;)  &#x21d2; Object </a>
+    
+
+    
+      (also: #set_font)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#SetFontStyle-instance_method" title="#SetFontStyle (instance method)">#<strong>SetFontStyle</strong>(style, size)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../../I18n.html" title="Redmine::I18n (module)">I18n</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../../I18n.html#current_language-instance_method" title="Redmine::I18n#current_language (method)">#current_language</a></span>, <span class='object_link'><a href="../../I18n.html#day_letter-instance_method" title="Redmine::I18n#day_letter (method)">#day_letter</a></span>, <span class='object_link'><a href="../../I18n.html#day_name-instance_method" title="Redmine::I18n#day_name (method)">#day_name</a></span>, <span class='object_link'><a href="../../I18n.html#find_language-instance_method" title="Redmine::I18n#find_language (method)">#find_language</a></span>, <span class='object_link'><a href="../../I18n.html#format_date-instance_method" title="Redmine::I18n#format_date (method)">#format_date</a></span>, <span class='object_link'><a href="../../I18n.html#format_hours-instance_method" title="Redmine::I18n#format_hours (method)">#format_hours</a></span>, <span class='object_link'><a href="../../I18n.html#format_time-instance_method" title="Redmine::I18n#format_time (method)">#format_time</a></span>, <span class='object_link'><a href="../../I18n.html#included-class_method" title="Redmine::I18n.included (method)">included</a></span>, <span class='object_link'><a href="../../I18n.html#l-instance_method" title="Redmine::I18n#l (method)">#l</a></span>, <span class='object_link'><a href="../../I18n.html#l_hours-instance_method" title="Redmine::I18n#l_hours (method)">#l_hours</a></span>, <span class='object_link'><a href="../../I18n.html#l_hours_short-instance_method" title="Redmine::I18n#l_hours_short (method)">#l_hours_short</a></span>, <span class='object_link'><a href="../../I18n.html#l_or_humanize-instance_method" title="Redmine::I18n#l_or_humanize (method)">#l_or_humanize</a></span>, <span class='object_link'><a href="../../I18n.html#languages_options-instance_method" title="Redmine::I18n#languages_options (method)">#languages_options</a></span>, <span class='object_link'><a href="../../I18n.html#ll-instance_method" title="Redmine::I18n#ll (method)">#ll</a></span>, <span class='object_link'><a href="../../I18n.html#lu-instance_method" title="Redmine::I18n#lu (method)">#lu</a></span>, <span class='object_link'><a href="../../I18n.html#month_name-instance_method" title="Redmine::I18n#month_name (method)">#month_name</a></span>, <span class='object_link'><a href="../../I18n.html#set_language_if_valid-instance_method" title="Redmine::I18n#set_language_if_valid (method)">#set_language_if_valid</a></span>, <span class='object_link'><a href="../../I18n.html#valid_languages-instance_method" title="Redmine::I18n#valid_languages (method)">#valid_languages</a></span></p>
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(lang, orientation = &#39;P&#39;)  &#x21d2; <tt><span class='object_link'><a href="" title="Redmine::Export::PDF::ITCPDF (class)">ITCPDF</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of ITCPDF</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_lang'>lang</span><span class='comma'>,</span> <span class='id identifier rubyid_orientation'>orientation</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>P</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='cvar'>@@k_path_cache</span> <span class='op'>=</span> <span class='const'>Rails</span><span class='period'>.</span><span class='id identifier rubyid_root'>root</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tmp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pdf</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='const'>FileUtils</span><span class='period'>.</span><span class='id identifier rubyid_mkdir_p'>mkdir_p</span> <span class='cvar'>@@k_path_cache</span> <span class='kw'>unless</span> <span class='const'>File</span><span class='op'>::</span><span class='id identifier rubyid_exist?'>exist?</span><span class='lparen'>(</span><span class='cvar'>@@k_path_cache</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_language_if_valid'>set_language_if_valid</span> <span class='id identifier rubyid_lang'>lang</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_orientation'>orientation</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mm</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>A4</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_print_header'>set_print_header</span><span class='lparen'>(</span><span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_rtl'>set_rtl</span><span class='lparen'>(</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:direction</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rtl</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+  <span class='ivar'>@font_for_content</span> <span class='op'>=</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:general_pdf_fontname</span><span class='rparen'>)</span>
+  <span class='ivar'>@monospaced_font_for_content</span> <span class='op'>=</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:general_pdf_monospaced_fontname</span><span class='rparen'>)</span>
+  <span class='ivar'>@font_for_footer</span>  <span class='op'>=</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:general_pdf_fontname</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_creator'>set_creator</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Info.html" title="Redmine::Info (module)">Info</a></span></span><span class='period'>.</span><span class='id identifier rubyid_app_name'><span class='object_link'><a href="../../Info.html#app_name-class_method" title="Redmine::Info.app_name (method)">app_name</a></span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_font'>set_font</span><span class='lparen'>(</span><span class='ivar'>@font_for_content</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_set_header_font'>set_header_font</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='ivar'>@font_for_content</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>10</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_footer_font'>set_footer_font</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='ivar'>@font_for_content</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>8</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_default_monospaced_font'>set_default_monospaced_font</span><span class='lparen'>(</span><span class='ivar'>@monospaced_font_for_content</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_display_mode'>set_display_mode</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>default</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>OneColumn</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="footer_date=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="footer_date-instance_method">
+  
+    #<strong>footer_date</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute footer_date</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_footer_date'>footer_date</span>
+  <span class='ivar'>@footer_date</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="fix_text_encoding-instance_method">
+  
+    #<strong>fix_text_encoding</strong>(txt)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fix_text_encoding'>fix_text_encoding</span><span class='lparen'>(</span><span class='id identifier rubyid_txt'>txt</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="RDMPdfEncoding.html" title="Redmine::Export::PDF::RDMPdfEncoding (class)">RDMPdfEncoding</a></span></span><span class='op'>::</span><span class='id identifier rubyid_rdm_from_utf8'><span class='object_link'><a href="RDMPdfEncoding.html#rdm_from_utf8-class_method" title="Redmine::Export::PDF::RDMPdfEncoding.rdm_from_utf8 (method)">rdm_from_utf8</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_txt'>txt</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="Footer-instance_method">
+  
+    #<strong>Footer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 120</span>
+
+<span class='kw'>def</span> <span class='const'>Footer</span>
+  <span class='id identifier rubyid_set_font'>set_font</span><span class='lparen'>(</span><span class='ivar'>@font_for_footer</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>I</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>8</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_x'>set_x</span><span class='lparen'>(</span><span class='int'>15</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_get_rtl'>get_rtl</span>
+    <span class='const'><span class='object_link'><a href="#RDMCell-instance_method" title="Redmine::Export::PDF::ITCPDF#RDMCell (method)">RDMCell</a></span></span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>5</span><span class='comma'>,</span> <span class='ivar'>@footer_date</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>R</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='const'><span class='object_link'><a href="#RDMCell-instance_method" title="Redmine::Export::PDF::ITCPDF#RDMCell (method)">RDMCell</a></span></span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>5</span><span class='comma'>,</span> <span class='ivar'>@footer_date</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>L</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_set_x'>set_x</span><span class='lparen'>(</span><span class='op'>-</span><span class='int'>30</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="#RDMCell-instance_method" title="Redmine::Export::PDF::ITCPDF#RDMCell (method)">RDMCell</a></span></span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>5</span><span class='comma'>,</span> <span class='id identifier rubyid_get_alias_num_page'>get_alias_num_page</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_get_alias_nb_pages'>get_alias_nb_pages</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>C</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="formatted_text-instance_method">
+  
+    #<strong>formatted_text</strong>(text)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_formatted_text'>formatted_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../WikiFormatting.html" title="Redmine::WikiFormatting (module)">WikiFormatting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_to_html'><span class='object_link'><a href="../../WikiFormatting.html#to_html-class_method" title="Redmine::WikiFormatting.to_html (method)">to_html</a></span></span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../../Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_text_formatting'>text_formatting</span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_image_filename-instance_method">
+  
+    #<strong>get_image_filename</strong>(attrname)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.6.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105
+106
+107
+108
+109
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_image_filename'>get_image_filename</span><span class='lparen'>(</span><span class='id identifier rubyid_attrname'>attrname</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_atta'>atta</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="RDMPdfEncoding.html" title="Redmine::Export::PDF::RDMPdfEncoding (class)">RDMPdfEncoding</a></span></span><span class='period'>.</span><span class='id identifier rubyid_attach'><span class='object_link'><a href="RDMPdfEncoding.html#attach-class_method" title="Redmine::Export::PDF::RDMPdfEncoding.attach (method)">attach</a></span></span><span class='lparen'>(</span><span class='ivar'>@attachments</span><span class='comma'>,</span> <span class='id identifier rubyid_attrname'>attrname</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>UTF-8</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_atta'>atta</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_atta'>atta</span><span class='period'>.</span><span class='id identifier rubyid_diskfile'>diskfile</span>
+  <span class='kw'>else</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_sever_url-instance_method">
+  
+    #<strong>get_sever_url</strong>(url)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.6.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114
+115
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 112</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_sever_url'>get_sever_url</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_empty_string'>empty_string</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span> <span class='kw'>and</span> <span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../../../Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_host_name'>host_name</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='id identifier rubyid_url'>url</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_url'>url</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="RDMCell-instance_method">
+  
+    #<strong>RDMCell</strong>(w, h = 0, txt = &#39;&#39;, border = 0, ln = 0, align = &#39;&#39;, fill = 0, link = &#39;&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 72</span>
+
+<span class='kw'>def</span> <span class='const'>RDMCell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span> <span class='comma'>,</span><span class='id identifier rubyid_h'>h</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_align'>align</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_link'>link</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_cell'>cell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='comma'>,</span> <span class='id identifier rubyid_align'>align</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='comma'>,</span> <span class='id identifier rubyid_link'>link</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="RDMMultiCell-instance_method">
+  
+    #<strong>RDMMultiCell</strong>(w, h = 0, txt = &#39;&#39;, border = 0, align = &#39;&#39;, fill = 0, ln = 1)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='const'>RDMMultiCell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_align'>align</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='op'>=</span><span class='int'>1</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_multi_cell'>multi_cell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='comma'>,</span> <span class='id identifier rubyid_align'>align</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="RDMwriteFormattedCell-instance_method">
+  
+    #<strong>RDMwriteFormattedCell</strong>(w, h, x, y, txt = &#39;&#39;, attachments = [], border = 0, ln = 1, fill = 0)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='const'>RDMwriteFormattedCell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_attachments'>attachments</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='op'>=</span><span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='op'>=</span><span class='int'>0</span><span class='rparen'>)</span>
+  <span class='ivar'>@attachments</span> <span class='op'>=</span> <span class='id identifier rubyid_attachments'>attachments</span>
+
+  <span class='id identifier rubyid_css_tag'>css_tag</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> &lt;style&gt;
+  table, td {
+    border: 2px #ff0000 solid;
+  }
+  th {  background-color:#EEEEEE; padding: 4px; white-space:nowrap; text-align: center;  font-style: bold;}
+  pre {
+    background-color: #fafafa;
+  }
+  &lt;/style&gt;</span><span class='tstring_end'>&#39;</span></span>
+
+  <span class='comment'># Strip {{toc}} tags
+</span>  <span class='id identifier rubyid_txt'>txt</span><span class='period'>.</span><span class='id identifier rubyid_gsub!'>gsub!</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>&lt;p&gt;\{\{([&lt;&gt;]?)toc\}\}&lt;\/p&gt;</span><span class='regexp_end'>/i</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_writeHTMLCell'>writeHTMLCell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_css_tag'>css_tag</span> <span class='op'>+</span> <span class='id identifier rubyid_txt'>txt</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="RDMwriteHTMLCell-instance_method">
+  
+    #<strong>RDMwriteHTMLCell</strong>(w, h, x, y, txt = &#39;&#39;, attachments = [], border = 0, ln = 1, fill = 0)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100
+101</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='const'>RDMwriteHTMLCell</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_attachments'>attachments</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='op'>=</span><span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='op'>=</span><span class='int'>0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_txt'>txt</span> <span class='op'>=</span> <span class='id identifier rubyid_formatted_text'>formatted_text</span><span class='lparen'>(</span><span class='id identifier rubyid_txt'>txt</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="#RDMwriteFormattedCell-instance_method" title="Redmine::Export::PDF::ITCPDF#RDMwriteFormattedCell (method)">RDMwriteFormattedCell</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_txt'>txt</span><span class='comma'>,</span> <span class='id identifier rubyid_attachments'>attachments</span><span class='comma'>,</span> <span class='id identifier rubyid_border'>border</span><span class='comma'>,</span> <span class='id identifier rubyid_ln'>ln</span><span class='comma'>,</span> <span class='id identifier rubyid_fill'>fill</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="SetFont-instance_method">
+  
+    #<strong>SetFont</strong>(family, style = &#39;&#39;, size = 0, fontfile = &#39;&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='set_font-instance_method'>set_font</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.6.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='const'>SetFont</span><span class='lparen'>(</span><span class='id identifier rubyid_family'>family</span><span class='comma'>,</span> <span class='id identifier rubyid_style'>style</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span><span class='op'>=</span><span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_fontfile'>fontfile</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='comment'># FreeSerif Bold Thai font has problem.
+</span>  <span class='id identifier rubyid_style'>style</span><span class='period'>.</span><span class='id identifier rubyid_delete!'>delete!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>B</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_family'>family</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_casecmp'>casecmp</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>freeserif</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='comment'># DejaVuSans Italic Arabic and Persian font has problem.
+</span>  <span class='id identifier rubyid_style'>style</span><span class='period'>.</span><span class='id identifier rubyid_delete!'>delete!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>I</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_family'>family</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_casecmp'>casecmp</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>dejavusans</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>==</span> <span class='int'>0</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_current_language'>current_language</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_casecmp'>casecmp</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>vi</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>!=</span> <span class='int'>0</span>
+  <span class='comment'># DejaVuSansMono Italic Arabic font has problem
+</span>  <span class='id identifier rubyid_style'>style</span><span class='period'>.</span><span class='id identifier rubyid_delete!'>delete!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>I</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_family'>family</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_casecmp'>casecmp</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>dejavusansmono</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_family'>family</span><span class='comma'>,</span> <span class='id identifier rubyid_style'>style</span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='id identifier rubyid_fontfile'>fontfile</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="SetFontStyle-instance_method">
+  
+    #<strong>SetFontStyle</strong>(style, size)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/export/pdf.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='const'>SetFontStyle</span><span class='lparen'>(</span><span class='id identifier rubyid_style'>style</span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set_font'>set_font</span><span class='lparen'>(</span><span class='ivar'>@font_for_content</span><span class='comma'>,</span> <span class='id identifier rubyid_style'>style</span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:21 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

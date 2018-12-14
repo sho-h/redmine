@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: AnonymousUser
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "AnonymousUser";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (A)</a> &raquo;
+    
+    
+    <span class="title">AnonymousUser</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: AnonymousUser
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="Principal.html" title="Principal (class)">Principal</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="User.html" title="User (class)">User</a></span></li>
+          
+            <li class="next">AnonymousUser</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/user.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants inherited
+     from <span class='object_link'><a href="User.html" title="User (class)">User</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="User.html#LABEL_BY_STATUS-constant" title="User::LABEL_BY_STATUS (constant)">User::LABEL_BY_STATUS</a></span>, <span class='object_link'><a href="User.html#LOGIN_LENGTH_LIMIT-constant" title="User::LOGIN_LENGTH_LIMIT (constant)">User::LOGIN_LENGTH_LIMIT</a></span>, <span class='object_link'><a href="User.html#MAIL_LENGTH_LIMIT-constant" title="User::MAIL_LENGTH_LIMIT (constant)">User::MAIL_LENGTH_LIMIT</a></span>, <span class='object_link'><a href="User.html#MAIL_NOTIFICATION_OPTIONS-constant" title="User::MAIL_NOTIFICATION_OPTIONS (constant)">User::MAIL_NOTIFICATION_OPTIONS</a></span>, <span class='object_link'><a href="User.html#USER_FORMATS-constant" title="User::USER_FORMATS (constant)">User::USER_FORMATS</a></span></p>
+
+  
+  
+  <h3 class="inherited">Constants inherited
+     from <span class='object_link'><a href="Principal.html" title="Principal (class)">Principal</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Principal.html#STATUS_ACTIVE-constant" title="Principal::STATUS_ACTIVE (constant)">Principal::STATUS_ACTIVE</a></span>, <span class='object_link'><a href="Principal.html#STATUS_ANONYMOUS-constant" title="Principal::STATUS_ANONYMOUS (constant)">Principal::STATUS_ANONYMOUS</a></span>, <span class='object_link'><a href="Principal.html#STATUS_LOCKED-constant" title="Principal::STATUS_LOCKED (constant)">Principal::STATUS_LOCKED</a></span>, <span class='object_link'><a href="Principal.html#STATUS_REGISTERED-constant" title="Principal::STATUS_REGISTERED (constant)">Principal::STATUS_REGISTERED</a></span></p>
+
+
+
+
+  <h2>Instance Attribute Summary</h2>
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="User.html" title="User (class)">User</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="User.html#generate_password-instance_method" title="User#generate_password (method)">#generate_password</a></span>, <span class='object_link'><a href="User.html#last_before_login_on-instance_method" title="User#last_before_login_on (method)">#last_before_login_on</a></span>, <span class='object_link'><a href="User.html#password-instance_method" title="User#password (method)">#password</a></span>, <span class='object_link'><a href="User.html#password_confirmation-instance_method" title="User#password_confirmation (method)">#password_confirmation</a></span>, <span class='object_link'><a href="User.html#remote_ip-instance_method" title="User#remote_ip (method)">#remote_ip</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#admin-instance_method" title="#admin (instance method)">#<strong>admin</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#available_custom_fields-instance_method" title="#available_custom_fields (instance method)">#<strong>available_custom_fields</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#builtin_role-instance_method" title="#builtin_role (instance method)">#<strong>builtin_role</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the user&#39;s bult-in role.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#destroy-instance_method" title="#destroy (instance method)">#<strong>destroy</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Anonymous user can not be destroyed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#logged%3F-instance_method" title="#logged? (instance method)">#<strong>logged?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Overrides a few properties.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mail-instance_method" title="#mail (instance method)">#<strong>mail</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mail=-instance_method" title="#mail= (instance method)">#<strong>mail=</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#member_of%3F-instance_method" title="#member_of? (instance method)">#<strong>member_of?</strong>(*args)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#membership-instance_method" title="#membership (instance method)">#<strong>membership</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pref-instance_method" title="#pref (instance method)">#<strong>pref</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rss_key-instance_method" title="#rss_key (instance method)">#<strong>rss_key</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#time_zone-instance_method" title="#time_zone (instance method)">#<strong>time_zone</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_anonymous_uniqueness-instance_method" title="#validate_anonymous_uniqueness (instance method)">#<strong>validate_anonymous_uniqueness</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="User.html" title="User (class)">User</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="User.html#activate-instance_method" title="User#activate (method)">#activate</a></span>, <span class='object_link'><a href="User.html#activate!-instance_method" title="User#activate! (method)">#activate!</a></span>, <span class='object_link'><a href="User.html#active%3F-instance_method" title="User#active? (method)">#active?</a></span>, <span class='object_link'><a href="User.html#allowed_to%3F-instance_method" title="User#allowed_to? (method)">#allowed_to?</a></span>, <span class='object_link'><a href="User.html#allowed_to_globally%3F-instance_method" title="User#allowed_to_globally? (method)">#allowed_to_globally?</a></span>, <span class='object_link'><a href="User.html#allowed_to_view_all_time_entries%3F-instance_method" title="User#allowed_to_view_all_time_entries? (method)">#allowed_to_view_all_time_entries?</a></span>, <span class='object_link'><a href="User.html#anonymous-class_method" title="User.anonymous (method)">anonymous</a></span>, <span class='object_link'><a href="User.html#anonymous%3F-instance_method" title="User#anonymous? (method)">#anonymous?</a></span>, <span class='object_link'><a href="User.html#api_key-instance_method" title="User#api_key (method)">#api_key</a></span>, <span class='object_link'><a href="User.html#base_reload-instance_method" title="User#base_reload (method)">#base_reload</a></span>, <span class='object_link'><a href="User.html#change_password_allowed%3F-instance_method" title="User#change_password_allowed? (method)">#change_password_allowed?</a></span>, <span class='object_link'><a href="User.html#check_password%3F-instance_method" title="User#check_password? (method)">#check_password?</a></span>, <span class='object_link'><a href="User.html#css_classes-instance_method" title="User#css_classes (method)">#css_classes</a></span>, <span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span>, <span class='object_link'><a href="User.html#current=-class_method" title="User.current= (method)">current=</a></span>, <span class='object_link'><a href="User.html#default_admin_account_changed%3F-class_method" title="User.default_admin_account_changed? (method)">default_admin_account_changed?</a></span>, <span class='object_link'><a href="User.html#delete_autologin_token-instance_method" title="User#delete_autologin_token (method)">#delete_autologin_token</a></span>, <span class='object_link'><a href="User.html#delete_session_token-instance_method" title="User#delete_session_token (method)">#delete_session_token</a></span>, <span class='object_link'><a href="User.html#fields_for_order_statement-class_method" title="User.fields_for_order_statement (method)">fields_for_order_statement</a></span>, <span class='object_link'><a href="User.html#find_by_api_key-class_method" title="User.find_by_api_key (method)">find_by_api_key</a></span>, <span class='object_link'><a href="User.html#find_by_login-class_method" title="User.find_by_login (method)">find_by_login</a></span>, <span class='object_link'><a href="User.html#find_by_mail-class_method" title="User.find_by_mail (method)">find_by_mail</a></span>, <span class='object_link'><a href="User.html#find_by_rss_key-class_method" title="User.find_by_rss_key (method)">find_by_rss_key</a></span>, <span class='object_link'><a href="User.html#find_or_initialize_by_identity_url-class_method" title="User.find_or_initialize_by_identity_url (method)">find_or_initialize_by_identity_url</a></span>, <span class='object_link'><a href="User.html#force_default_language%3F-instance_method" title="User#force_default_language? (method)">#force_default_language?</a></span>, <span class='object_link'><a href="User.html#generate_autologin_token-instance_method" title="User#generate_autologin_token (method)">#generate_autologin_token</a></span>, <span class='object_link'><a href="User.html#generate_password%3F-instance_method" title="User#generate_password? (method)">#generate_password?</a></span>, <span class='object_link'><a href="User.html#generate_session_token-instance_method" title="User#generate_session_token (method)">#generate_session_token</a></span>, <span class='object_link'><a href="User.html#identity_url=-instance_method" title="User#identity_url= (method)">#identity_url=</a></span>, <span class='object_link'><a href="User.html#is_or_belongs_to%3F-instance_method" title="User#is_or_belongs_to? (method)">#is_or_belongs_to?</a></span>, <span class='object_link'><a href="User.html#language-instance_method" title="User#language (method)">#language</a></span>, <span class='object_link'><a href="User.html#lock-instance_method" title="User#lock (method)">#lock</a></span>, <span class='object_link'><a href="User.html#lock!-instance_method" title="User#lock! (method)">#lock!</a></span>, <span class='object_link'><a href="User.html#locked%3F-instance_method" title="User#locked? (method)">#locked?</a></span>, <span class='object_link'><a href="User.html#mail_changed%3F-instance_method" title="User#mail_changed? (method)">#mail_changed?</a></span>, <span class='object_link'><a href="User.html#mails-instance_method" title="User#mails (method)">#mails</a></span>, <span class='object_link'><a href="User.html#managed_roles-instance_method" title="User#managed_roles (method)">#managed_roles</a></span>, <span class='object_link'><a href="User.html#must_change_password%3F-instance_method" title="User#must_change_password? (method)">#must_change_password?</a></span>, <span class='object_link'><a href="User.html#name_formatter-class_method" title="User.name_formatter (method)">name_formatter</a></span>, <span class='object_link'><a href="User.html#notified_project_ids=-instance_method" title="User#notified_project_ids= (method)">#notified_project_ids=</a></span>, <span class='object_link'><a href="User.html#notified_projects_ids-instance_method" title="User#notified_projects_ids (method)">#notified_projects_ids</a></span>, <span class='object_link'><a href="User.html#notify_about%3F-instance_method" title="User#notify_about? (method)">#notify_about?</a></span>, <span class='object_link'><a href="User.html#own_account_deletable%3F-instance_method" title="User#own_account_deletable? (method)">#own_account_deletable?</a></span>, <span class='object_link'><a href="User.html#password_expired%3F-instance_method" title="User#password_expired? (method)">#password_expired?</a></span>, <span class='object_link'><a href="User.html#project_ids_by_role-instance_method" title="User#project_ids_by_role (method)">#project_ids_by_role</a></span>, <span class='object_link'><a href="User.html#projects_by_role-instance_method" title="User#projects_by_role (method)">#projects_by_role</a></span>, <span class='object_link'><a href="User.html#random_password-instance_method" title="User#random_password (method)">#random_password</a></span>, <span class='object_link'><a href="User.html#register-instance_method" title="User#register (method)">#register</a></span>, <span class='object_link'><a href="User.html#register!-instance_method" title="User#register! (method)">#register!</a></span>, <span class='object_link'><a href="User.html#registered%3F-instance_method" title="User#registered? (method)">#registered?</a></span>, <span class='object_link'><a href="User.html#reload-instance_method" title="User#reload (method)">#reload</a></span>, <span class='object_link'><a href="User.html#roles-instance_method" title="User#roles (method)">#roles</a></span>, <span class='object_link'><a href="User.html#roles_for_project-instance_method" title="User#roles_for_project (method)">#roles_for_project</a></span>, <span class='object_link'><a href="User.html#salt_password-instance_method" title="User#salt_password (method)">#salt_password</a></span>, <span class='object_link'><a href="User.html#salt_unsalted_passwords!-class_method" title="User.salt_unsalted_passwords! (method)">salt_unsalted_passwords!</a></span>, <span class='object_link'><a href="User.html#set_mail_notification-instance_method" title="User#set_mail_notification (method)">#set_mail_notification</a></span>, <span class='object_link'><a href="User.html#time_to_date-instance_method" title="User#time_to_date (method)">#time_to_date</a></span>, <span class='object_link'><a href="User.html#to_s-instance_method" title="User#to_s (method)">#to_s</a></span>, <span class='object_link'><a href="User.html#today-instance_method" title="User#today (method)">#today</a></span>, <span class='object_link'><a href="User.html#try_to_autologin-class_method" title="User.try_to_autologin (method)">try_to_autologin</a></span>, <span class='object_link'><a href="User.html#try_to_login-class_method" title="User.try_to_login (method)">try_to_login</a></span>, <span class='object_link'><a href="User.html#update_hashed_password-instance_method" title="User#update_hashed_password (method)">#update_hashed_password</a></span>, <span class='object_link'><a href="User.html#update_last_login_on!-instance_method" title="User#update_last_login_on! (method)">#update_last_login_on!</a></span>, <span class='object_link'><a href="User.html#valid_notification_options-class_method" title="User.valid_notification_options (method)">valid_notification_options</a></span>, <span class='object_link'><a href="User.html#valid_notification_options-instance_method" title="User#valid_notification_options (method)">#valid_notification_options</a></span>, <span class='object_link'><a href="User.html#verify_session_token-class_method" title="User.verify_session_token (method)">verify_session_token</a></span>, <span class='object_link'><a href="User.html#visible_project_ids-instance_method" title="User#visible_project_ids (method)">#visible_project_ids</a></span>, <span class='object_link'><a href="User.html#wants_comments_in_reverse_order%3F-instance_method" title="User#wants_comments_in_reverse_order? (method)">#wants_comments_in_reverse_order?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SafeAttributes.html" title="Redmine::SafeAttributes (module)">Redmine::SafeAttributes</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SafeAttributes.html#delete_unsafe_attributes-instance_method" title="Redmine::SafeAttributes#delete_unsafe_attributes (method)">#delete_unsafe_attributes</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#included-class_method" title="Redmine::SafeAttributes.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute%3F-instance_method" title="Redmine::SafeAttributes#safe_attribute? (method)">#safe_attribute?</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute_names-instance_method" title="Redmine::SafeAttributes#safe_attribute_names (method)">#safe_attribute_names</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attributes=-instance_method" title="Redmine::SafeAttributes#safe_attributes= (method)">#safe_attributes=</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Principal.html" title="Principal (class)">Principal</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Principal.html#<=>-instance_method" title="Principal#&lt;=&gt; (method)">#<=></a></span>, <span class='object_link'><a href="Principal.html#detect_by_keyword-class_method" title="Principal.detect_by_keyword (method)">detect_by_keyword</a></span>, <span class='object_link'><a href="Principal.html#fields_for_order_statement-class_method" title="Principal.fields_for_order_statement (method)">fields_for_order_statement</a></span>, <span class='object_link'><a href="Principal.html#nullify_projects_default_assigned_to-instance_method" title="Principal#nullify_projects_default_assigned_to (method)">#nullify_projects_default_assigned_to</a></span>, <span class='object_link'><a href="Principal.html#project_ids-instance_method" title="Principal#project_ids (method)">#project_ids</a></span>, <span class='object_link'><a href="Principal.html#reload-instance_method" title="Principal#reload (method)">#reload</a></span>, <span class='object_link'><a href="Principal.html#visible%3F-instance_method" title="Principal#visible? (method)">#visible?</a></span></p>
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="admin-instance_method">
+  
+    #<strong>admin</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+944</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 944</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_admin'>admin</span><span class='semicolon'>;</span> <span class='kw'>false</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="available_custom_fields-instance_method">
+  
+    #<strong>available_custom_fields</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+938
+939
+940</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 938</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_available_custom_fields'>available_custom_fields</span>
+  <span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="builtin_role-instance_method">
+  
+    #<strong>builtin_role</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the user&#39;s bult-in role</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+956
+957
+958</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 956</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_builtin_role'>builtin_role</span>
+  <span class='ivar'>@builtin_role</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Role.html" title="Role (class)">Role</a></span></span><span class='period'>.</span><span class='id identifier rubyid_anonymous'><span class='object_link'><a href="Role.html#anonymous-class_method" title="Role.anonymous (method)">anonymous</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="destroy-instance_method">
+  
+    #<strong>destroy</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Anonymous user can not be destroyed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+969
+970
+971</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 969</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
+  <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="logged?-instance_method">
+  
+    #<strong>logged?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Overrides a few properties</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+943</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 943</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_logged?'>logged?</span><span class='semicolon'>;</span> <span class='kw'>false</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mail-instance_method">
+  
+    #<strong>mail</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+947</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 947</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mail'>mail</span><span class='semicolon'>;</span> <span class='kw'>nil</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mail=-instance_method">
+  
+    #<strong>mail=</strong>(*args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+946</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 946</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mail='>mail=</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>nil</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="member_of?-instance_method">
+  
+    #<strong>member_of?</strong>(*args)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+964
+965
+966</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 964</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_member_of?'>member_of?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="membership-instance_method">
+  
+    #<strong>membership</strong>(*args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+960
+961
+962</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 960</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_membership'>membership</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>(*args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+945</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 945</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='const'>I18n</span><span class='period'>.</span><span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='symbol'>:label_user_anonymous</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pref-instance_method">
+  
+    #<strong>pref</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+951
+952
+953</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 951</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pref'>pref</span>
+  <span class='const'><span class='object_link'><a href="UserPreference.html" title="UserPreference (class)">UserPreference</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="UserPreference.html#initialize-instance_method" title="UserPreference#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='symbol'>:user</span> <span class='op'>=&gt;</span> <span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rss_key-instance_method">
+  
+    #<strong>rss_key</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+949</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 949</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rss_key'>rss_key</span><span class='semicolon'>;</span> <span class='kw'>nil</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="time_zone-instance_method">
+  
+    #<strong>time_zone</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.6.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+948</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 948</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_time_zone'>time_zone</span><span class='semicolon'>;</span> <span class='kw'>nil</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_anonymous_uniqueness-instance_method">
+  
+    #<strong>validate_anonymous_uniqueness</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+933
+934
+935
+936</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 933</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_anonymous_uniqueness'>validate_anonymous_uniqueness</span>
+  <span class='comment'># There should be only one AnonymousUser in the database
+</span>  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:base</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>An anonymous user already exists.</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="" title="AnonymousUser (class)">AnonymousUser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_exists?'>exists?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:08 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

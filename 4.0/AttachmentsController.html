@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: AttachmentsController
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "AttachmentsController";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (A)</a> &raquo;
+    
+    
+    <span class="title">AttachmentsController</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: AttachmentsController
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActionController::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></li>
+          
+            <li class="next">AttachmentsController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/controllers/attachments_controller.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Redmine - project management software Copyright (C) 2006-2017 
+Jean-Philippe Lang</p>
+
+<p>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.5.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#current_menu_item-instance_method" title="#current_menu_item (instance method)">#<strong>current_menu_item</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the menu item that should be selected when viewing an attachment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#destroy-instance_method" title="#destroy (instance method)">#<strong>destroy</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#download-instance_method" title="#download (instance method)">#<strong>download</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_all-instance_method" title="#edit_all (instance method)">#<strong>edit_all</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit all the attachments of a container.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show-instance_method" title="#show (instance method)">#<strong>show</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#thumbnail-instance_method" title="#thumbnail (instance method)">#<strong>thumbnail</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_all-instance_method" title="#update_all (instance method)">#<strong>update_all</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Update all the attachments of a container.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#upload-instance_method" title="#upload (instance method)">#<strong>upload</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#_include_layout%3F-instance_method" title="ApplicationController#_include_layout? (method)">#_include_layout?</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_api_auth-class_method" title="ApplicationController.accept_api_auth (method)">accept_api_auth</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_api_auth%3F-instance_method" title="ApplicationController#accept_api_auth? (method)">#accept_api_auth?</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_rss_auth-class_method" title="ApplicationController.accept_rss_auth (method)">accept_rss_auth</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_rss_auth%3F-instance_method" title="ApplicationController#accept_rss_auth? (method)">#accept_rss_auth?</a></span>, <span class='object_link'><a href="ApplicationController.html#api_key_from_request-instance_method" title="ApplicationController#api_key_from_request (method)">#api_key_from_request</a></span>, <span class='object_link'><a href="ApplicationController.html#api_offset_and_limit-instance_method" title="ApplicationController#api_offset_and_limit (method)">#api_offset_and_limit</a></span>, <span class='object_link'><a href="ApplicationController.html#api_request%3F-instance_method" title="ApplicationController#api_request? (method)">#api_request?</a></span>, <span class='object_link'><a href="ApplicationController.html#api_switch_user_from_request-instance_method" title="ApplicationController#api_switch_user_from_request (method)">#api_switch_user_from_request</a></span>, <span class='object_link'><a href="ApplicationController.html#authorize-instance_method" title="ApplicationController#authorize (method)">#authorize</a></span>, <span class='object_link'><a href="ApplicationController.html#authorize_global-instance_method" title="ApplicationController#authorize_global (method)">#authorize_global</a></span>, <span class='object_link'><a href="ApplicationController.html#autologin_cookie_name-instance_method" title="ApplicationController#autologin_cookie_name (method)">#autologin_cookie_name</a></span>, <span class='object_link'><a href="ApplicationController.html#back_url-instance_method" title="ApplicationController#back_url (method)">#back_url</a></span>, <span class='object_link'><a href="ApplicationController.html#check_if_login_required-instance_method" title="ApplicationController#check_if_login_required (method)">#check_if_login_required</a></span>, <span class='object_link'><a href="ApplicationController.html#check_password_change-instance_method" title="ApplicationController#check_password_change (method)">#check_password_change</a></span>, <span class='object_link'><a href="ApplicationController.html#check_project_privacy-instance_method" title="ApplicationController#check_project_privacy (method)">#check_project_privacy</a></span>, <span class='object_link'><a href="ApplicationController.html#deny_access-instance_method" title="ApplicationController#deny_access (method)">#deny_access</a></span>, <span class='object_link'><a href="ApplicationController.html#filename_for_content_disposition-instance_method" title="ApplicationController#filename_for_content_disposition (method)">#filename_for_content_disposition</a></span>, <span class='object_link'><a href="ApplicationController.html#find_attachments-instance_method" title="ApplicationController#find_attachments (method)">#find_attachments</a></span>, <span class='object_link'><a href="ApplicationController.html#find_current_user-instance_method" title="ApplicationController#find_current_user (method)">#find_current_user</a></span>, <span class='object_link'><a href="ApplicationController.html#find_issue-instance_method" title="ApplicationController#find_issue (method)">#find_issue</a></span>, <span class='object_link'><a href="ApplicationController.html#find_issues-instance_method" title="ApplicationController#find_issues (method)">#find_issues</a></span>, <span class='object_link'><a href="ApplicationController.html#find_model_object-instance_method" title="ApplicationController#find_model_object (method)">#find_model_object</a></span>, <span class='object_link'><a href="ApplicationController.html#find_optional_project-instance_method" title="ApplicationController#find_optional_project (method)">#find_optional_project</a></span>, <span class='object_link'><a href="ApplicationController.html#find_optional_project_by_id-instance_method" title="ApplicationController#find_optional_project_by_id (method)">#find_optional_project_by_id</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project-instance_method" title="ApplicationController#find_project (method)">#find_project</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project_by_project_id-instance_method" title="ApplicationController#find_project_by_project_id (method)">#find_project_by_project_id</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project_from_association-instance_method" title="ApplicationController#find_project_from_association (method)">#find_project_from_association</a></span>, <span class='object_link'><a href="ApplicationController.html#handle_unverified_request-instance_method" title="ApplicationController#handle_unverified_request (method)">#handle_unverified_request</a></span>, <span class='object_link'><a href="ApplicationController.html#logged_user=-instance_method" title="ApplicationController#logged_user= (method)">#logged_user=</a></span>, <span class='object_link'><a href="ApplicationController.html#logout_user-instance_method" title="ApplicationController#logout_user (method)">#logout_user</a></span>, <span class='object_link'><a href="ApplicationController.html#missing_template-instance_method" title="ApplicationController#missing_template (method)">#missing_template</a></span>, <span class='object_link'><a href="ApplicationController.html#model_object-class_method" title="ApplicationController.model_object (method)">model_object</a></span>, <span class='object_link'><a href="ApplicationController.html#parse_params_for_bulk_update-instance_method" title="ApplicationController#parse_params_for_bulk_update (method)">#parse_params_for_bulk_update</a></span>, <span class='object_link'><a href="ApplicationController.html#parse_qvalues-instance_method" title="ApplicationController#parse_qvalues (method)">#parse_qvalues</a></span>, <span class='object_link'><a href="ApplicationController.html#per_page_option-instance_method" title="ApplicationController#per_page_option (method)">#per_page_option</a></span>, <span class='object_link'><a href="ApplicationController.html#query_statement_invalid-instance_method" title="ApplicationController#query_statement_invalid (method)">#query_statement_invalid</a></span>, <span class='object_link'><a href="ApplicationController.html#redirect_back_or_default-instance_method" title="ApplicationController#redirect_back_or_default (method)">#redirect_back_or_default</a></span>, <span class='object_link'><a href="ApplicationController.html#redirect_to_referer_or-instance_method" title="ApplicationController#redirect_to_referer_or (method)">#redirect_to_referer_or</a></span>, <span class='object_link'><a href="ApplicationController.html#render_403-instance_method" title="ApplicationController#render_403 (method)">#render_403</a></span>, <span class='object_link'><a href="ApplicationController.html#render_404-instance_method" title="ApplicationController#render_404 (method)">#render_404</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_errors-instance_method" title="ApplicationController#render_api_errors (method)">#render_api_errors</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_head-instance_method" title="ApplicationController#render_api_head (method)">#render_api_head</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_ok-instance_method" title="ApplicationController#render_api_ok (method)">#render_api_ok</a></span>, <span class='object_link'><a href="ApplicationController.html#render_attachment_warning_if_needed-instance_method" title="ApplicationController#render_attachment_warning_if_needed (method)">#render_attachment_warning_if_needed</a></span>, <span class='object_link'><a href="ApplicationController.html#render_error-instance_method" title="ApplicationController#render_error (method)">#render_error</a></span>, <span class='object_link'><a href="ApplicationController.html#render_feed-instance_method" title="ApplicationController#render_feed (method)">#render_feed</a></span>, <span class='object_link'><a href="ApplicationController.html#render_validation_errors-instance_method" title="ApplicationController#render_validation_errors (method)">#render_validation_errors</a></span>, <span class='object_link'><a href="ApplicationController.html#require_admin-instance_method" title="ApplicationController#require_admin (method)">#require_admin</a></span>, <span class='object_link'><a href="ApplicationController.html#require_admin_or_api_request-instance_method" title="ApplicationController#require_admin_or_api_request (method)">#require_admin_or_api_request</a></span>, <span class='object_link'><a href="ApplicationController.html#require_login-instance_method" title="ApplicationController#require_login (method)">#require_login</a></span>, <span class='object_link'><a href="ApplicationController.html#session_expiration-instance_method" title="ApplicationController#session_expiration (method)">#session_expiration</a></span>, <span class='object_link'><a href="ApplicationController.html#session_expired%3F-instance_method" title="ApplicationController#session_expired? (method)">#session_expired?</a></span>, <span class='object_link'><a href="ApplicationController.html#set_localization-instance_method" title="ApplicationController#set_localization (method)">#set_localization</a></span>, <span class='object_link'><a href="ApplicationController.html#start_user_session-instance_method" title="ApplicationController#start_user_session (method)">#start_user_session</a></span>, <span class='object_link'><a href="ApplicationController.html#try_to_autologin-instance_method" title="ApplicationController#try_to_autologin (method)">#try_to_autologin</a></span>, <span class='object_link'><a href="ApplicationController.html#use_layout-instance_method" title="ApplicationController#use_layout (method)">#use_layout</a></span>, <span class='object_link'><a href="ApplicationController.html#user_setup-instance_method" title="ApplicationController#user_setup (method)">#user_setup</a></span>, <span class='object_link'><a href="ApplicationController.html#verify_authenticity_token-instance_method" title="ApplicationController#verify_authenticity_token (method)">#verify_authenticity_token</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SudoMode/Controller.html" title="Redmine::SudoMode::Controller (module)">Redmine::SudoMode::Controller</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SudoMode/Controller.html#process_sudo_form-instance_method" title="Redmine::SudoMode::Controller#process_sudo_form (method)">#process_sudo_form</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#render_sudo_form-instance_method" title="Redmine::SudoMode::Controller#render_sudo_form (method)">#render_sudo_form</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#require_sudo_mode-instance_method" title="Redmine::SudoMode::Controller#require_sudo_mode (method)">#require_sudo_mode</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#sudo_mode-instance_method" title="Redmine::SudoMode::Controller#sudo_mode (method)">#sudo_mode</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#sudo_timestamp_valid%3F-instance_method" title="Redmine::SudoMode::Controller#sudo_timestamp_valid? (method)">#sudo_timestamp_valid?</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#update_sudo_timestamp!-instance_method" title="Redmine::SudoMode::Controller#update_sudo_timestamp! (method)">#update_sudo_timestamp!</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/MenuManager/MenuController.html" title="Redmine::MenuManager::MenuController (module)">Redmine::MenuManager::MenuController</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/MenuManager/MenuController.html#current_menu-instance_method" title="Redmine::MenuManager::MenuController#current_menu (method)">#current_menu</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#included-class_method" title="Redmine::MenuManager::MenuController.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#menu_items-instance_method" title="Redmine::MenuManager::MenuController#menu_items (method)">#menu_items</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#redirect_to_menu_item-instance_method" title="Redmine::MenuManager::MenuController#redirect_to_menu_item (method)">#redirect_to_menu_item</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#redirect_to_project_menu_item-instance_method" title="Redmine::MenuManager::MenuController#redirect_to_project_menu_item (method)">#redirect_to_project_menu_item</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Search/Controller.html" title="Redmine::Search::Controller (module)">Redmine::Search::Controller</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Search/Controller.html#default_search_scope-instance_method" title="Redmine::Search::Controller#default_search_scope (method)">#default_search_scope</a></span>, <span class='object_link'><a href="Redmine/Search/Controller.html#default_search_scopes-instance_method" title="Redmine::Search::Controller#default_search_scopes (method)">#default_search_scopes</a></span>, <span class='object_link'><a href="Redmine/Search/Controller.html#included-class_method" title="Redmine::Search::Controller.included (method)">included</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="RoutesHelper.html" title="RoutesHelper (module)">RoutesHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="RoutesHelper.html#_new_project_issue_path-instance_method" title="RoutesHelper#_new_project_issue_path (method)">#_new_project_issue_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_new_time_entry_path-instance_method" title="RoutesHelper#_new_time_entry_path (method)">#_new_time_entry_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_calendar_path-instance_method" title="RoutesHelper#_project_calendar_path (method)">#_project_calendar_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_gantt_path-instance_method" title="RoutesHelper#_project_gantt_path (method)">#_project_gantt_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_issues_path-instance_method" title="RoutesHelper#_project_issues_path (method)">#_project_issues_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_news_path-instance_method" title="RoutesHelper#_project_news_path (method)">#_project_news_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_report_time_entries_path-instance_method" title="RoutesHelper#_report_time_entries_path (method)">#_report_time_entries_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_time_entries_path-instance_method" title="RoutesHelper#_time_entries_path (method)">#_time_entries_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#board_path-instance_method" title="RoutesHelper#board_path (method)">#board_path</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Hook/Helper.html" title="Redmine::Hook::Helper (module)">Redmine::Hook::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Hook/Helper.html#call_hook-instance_method" title="Redmine::Hook::Helper#call_hook (method)">#call_hook</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Pagination.html" title="Redmine::Pagination (module)">Redmine::Pagination</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Pagination.html#paginate-instance_method" title="Redmine::Pagination#paginate (method)">#paginate</a></span>, <span class='object_link'><a href="Redmine/Pagination.html#paginator-instance_method" title="Redmine::Pagination#paginator (method)">#paginator</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/I18n.html" title="Redmine::I18n (module)">Redmine::I18n</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/I18n.html#current_language-instance_method" title="Redmine::I18n#current_language (method)">#current_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_letter-instance_method" title="Redmine::I18n#day_letter (method)">#day_letter</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_name-instance_method" title="Redmine::I18n#day_name (method)">#day_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#find_language-instance_method" title="Redmine::I18n#find_language (method)">#find_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_date-instance_method" title="Redmine::I18n#format_date (method)">#format_date</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_hours-instance_method" title="Redmine::I18n#format_hours (method)">#format_hours</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_time-instance_method" title="Redmine::I18n#format_time (method)">#format_time</a></span>, <span class='object_link'><a href="Redmine/I18n.html#included-class_method" title="Redmine::I18n.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l-instance_method" title="Redmine::I18n#l (method)">#l</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours-instance_method" title="Redmine::I18n#l_hours (method)">#l_hours</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours_short-instance_method" title="Redmine::I18n#l_hours_short (method)">#l_hours_short</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_or_humanize-instance_method" title="Redmine::I18n#l_or_humanize (method)">#l_or_humanize</a></span>, <span class='object_link'><a href="Redmine/I18n.html#languages_options-instance_method" title="Redmine::I18n#languages_options (method)">#languages_options</a></span>, <span class='object_link'><a href="Redmine/I18n.html#ll-instance_method" title="Redmine::I18n#ll (method)">#ll</a></span>, <span class='object_link'><a href="Redmine/I18n.html#lu-instance_method" title="Redmine::I18n#lu (method)">#lu</a></span>, <span class='object_link'><a href="Redmine/I18n.html#month_name-instance_method" title="Redmine::I18n#month_name (method)">#month_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#set_language_if_valid-instance_method" title="Redmine::I18n#set_language_if_valid (method)">#set_language_if_valid</a></span>, <span class='object_link'><a href="Redmine/I18n.html#valid_languages-instance_method" title="Redmine::I18n#valid_languages (method)">#valid_languages</a></span></p>
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="current_menu_item-instance_method">
+  
+    #<strong>current_menu_item</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the menu item that should be selected when viewing an attachment</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 166</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_current_menu_item'>current_menu_item</span>
+  <span class='kw'>if</span> <span class='ivar'>@attachment</span>
+    <span class='kw'>case</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span>
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="WikiPage.html" title="WikiPage (class)">WikiPage</a></span></span>
+      <span class='symbol'>:wiki</span>
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="Message.html" title="Message (class)">Message</a></span></span>
+      <span class='symbol'>:boards</span>
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Version.html" title="Version (class)">Version</a></span></span>
+      <span class='symbol'>:files</span>
+    <span class='kw'>else</span>
+      <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_pluralize'>pluralize</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="destroy-instance_method">
+  
+    #<strong>destroy</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 147</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
+  <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:init_journal</span><span class='rparen'>)</span>
+    <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_init_journal'>init_journal</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span>
+    <span class='comment'># Make sure association callbacks are called
+</span>    <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_attachments'>attachments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_redirect_to_referer_or'>redirect_to_referer_or</span> <span class='id identifier rubyid_project_path'>project_path</span><span class='lparen'>(</span><span class='ivar'>@project</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_js'>js</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_render_api_ok'>render_api_ok</span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="download-instance_method">
+  
+    #<strong>download</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_download'>download</span>
+  <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Version.html" title="Version (class)">Version</a></span></span><span class='rparen'>)</span> <span class='op'>||</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='rparen'>)</span>
+    <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_increment_download'>increment_download</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_stale?'>stale?</span><span class='lparen'>(</span><span class='symbol'>:etag</span> <span class='op'>=&gt;</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_digest'>digest</span><span class='rparen'>)</span>
+    <span class='comment'># images are sent inline
+</span>    <span class='id identifier rubyid_send_file'>send_file</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_diskfile'>diskfile</span><span class='comma'>,</span> <span class='symbol'>:filename</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_filename_for_content_disposition'>filename_for_content_disposition</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span><span class='comma'>,</span>
+                                    <span class='symbol'>:type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_detect_content_type'>detect_content_type</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span><span class='comma'>,</span>
+                                    <span class='symbol'>:disposition</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_disposition'>disposition</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit_all-instance_method">
+  
+    #<strong>edit_all</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit all the attachments of a container</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 120</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_all'>edit_all</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="show-instance_method">
+  
+    #<strong>show</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span> <span class='lbrace'>{</span>
+      <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:attachments</span><span class='rparen'>)</span>
+        <span class='ivar'>@attachments</span> <span class='op'>=</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_container'>container</span><span class='period'>.</span><span class='id identifier rubyid_attachments'>attachments</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_index'>index</span> <span class='op'>=</span> <span class='ivar'>@attachments</span><span class='period'>.</span><span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span>
+          <span class='ivar'>@paginator</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Pagination.html" title="Redmine::Pagination (module)">Pagination</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Pagination/Paginator.html" title="Redmine::Pagination::Paginator (class)">Paginator</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Redmine/Pagination/Paginator.html#initialize-instance_method" title="Redmine::Pagination::Paginator#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+            <span class='ivar'>@attachments</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>+</span><span class='int'>1</span>
+          <span class='rparen'>)</span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+      <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_is_diff?'>is_diff?</span>
+        <span class='ivar'>@diff</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_diskfile'>diskfile</span><span class='comma'>,</span> <span class='symbol'>:mode</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rb</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='ivar'>@diff_type</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_pref'>pref</span><span class='lbracket'>[</span><span class='symbol'>:diff_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>inline</span><span class='tstring_end'>&#39;</span></span>
+        <span class='ivar'>@diff_type</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>inline</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>unless</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>inline</span><span class='words_sep'> </span><span class='tstring_content'>sbs</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='ivar'>@diff_type</span><span class='rparen'>)</span>
+        <span class='comment'># Save diff type as user preference
+</span>        <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_logged?'>logged?</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@diff_type</span> <span class='op'>!=</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_pref'>pref</span><span class='lbracket'>[</span><span class='symbol'>:diff_type</span><span class='rbracket'>]</span>
+          <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_pref'>pref</span><span class='lbracket'>[</span><span class='symbol'>:diff_type</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@diff_type</span>
+          <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_preference'>preference</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+        <span class='kw'>end</span>
+        <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>diff</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>elsif</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_is_text?'>is_text?</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_filesize'>filesize</span> <span class='op'>&lt;=</span> <span class='const'><span class='object_link'><a href="Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_file_max_size_displayed'>file_max_size_displayed</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='period'>.</span><span class='id identifier rubyid_kilobyte'>kilobyte</span>
+        <span class='ivar'>@content</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_diskfile'>diskfile</span><span class='comma'>,</span> <span class='symbol'>:mode</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>rb</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>file</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>elsif</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_is_image?'>is_image?</span>
+        <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>image</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>other</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="thumbnail-instance_method">
+  
+    #<strong>thumbnail</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_thumbnail'>thumbnail</span>
+  <span class='kw'>if</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_thumbnailable?'>thumbnailable?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_tbnail'>tbnail</span> <span class='op'>=</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_thumbnail'>thumbnail</span><span class='lparen'>(</span><span class='symbol'>:size</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:size</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_stale?'>stale?</span><span class='lparen'>(</span><span class='symbol'>:etag</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_tbnail'>tbnail</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_send_file'>send_file</span> <span class='id identifier rubyid_tbnail'>tbnail</span><span class='comma'>,</span>
+        <span class='symbol'>:filename</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_filename_for_content_disposition'>filename_for_content_disposition</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span><span class='comma'>,</span>
+        <span class='symbol'>:type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_detect_content_type'>detect_content_type</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span><span class='comma'>,</span>
+        <span class='symbol'>:disposition</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>inline</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='comment'># No thumbnail for the attachment or thumbnail could not be created
+</span>    <span class='id identifier rubyid_head'>head</span> <span class='int'>404</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    #<strong>update</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 132</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
+  <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_safe_attributes'>safe_attributes</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:attachment</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_saved'>saved</span> <span class='op'>=</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span> <span class='lbrace'>{</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_saved'>saved</span>
+        <span class='id identifier rubyid_render_api_ok'>render_api_ok</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_render_validation_errors'>render_validation_errors</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_all-instance_method">
+  
+    #<strong>update_all</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Update all the attachments of a container</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+124
+125
+126
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 124</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_all'>update_all</span>
+  <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="Attachment.html" title="Attachment (class)">Attachment</a></span></span><span class='period'>.</span><span class='id identifier rubyid_update_attachments'><span class='object_link'><a href="Attachment.html#update_attachments-class_method" title="Attachment.update_attachments (method)">update_attachments</a></span></span><span class='lparen'>(</span><span class='ivar'>@attachments</span><span class='comma'>,</span> <span class='id identifier rubyid_update_all_params'>update_all_params</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_redirect_back_or_default'>redirect_back_or_default</span> <span class='id identifier rubyid_home_path'>home_path</span>
+    <span class='kw'>return</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>edit_all</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="upload-instance_method">
+  
+    #<strong>upload</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/attachments_controller.rb', line 93</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_upload'>upload</span>
+  <span class='comment'># Make sure that API users get used to set this content type
+</span>  <span class='comment'># as it won&#39;t trigger Rails&#39; automatic parsing of the request body for parameters
+</span>  <span class='kw'>unless</span> <span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_content_type'>content_type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/octet-stream</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_head'>head</span> <span class='int'>406</span>
+    <span class='kw'>return</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@attachment</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Attachment.html" title="Attachment (class)">Attachment</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:file</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_raw_post'>raw_post</span><span class='rparen'>)</span>
+  <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_author'>author</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span>
+  <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_filename'>filename</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:filename</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Utils.html" title="Redmine::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid_random_hex'><span class='object_link'><a href="Redmine/Utils.html#random_hex-class_method" title="Redmine::Utils.random_hex (method)">random_hex</a></span></span><span class='lparen'>(</span><span class='int'>16</span><span class='rparen'>)</span>
+  <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_content_type'>content_type</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:content_type</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span>
+  <span class='id identifier rubyid_saved'>saved</span> <span class='op'>=</span> <span class='ivar'>@attachment</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_js'>js</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span> <span class='lbrace'>{</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_saved'>saved</span>
+        <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>upload</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:status</span> <span class='op'>=&gt;</span> <span class='symbol'>:created</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_render_validation_errors'>render_validation_errors</span><span class='lparen'>(</span><span class='ivar'>@attachment</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:50 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

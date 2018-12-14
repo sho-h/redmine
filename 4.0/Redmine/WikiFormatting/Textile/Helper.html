@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Redmine::WikiFormatting::Textile::Helper
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Redmine::WikiFormatting::Textile::Helper";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (H)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../WikiFormatting.html" title="Redmine::WikiFormatting (module)">WikiFormatting</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Textile.html" title="Redmine::WikiFormatting::Textile (module)">Textile</a></span></span>
+     &raquo; 
+    <span class="title">Helper</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Redmine::WikiFormatting::Textile::Helper
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/redmine/wiki_formatting/textile/helper.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#heads_for_wiki_formatter-instance_method" title="#heads_for_wiki_formatter (instance method)">#<strong>heads_for_wiki_formatter</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initial_page_content-instance_method" title="#initial_page_content (instance method)">#<strong>initial_page_content</strong>(page)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wikitoolbar_for-instance_method" title="#wikitoolbar_for (instance method)">#<strong>wikitoolbar_for</strong>(field_id, preview_url = preview_text_path)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="heads_for_wiki_formatter-instance_method">
+  
+    #<strong>heads_for_wiki_formatter</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/helper.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_heads_for_wiki_formatter'>heads_for_wiki_formatter</span>
+  <span class='kw'>unless</span> <span class='ivar'>@heads_for_wiki_formatter_included</span>
+    <span class='id identifier rubyid_content_for'>content_for</span> <span class='symbol'>:header_tags</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_javascript_include_tag'>javascript_include_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>jstoolbar/jstoolbar</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>+</span>
+      <span class='id identifier rubyid_javascript_include_tag'>javascript_include_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>jstoolbar/textile</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>+</span>
+      <span class='id identifier rubyid_javascript_include_tag'>javascript_include_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>jstoolbar/lang/jstoolbar-</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_current_language'>current_language</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>+</span>
+      <span class='id identifier rubyid_javascript_tag'>javascript_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>var wikiImageMimeTypes = </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../MimeType.html" title="Redmine::MimeType (module)">MimeType</a></span></span><span class='period'>.</span><span class='id identifier rubyid_by_type'><span class='object_link'><a href="../../MimeType.html#by_type-class_method" title="Redmine::MimeType.by_type (method)">by_type</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>image</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='embexpr_end'>}</span><span class='tstring_content'>;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>+</span>
+      <span class='id identifier rubyid_stylesheet_link_tag'>stylesheet_link_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>jstoolbar</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    <span class='ivar'>@heads_for_wiki_formatter_included</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="initial_page_content-instance_method">
+  
+    #<strong>initial_page_content</strong>(page)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/helper.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initial_page_content'>initial_page_content</span><span class='lparen'>(</span><span class='id identifier rubyid_page'>page</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>h1. </span><span class='embexpr_beg'>#{</span><span class='ivar'>@page</span><span class='period'>.</span><span class='id identifier rubyid_pretty_title'>pretty_title</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="wikitoolbar_for-instance_method">
+  
+    #<strong>wikitoolbar_for</strong>(field_id, preview_url = preview_text_path)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/helper.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_wikitoolbar_for'>wikitoolbar_for</span><span class='lparen'>(</span><span class='id identifier rubyid_field_id'>field_id</span><span class='comma'>,</span> <span class='id identifier rubyid_preview_url'>preview_url</span> <span class='op'>=</span> <span class='id identifier rubyid_preview_text_path'>preview_text_path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_heads_for_wiki_formatter'>heads_for_wiki_formatter</span>
+  <span class='comment'># Is there a simple way to link to a public resource?
+</span>  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../../../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Utils.html" title="Redmine::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid_relative_url_root'><span class='object_link'><a href="../../Utils.html#relative_url_root-class_method" title="Redmine::Utils.relative_url_root (method)">relative_url_root</a></span></span><span class='embexpr_end'>}</span><span class='tstring_content'>/help/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_current_language'>current_language</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='embexpr_end'>}</span><span class='tstring_content'>/wiki_syntax_textile.html</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_javascript_tag'>javascript_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>var wikiToolbar = new jsToolBar(document.getElementById(&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field_id'>field_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)); wikiToolbar.setHelpLink(&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_escape_javascript'>escape_javascript</span> <span class='id identifier rubyid_url'>url</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;); wikiToolbar.setPreviewUrl(&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_preview_url'>preview_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;); wikiToolbar.draw();</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:05 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

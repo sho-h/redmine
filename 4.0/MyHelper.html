@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: MyHelper
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "MyHelper";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (M)</a> &raquo;
+    
+    
+    <span class="title">MyHelper</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: MyHelper
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/helpers/my_helper.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Redmine - project management software Copyright (C) 2006-2017 
+Jean-Philippe Lang</p>
+
+<p>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#block_select_tag-instance_method" title="#block_select_tag (instance method)">#<strong>block_select_tag</strong>(user)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the select tag used to add a block to My page.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_activity_block-instance_method" title="#render_activity_block (instance method)">#<strong>render_activity_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_block-instance_method" title="#render_block (instance method)">#<strong>render_block</strong>(block, user)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders a single block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_block_content-instance_method" title="#render_block_content (instance method)">#<strong>render_block_content</strong>(block, user)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders a single block content.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_blocks-instance_method" title="#render_blocks (instance method)">#<strong>render_blocks</strong>(blocks, user, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the blocks.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_calendar_block-instance_method" title="#render_calendar_block (instance method)">#<strong>render_calendar_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_documents_block-instance_method" title="#render_documents_block (instance method)">#<strong>render_documents_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_issuequery_block-instance_method" title="#render_issuequery_block (instance method)">#<strong>render_issuequery_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_issuesassignedtome_block-instance_method" title="#render_issuesassignedtome_block (instance method)">#<strong>render_issuesassignedtome_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_issuesreportedbyme_block-instance_method" title="#render_issuesreportedbyme_block (instance method)">#<strong>render_issuesreportedbyme_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_issueswatched_block-instance_method" title="#render_issueswatched_block (instance method)">#<strong>render_issueswatched_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_news_block-instance_method" title="#render_news_block (instance method)">#<strong>render_news_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#render_timelog_block-instance_method" title="#render_timelog_block (instance method)">#<strong>render_timelog_block</strong>(block, settings)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="block_select_tag-instance_method">
+  
+    #<strong>block_select_tag</strong>(user)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the select tag used to add a block to My page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_block_select_tag'>block_select_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_blocks_in_use'>blocks_in_use</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_pref'>pref</span><span class='period'>.</span><span class='id identifier rubyid_my_page_layout'>my_page_layout</span><span class='period'>.</span><span class='id identifier rubyid_values'>values</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span>
+  <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>option</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/MyPage.html" title="Redmine::MyPage (module)">MyPage</a></span></span><span class='period'>.</span><span class='id identifier rubyid_block_options'><span class='object_link'><a href="Redmine/MyPage.html#block_options-class_method" title="Redmine::MyPage.block_options (method)">block_options</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_blocks_in_use'>blocks_in_use</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_label'>label</span><span class='comma'>,</span> <span class='id identifier rubyid_block'>block</span><span class='op'>|</span>
+    <span class='id identifier rubyid_options'>options</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>option</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_label'>label</span><span class='comma'>,</span> <span class='symbol'>:value</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:disabled</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_select_tag'>select_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>block</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='comma'>,</span> <span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>block-select</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:onchange</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$(&#39;#block-form&#39;).submit();</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_activity_block-instance_method">
+  
+    #<strong>render_activity_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>4.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 171</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_activity_block'>render_activity_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_events_by_day'>events_by_day</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Activity.html" title="Redmine::Activity (module)">Activity</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Activity/Fetcher.html" title="Redmine::Activity::Fetcher (class)">Fetcher</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Redmine/Activity/Fetcher.html#initialize-instance_method" title="Redmine::Activity::Fetcher#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='comma'>,</span> <span class='symbol'>:author</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_events'><span class='object_link'><a href="Redmine/Activity/Fetcher.html#events-instance_method" title="Redmine::Activity::Fetcher#events (method)">events</a></span></span><span class='lparen'>(</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>10</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_group_by'>group_by</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_event'>event</span><span class='op'>|</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_time_to_date'>time_to_date</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_event_datetime'>event_datetime</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/activity</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:events_by_day</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_events_by_day'>events_by_day</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_block-instance_method">
+  
+    #<strong>render_block</strong>(block, user)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders a single block</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_block'>render_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_content'>content</span> <span class='op'>=</span> <span class='id identifier rubyid_render_block_content'>render_block_content</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_content'>content</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>span</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:class</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sort-handle</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:title</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:button_move</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_close'>close</span> <span class='op'>=</span> <span class='id identifier rubyid_link_to'>link_to</span><span class='lparen'>(</span><span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:button_delete</span><span class='rparen'>)</span><span class='comma'>,</span>
+                    <span class='lbrace'>{</span><span class='symbol'>:action</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>remove_block</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span><span class='comma'>,</span>
+                    <span class='symbol'>:remote</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='symbol'>:method</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+                    <span class='symbol'>:class</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>icon-only icon-close</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:title</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:button_delete</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_content'>content</span> <span class='op'>=</span> <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>div</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_handle'>handle</span> <span class='op'>+</span> <span class='id identifier rubyid_close'>close</span><span class='comma'>,</span> <span class='symbol'>:class</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>contextual</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_content'>content</span>
+
+    <span class='id identifier rubyid_content_tag'>content_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>div</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_content'>content</span><span class='comma'>,</span> <span class='symbol'>:class</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>mypage-box</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>block-</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_block'>block</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_block_content-instance_method">
+  
+    #<strong>render_block_content</strong>(block, user)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders a single block content</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_block_content'>render_block_content</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='id identifier rubyid_block_definition'>block_definition</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/MyPage.html" title="Redmine::MyPage (module)">MyPage</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find_block'><span class='object_link'><a href="Redmine/MyPage.html#find_block-class_method" title="Redmine::MyPage.find_block (method)">find_block</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+    <span class='const'>Rails</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unknown block \&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_block'>block</span><span class='embexpr_end'>}</span><span class='tstring_content'>\&quot; found in </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_login'>login</span><span class='embexpr_end'>}</span><span class='tstring_content'> (id=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>) preferences</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_settings'>settings</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_pref'>pref</span><span class='period'>.</span><span class='id identifier rubyid_my_page_settings'>my_page_settings</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_partial'>partial</span> <span class='op'>=</span> <span class='id identifier rubyid_block_definition'>block_definition</span><span class='lbracket'>[</span><span class='symbol'>:partial</span><span class='rbracket'>]</span>
+    <span class='kw'>begin</span>
+      <span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_partial'>partial</span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:user</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:settings</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_settings'>settings</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+    <span class='kw'>rescue</span> <span class='const'>ActionView</span><span class='op'>::</span><span class='const'>MissingTemplate</span>
+      <span class='const'>Rails</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Partial \&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_partial'>partial</span><span class='embexpr_end'>}</span><span class='tstring_content'>\&quot; missing for block \&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_block'>block</span><span class='embexpr_end'>}</span><span class='tstring_content'>\&quot; found in </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_login'>login</span><span class='embexpr_end'>}</span><span class='tstring_content'> (id=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>) preferences</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>nil</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_send'>send</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>render_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_block_definition'>block_definition</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>_block</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_blocks-instance_method">
+  
+    #<strong>render_blocks</strong>(blocks, user, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the blocks</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_blocks'>render_blocks</span><span class='lparen'>(</span><span class='id identifier rubyid_blocks'>blocks</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_s'>s</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_html_safe'>html_safe</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_blocks'>blocks</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_blocks'>blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_block'>block</span><span class='op'>|</span>
+      <span class='id identifier rubyid_s'>s</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_render_block'>render_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_s'>s</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_calendar_block-instance_method">
+  
+    #<strong>render_calendar_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 78</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_calendar_block'>render_calendar_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_calendar'>calendar</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Helpers.html" title="Redmine::Helpers (module)">Helpers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Helpers/Calendar.html" title="Redmine::Helpers::Calendar (class)">Calendar</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Redmine/Helpers/Calendar.html#initialize-instance_method" title="Redmine::Helpers::Calendar#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span><span class='comma'>,</span> <span class='id identifier rubyid_current_language'>current_language</span><span class='comma'>,</span> <span class='symbol'>:week</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_calendar'>calendar</span><span class='period'>.</span><span class='id identifier rubyid_events'>events</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Issue.html" title="Issue (class)">Issue</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='period'>.</span>
+    <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='symbol'>:project_id</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_projects'>projects</span><span class='period'>.</span><span class='id identifier rubyid_pluck'>pluck</span><span class='lparen'>(</span><span class='symbol'>:id</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(start_date&gt;=? and start_date&lt;=?) or (due_date&gt;=? and due_date&lt;=?)</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_calendar'>calendar</span><span class='period'>.</span><span class='id identifier rubyid_startdt'>startdt</span><span class='comma'>,</span> <span class='id identifier rubyid_calendar'>calendar</span><span class='period'>.</span><span class='id identifier rubyid_enddt'>enddt</span><span class='comma'>,</span> <span class='id identifier rubyid_calendar'>calendar</span><span class='period'>.</span><span class='id identifier rubyid_startdt'>startdt</span><span class='comma'>,</span> <span class='id identifier rubyid_calendar'>calendar</span><span class='period'>.</span><span class='id identifier rubyid_enddt'>enddt</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:project</span><span class='comma'>,</span> <span class='symbol'>:tracker</span><span class='comma'>,</span> <span class='symbol'>:priority</span><span class='comma'>,</span> <span class='symbol'>:assigned_to</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_references'>references</span><span class='lparen'>(</span><span class='symbol'>:project</span><span class='comma'>,</span> <span class='symbol'>:tracker</span><span class='comma'>,</span> <span class='symbol'>:priority</span><span class='comma'>,</span> <span class='symbol'>:assigned_to</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_to_a'>to_a</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/calendar</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:calendar</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_calendar'>calendar</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_documents_block-instance_method">
+  
+    #<strong>render_documents_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 90</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_documents_block'>render_documents_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_documents'>documents</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Document.html" title="Document (class)">Document</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='period'>.</span><span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Document.html" title="Document (class)">Document</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.created_on DESC</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_limit'>limit</span><span class='lparen'>(</span><span class='int'>10</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/documents</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:documents</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_documents'>documents</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_issuequery_block-instance_method">
+  
+    #<strong>render_issuequery_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 129</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_issuequery_block'>render_issuequery_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IssueQuery.html" title="IssueQuery (class)">IssueQuery</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'><span class='object_link'><a href="Query.html#visible-class_method" title="Query.visible (method)">visible</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find_by_id'>find_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:query_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_query'>query</span>
+    <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_column_names'>column_names</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:columns</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:columns</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_sort_criteria'>sort_criteria</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:sort</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:sort</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_issues'>issues</span> <span class='op'>=</span> <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_issues'>issues</span><span class='lparen'>(</span><span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>10</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/issues</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:issues</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_issues'>issues</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:settings</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_settings'>settings</span><span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_queries'>queries</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IssueQuery.html" title="IssueQuery (class)">IssueQuery</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'><span class='object_link'><a href="Query.html#visible-class_method" title="Query.visible (method)">visible</a></span></span><span class='period'>.</span><span class='id identifier rubyid_sorted'>sorted</span>
+    <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/issue_query_selection</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:queries</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_queries'>queries</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:settings</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_settings'>settings</span><span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_issuesassignedtome_block-instance_method">
+  
+    #<strong>render_issuesassignedtome_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 96</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_issuesassignedtome_block'>render_issuesassignedtome_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IssueQuery.html" title="IssueQuery (class)">IssueQuery</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IssueQuery.html#initialize-instance_method" title="IssueQuery#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_assigned_to_me_issues</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='symbol'>:user</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>assigned_to_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>me</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project.status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Project.html#STATUS_ACTIVE-constant" title="Project::STATUS_ACTIVE (constant)">STATUS_ACTIVE</a></span></span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_column_names'>column_names</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:columns</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracker</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>subject</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_sort_criteria'>sort_criteria</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:sort</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>priority</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>desc</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>updated_on</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>desc</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_issues'>issues</span> <span class='op'>=</span> <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_issues'>issues</span><span class='lparen'>(</span><span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>10</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/issues</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:issues</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_issues'>issues</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_issuesreportedbyme_block-instance_method">
+  
+    #<strong>render_issuesreportedbyme_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 107</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_issuesreportedbyme_block'>render_issuesreportedbyme_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IssueQuery.html" title="IssueQuery (class)">IssueQuery</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IssueQuery.html#initialize-instance_method" title="IssueQuery#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_reported_issues</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='symbol'>:user</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>author_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>me</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project.status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Project.html#STATUS_ACTIVE-constant" title="Project::STATUS_ACTIVE (constant)">STATUS_ACTIVE</a></span></span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_column_names'>column_names</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:columns</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracker</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>subject</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_sort_criteria'>sort_criteria</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:sort</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>updated_on</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>desc</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_issues'>issues</span> <span class='op'>=</span> <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_issues'>issues</span><span class='lparen'>(</span><span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>10</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/issues</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:issues</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_issues'>issues</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_issueswatched_block-instance_method">
+  
+    #<strong>render_issueswatched_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 118</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_issueswatched_block'>render_issueswatched_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IssueQuery.html" title="IssueQuery (class)">IssueQuery</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IssueQuery.html#initialize-instance_method" title="IssueQuery#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_watched_issues</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='symbol'>:user</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>watcher_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>me</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project.status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>=</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Project.html#STATUS_ACTIVE-constant" title="Project::STATUS_ACTIVE (constant)">STATUS_ACTIVE</a></span></span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_column_names'>column_names</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:columns</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>project</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracker</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>status</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>subject</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_sort_criteria'>sort_criteria</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:sort</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_presence'>presence</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>updated_on</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>desc</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_issues'>issues</span> <span class='op'>=</span> <span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_issues'>issues</span><span class='lparen'>(</span><span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>10</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/issues</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:issues</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_issues'>issues</span><span class='comma'>,</span> <span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_news_block-instance_method">
+  
+    #<strong>render_news_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 143</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_news_block'>render_news_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_news'>news</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="News.html" title="News (class)">News</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='period'>.</span>
+    <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='symbol'>:project_id</span> <span class='op'>=&gt;</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_projects'>projects</span><span class='period'>.</span><span class='id identifier rubyid_pluck'>pluck</span><span class='lparen'>(</span><span class='symbol'>:id</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_limit'>limit</span><span class='lparen'>(</span><span class='int'>10</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:project</span><span class='comma'>,</span> <span class='symbol'>:author</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_references'>references</span><span class='lparen'>(</span><span class='symbol'>:project</span><span class='comma'>,</span> <span class='symbol'>:author</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="News.html" title="News (class)">News</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.created_on DESC</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_to_a'>to_a</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/news</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:news</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_news'>news</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="render_timelog_block-instance_method">
+  
+    #<strong>render_timelog_block</strong>(block, settings)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/my_helper.rb', line 155</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_render_timelog_block'>render_timelog_block</span><span class='lparen'>(</span><span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_days'>days</span> <span class='op'>=</span> <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:days</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='id identifier rubyid_days'>days</span> <span class='op'>=</span> <span class='int'>7</span> <span class='kw'>if</span> <span class='id identifier rubyid_days'>days</span> <span class='op'>&lt;</span> <span class='int'>1</span> <span class='op'>||</span> <span class='id identifier rubyid_days'>days</span> <span class='op'>&gt;</span> <span class='int'>365</span>
+
+  <span class='id identifier rubyid_entries'>entries</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="TimeEntry.html" title="TimeEntry (class)">TimeEntry</a></span></span><span class='period'>.</span>
+    <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="TimeEntry.html" title="TimeEntry (class)">TimeEntry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.user_id = ? AND </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="TimeEntry.html" title="TimeEntry (class)">TimeEntry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.spent_on BETWEEN ? AND ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_days'>days</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_joins'>joins</span><span class='lparen'>(</span><span class='symbol'>:activity</span><span class='comma'>,</span> <span class='symbol'>:project</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_references'>references</span><span class='lparen'>(</span><span class='symbol'>:issue</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='symbol'>:tracker</span><span class='comma'>,</span> <span class='symbol'>:status</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:issue</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='symbol'>:tracker</span><span class='comma'>,</span> <span class='symbol'>:status</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="TimeEntry.html" title="TimeEntry (class)">TimeEntry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.spent_on DESC, </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.name ASC, </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Tracker.html" title="Tracker (class)">Tracker</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.position ASC, </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Issue.html" title="Issue (class)">Issue</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.id ASC</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_to_a'>to_a</span>
+  <span class='id identifier rubyid_entries_by_day'>entries_by_day</span> <span class='op'>=</span> <span class='id identifier rubyid_entries'>entries</span><span class='period'>.</span><span class='id identifier rubyid_group_by'>group_by</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:spent_on</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:partial</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my/blocks/timelog</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:locals</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:block</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_block'>block</span><span class='comma'>,</span> <span class='symbol'>:entries</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_entries'>entries</span><span class='comma'>,</span> <span class='symbol'>:entries_by_day</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_entries_by_day'>entries_by_day</span><span class='comma'>,</span> <span class='symbol'>:days</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_days'>days</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:44:56 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

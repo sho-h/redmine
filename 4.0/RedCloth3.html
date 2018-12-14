@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RedCloth3
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "RedCloth3";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo;
+    
+    
+    <span class="title">RedCloth3</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: RedCloth3
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="String.html" title="String (class)">String</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="String.html" title="String (class)">String</a></span></li>
+          
+            <li class="next">RedCloth3</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="Redmine/Helpers/URL.html" title="Redmine::Helpers::URL (module)">Redmine::Helpers::URL</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/redmine/wiki_formatting/textile/redcloth3.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<h1 id="label-RedCloth">RedCloth</h1>
+
+<p>RedCloth is a Ruby library for converting Textile and/or Markdown into
+HTML.  You can use either format, intermingled or separately. You can also
+extend RedCloth to honor your own custom text stylings.</p>
+
+<p>RedCloth users are encouraged to use Textile if they are generating HTML
+and to use Markdown if others will be viewing the plain text.</p>
+
+<h2 id="label-What+is+Textile-3F">What is Textile?</h2>
+
+<p>Textile is a simple formatting style for text documents, loosely based on
+some HTML conventions.</p>
+
+<h2 id="label-Sample+Textile+Text">Sample Textile Text</h2>
+
+<pre class="code ruby"><code class="ruby">h2. This is a title
+
+h3. This is a subhead
+
+This is a bit of paragraph.
+
+bq. This is a blockquote.
+</code></pre>
+
+<h1 id="label-Writing+Textile">Writing Textile</h1>
+
+<p>A Textile document consists of paragraphs.  Paragraphs can be specially
+formatted by adding a small instruction to the beginning of the paragraph.</p>
+
+<pre class="code ruby"><code class="ruby">h[n].   Header of size [n].
+bq.     Blockquote.
+#       Numeric list.
+*       Bulleted list.
+</code></pre>
+
+<h2 id="label-Quick+Phrase+Modifiers">Quick Phrase Modifiers</h2>
+
+<p>Quick phrase modifiers are also included, to allow formatting of small
+portions of text within a paragraph.</p>
+
+<pre class="code ruby"><code class="ruby">\_emphasis\_
+\_\_italicized\_\_
+\*strong\*
+\*\*bold\*\*
+??citation??
+-deleted text-
++inserted text+
+^superscript^
+~subscript~
+@code@
+%(classname)span%
+
+==notextile== (leave text alone)
+</code></pre>
+
+<h2 id="label-Links">Links</h2>
+
+<p>To make a hypertext link, put the link text in “quotation  marks” followed
+immediately by a colon and the URL of the link.</p>
+
+<p>Optional: text in (parentheses) following the link text,  but before the
+closing quotation mark, will become a Title  attribute for the link,
+visible as a tool tip when a cursor is above it.</p>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby">&quot;This is a link (This is a title) &quot;:http://www.textism.com
+</code></pre>
+
+<p>Will become:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;a href=&quot;http://www.textism.com&quot; title=&quot;This is a title&quot;&gt;This is a link&lt;/a&gt;
+</code></pre>
+
+<h2 id="label-Images">Images</h2>
+
+<p>To insert an image, put the URL for the image inside exclamation marks.</p>
+
+<p>Optional: text that immediately follows the URL in (parentheses) will  be
+used as the Alt text for the image. Images on the web should always  have
+descriptive Alt text for the benefit of readers using non-graphical 
+browsers.</p>
+
+<p>Optional: place a colon followed by a URL immediately after the  closing !
+to make the image into a link.</p>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby">!http://www.textism.com/common/textist.gif(Textist)!
+</code></pre>
+
+<p>Will become:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;img src=&quot;http://www.textism.com/common/textist.gif&quot; alt=&quot;Textist&quot; /&gt;
+</code></pre>
+
+<p>With a link:</p>
+
+<pre class="code ruby"><code class="ruby">!/common/textist.gif(Textist)!:http://textism.com
+</code></pre>
+
+<p>Will become:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;a href=&quot;http://textism.com&quot;&gt;&lt;img src=&quot;/common/textist.gif&quot; alt=&quot;Textist&quot; /&gt;&lt;/a&gt;
+</code></pre>
+
+<h2 id="label-Defining+Acronyms">Defining Acronyms</h2>
+
+<p>HTML allows authors to define acronyms via the tag. The definition appears
+as a  tool tip when a cursor hovers over the acronym. A crucial aid to
+clear writing,  this should be used at least once for each acronym in
+documents where they appear.</p>
+
+<p>To quickly define an acronym in Textile, place the full text in
+(parentheses)  immediately following the acronym.</p>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>ACLU</span><span class='lparen'>(</span><span class='const'>American</span> <span class='const'>Civil</span> <span class='const'>Liberties</span> <span class='const'>Union</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>Will become:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;abbr title=&quot;American Civil Liberties Union&quot;&gt;ACLU&lt;/abbr&gt;
+</code></pre>
+
+<h2 id="label-Adding+Tables">Adding Tables</h2>
+
+<p>In Textile, simple tables can be added by separating each column by a pipe.</p>
+
+<pre class="code ruby"><code class="ruby">|a|simple|table|row|
+|And|Another|table|row|
+</code></pre>
+
+<p>Attributes are defined by style definitions in parentheses.</p>
+
+<pre class="code ruby"><code class="ruby">table(border:1px solid black).
+(background:#ddd;color:red). |{}| | | |
+</code></pre>
+
+<h2 id="label-Using+RedCloth">Using RedCloth</h2>
+
+<p>RedCloth is simply an extension of the String class, which can handle
+Textile formatting.  Use it like a String and output HTML with its
+RedCloth#to_html method.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_doc'>doc</span> <span class='op'>=</span> <span class='const'>RedCloth</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>
+
+h2. Test document
+
+Just a simple test.</span><span class='tstring_end'>&quot;</span></span>
+
+<span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_doc'>doc</span><span class='period'>.</span><span class='id identifier rubyid_to_html'>to_html</span>
+</code></pre>
+
+<p>By default, RedCloth uses both Textile and Markdown formatting, with
+Textile formatting taking precedence.  If you want to turn off Markdown
+formatting, to boost speed and limit the processor:</p>
+
+<pre class="code ruby"><code class="ruby">class RedCloth::Textile.new( str )
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Redmine/WikiFormatting/Textile/Formatter.html" title="Redmine::WikiFormatting::Textile::Formatter (class)">Redmine::WikiFormatting::Textile::Formatter</a></span></p>
+</div>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>3.0.4</span><span class='tstring_end'>&#39;</span></span></pre></dd>
+      
+        <dt id="DEFAULT_RULES-constant" class="">DEFAULT_RULES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='symbol'>:textile</span><span class='comma'>,</span> <span class='symbol'>:markdown</span><span class='rbracket'>]</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#filter_html-instance_method" title="#filter_html (instance method)">#<strong>filter_html</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Two accessor for setting security restrictions.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#filter_styles-instance_method" title="#filter_styles (instance method)">#<strong>filter_styles</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Two accessor for setting security restrictions.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hard_breaks-instance_method" title="#hard_breaks (instance method)">#<strong>hard_breaks</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor for toggling hard breaks.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lite_mode-instance_method" title="#lite_mode (instance method)">#<strong>lite_mode</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor for toggling lite mode.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#no_span_caps-instance_method" title="#no_span_caps (instance method)">#<strong>no_span_caps</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor for toggling span caps.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rules-instance_method" title="#rules (instance method)">#<strong>rules</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Establishes the markup predence.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(string, restrictions = [])  &#x21d2; RedCloth3 </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a new RedCloth object, based on <em>string</em> and enforcing all
+the included <em>restrictions</em>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_html-instance_method" title="#to_html (instance method)">#<strong>to_html</strong>(*rules)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generates HTML from the Textile contents.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Helpers/URL.html" title="Redmine::Helpers::URL (module)">Redmine::Helpers::URL</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Helpers/URL.html#uri_with_safe_scheme%3F-instance_method" title="Redmine::Helpers::URL#uri_with_safe_scheme? (method)">#uri_with_safe_scheme?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/CoreExtensions/String/Inflections.html" title="Redmine::CoreExtensions::String::Inflections (module)">Redmine::CoreExtensions::String::Inflections</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/CoreExtensions/String/Inflections.html#with_leading_slash-instance_method" title="Redmine::CoreExtensions::String::Inflections#with_leading_slash (method)">#with_leading_slash</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/CoreExtensions/String/Conversions.html" title="Redmine::CoreExtensions::String::Conversions (module)">Redmine::CoreExtensions::String::Conversions</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/CoreExtensions/String/Conversions.html#to_hours-instance_method" title="Redmine::CoreExtensions::String::Conversions#to_hours (method)">#to_hours</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Diffable.html" title="Diffable (module)">Diffable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Diffable.html#diff-instance_method" title="Diffable#diff (method)">#diff</a></span>, <span class='object_link'><a href="Diffable.html#patch-instance_method" title="Diffable#patch (method)">#patch</a></span>, <span class='object_link'><a href="Diffable.html#replacenextlarger-instance_method" title="Diffable#replacenextlarger (method)">#replacenextlarger</a></span>, <span class='object_link'><a href="Diffable.html#reverse_hash-instance_method" title="Diffable#reverse_hash (method)">#reverse_hash</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(string, restrictions = [])  &#x21d2; <tt><span class='object_link'><a href="" title="RedCloth3 (class)">RedCloth3</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new RedCloth object, based on <em>string</em> and enforcing all
+the included <em>restrictions</em>.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_r'>r</span> <span class='op'>=</span> <span class='const'>RedCloth</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>h1. A &lt;b&gt;bold&lt;/b&gt; man</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='symbol'>:filter_html</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
+<span class='id identifier rubyid_r'>r</span><span class='period'>.</span><span class='id identifier rubyid_to_html'>to_html</span>
+  <span class='comment'>#=&gt;&quot;&lt;h1&gt;A &amp;lt;b&amp;gt;bold&amp;lt;/b&amp;gt; man&lt;/h1&gt;&quot;
+</span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+255
+256
+257
+258</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 255</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span> <span class='id identifier rubyid_string'>string</span><span class='comma'>,</span> <span class='id identifier rubyid_restrictions'>restrictions</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
+    <span class='id identifier rubyid_restrictions'>restrictions</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_r'>r</span><span class='op'>|</span> <span class='id identifier rubyid_method'>method</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span> <span class='id identifier rubyid_r'>r</span> <span class='embexpr_end'>}</span><span class='tstring_content'>=</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span> <span class='kw'>true</span> <span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='kw'>super</span><span class='lparen'>(</span> <span class='id identifier rubyid_string'>string</span> <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="filter_html=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="filter_html-instance_method">
+  
+    #<strong>filter_html</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Two accessor for setting security restrictions.</p>
+
+<p>This is a nice thing if you&#39;re using RedCloth for formatting in public
+places (e.g. Wikis) where you don&#39;t want users to abuse HTML for bad
+things.</p>
+
+<p>If <code>:filter_html</code> is set, HTML which wasn&#39;t created by the
+Textile processor will be escaped.</p>
+
+<p>If <code>:filter_styles</code> is set, it will also disable the style
+markup specifier. (&#39;red&#39;)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_filter_html'>filter_html</span>
+  <span class='ivar'>@filter_html</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="filter_styles=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="filter_styles-instance_method">
+  
+    #<strong>filter_styles</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Two accessor for setting security restrictions.</p>
+
+<p>This is a nice thing if you&#39;re using RedCloth for formatting in public
+places (e.g. Wikis) where you don&#39;t want users to abuse HTML for bad
+things.</p>
+
+<p>If <code>:filter_html</code> is set, HTML which wasn&#39;t created by the
+Textile processor will be escaped.</p>
+
+<p>If <code>:filter_styles</code> is set, it will also disable the style
+markup specifier. (&#39;red&#39;)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_filter_styles'>filter_styles</span>
+  <span class='ivar'>@filter_styles</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="hard_breaks=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="hard_breaks-instance_method">
+  
+    #<strong>hard_breaks</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor for toggling hard breaks.</p>
+
+<p>If <code>:hard_breaks</code> is set, single newlines will be converted to
+HTML break tags.  This is the default behavior for traditional RedCloth.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+195
+196
+197</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 195</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hard_breaks'>hard_breaks</span>
+  <span class='ivar'>@hard_breaks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="lite_mode=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="lite_mode-instance_method">
+  
+    #<strong>lite_mode</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor for toggling lite mode.</p>
+
+<p>In lite mode, block-level rules are ignored.  This means that tables,
+paragraphs, lists, and such aren&#39;t available. Only the inline markup
+for bold, italics, entities and so on.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_r'>r</span> <span class='op'>=</span> <span class='const'>RedCloth</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>And then? She *fell*!</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='symbol'>:lite_mode</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
+<span class='id identifier rubyid_r'>r</span><span class='period'>.</span><span class='id identifier rubyid_to_html'>to_html</span>
+<span class='comment'>#=&gt; &quot;And then? She &lt;strong&gt;fell&lt;/strong&gt;!&quot;
+</span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 207</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_lite_mode'>lite_mode</span>
+  <span class='ivar'>@lite_mode</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="no_span_caps=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="no_span_caps-instance_method">
+  
+    #<strong>no_span_caps</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor for toggling span caps.</p>
+
+<p>Textile places `span&#39; tags around capitalized words by default, but
+this wreaks havoc on Wikis. If <code>:no_span_caps</code> is set, this will
+be suppressed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+217
+218
+219</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 217</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_no_span_caps'>no_span_caps</span>
+  <span class='ivar'>@no_span_caps</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rules=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rules-instance_method">
+  
+    #<strong>rules</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Establishes the markup predence.  Available rules include:</p>
+
+<h2 id="label-Textile+Rules">Textile Rules</h2>
+
+<p>The following textile rules can be set individually.  Or add the complete
+set of rules with the single :textile rule, which supplies the rule set in
+the following precedence:</p>
+<dl class="rdoc-list note-list"><dt>refs_textile
+<dd>
+<p>Textile references (i.e. [hobix]<a href="http://hobix.com">hobix.com</a>/)</p>
+</dd><dt>block_textile_table
+<dd>
+<p>Textile table block structures</p>
+</dd><dt>block_textile_lists
+<dd>
+<p>Textile list structures</p>
+</dd><dt>block_textile_prefix
+<dd>
+<p>Textile blocks with prefixes (i.e. bq., h2., etc.)</p>
+</dd><dt>inline_textile_image
+<dd>
+<p>Textile inline images</p>
+</dd><dt>inline_textile_link
+<dd>
+<p>Textile inline links</p>
+</dd><dt>inline_textile_span
+<dd>
+<p>Textile inline spans</p>
+</dd><dt>glyphs_textile
+<dd>
+<p>Textile entities (such as em-dashes and smart quotes)</p>
+</dd></dl>
+
+<h2 id="label-Markdown">Markdown</h2>
+<dl class="rdoc-list note-list"><dt>refs_markdown
+<dd>
+<p>Markdown references (for example: [hobix]: <a
+href="http://hobix.com">hobix.com</a>/)</p>
+</dd><dt>block_markdown_setext
+<dd>
+<p>Markdown setext headers</p>
+</dd><dt>block_markdown_atx
+<dd>
+<p>Markdown atx headers</p>
+</dd><dt>block_markdown_rule
+<dd>
+<p>Markdown horizontal rules</p>
+</dd><dt>block_markdown_bq
+<dd>
+<p>Markdown blockquotes</p>
+</dd><dt>block_markdown_lists
+<dd>
+<p>Markdown lists</p>
+</dd><dt>inline_markdown_link
+<dd>
+<p>Markdown links</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+246
+247
+248</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 246</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rules'>rules</span>
+  <span class='ivar'>@rules</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="to_html-instance_method">
+  
+    #<strong>to_html</strong>(*rules)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generates HTML from the Textile contents.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_r'>r</span> <span class='op'>=</span> <span class='const'>RedCloth</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>And then? She *fell*!</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span>
+<span class='id identifier rubyid_r'>r</span><span class='period'>.</span><span class='id identifier rubyid_to_html'>to_html</span><span class='lparen'>(</span> <span class='kw'>true</span> <span class='rparen'>)</span>
+  <span class='comment'>#=&gt;&quot;And then? She &lt;strong&gt;fell&lt;/strong&gt;!&quot;
+</span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/wiki_formatting/textile/redcloth3.rb', line 267</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_html'>to_html</span><span class='lparen'>(</span> <span class='op'>*</span><span class='id identifier rubyid_rules'>rules</span> <span class='rparen'>)</span>
+    <span class='id identifier rubyid_rules'>rules</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="#DEFAULT_RULES-constant" title="RedCloth3::DEFAULT_RULES (constant)">DEFAULT_RULES</a></span></span> <span class='kw'>if</span> <span class='id identifier rubyid_rules'>rules</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='comment'># make our working copy
+</span>    <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
+    
+    <span class='ivar'>@urlrefs</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='ivar'>@shelf</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_textile_rules'>textile_rules</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='symbol'>:block_textile_table</span><span class='comma'>,</span> <span class='symbol'>:block_textile_lists</span><span class='comma'>,</span>
+                     <span class='symbol'>:block_textile_prefix</span><span class='comma'>,</span> <span class='symbol'>:inline_textile_image</span><span class='comma'>,</span> <span class='symbol'>:inline_textile_link</span><span class='comma'>,</span>
+                     <span class='symbol'>:inline_textile_code</span><span class='comma'>,</span> <span class='symbol'>:inline_textile_span</span><span class='comma'>,</span> <span class='symbol'>:glyphs_textile</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_markdown_rules'>markdown_rules</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='symbol'>:refs_markdown</span><span class='comma'>,</span> <span class='symbol'>:block_markdown_setext</span><span class='comma'>,</span> <span class='symbol'>:block_markdown_atx</span><span class='comma'>,</span> <span class='symbol'>:block_markdown_rule</span><span class='comma'>,</span>
+                      <span class='symbol'>:block_markdown_bq</span><span class='comma'>,</span> <span class='symbol'>:block_markdown_lists</span><span class='comma'>,</span> 
+                      <span class='symbol'>:inline_markdown_reflink</span><span class='comma'>,</span> <span class='symbol'>:inline_markdown_link</span><span class='rbracket'>]</span>
+    <span class='ivar'>@rules</span> <span class='op'>=</span> <span class='id identifier rubyid_rules'>rules</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_rule'>rule</span><span class='op'>|</span>
+        <span class='kw'>case</span> <span class='id identifier rubyid_rule'>rule</span>
+        <span class='kw'>when</span> <span class='symbol'>:markdown</span>
+            <span class='id identifier rubyid_markdown_rules'>markdown_rules</span>
+        <span class='kw'>when</span> <span class='symbol'>:textile</span>
+            <span class='id identifier rubyid_textile_rules'>textile_rules</span>
+        <span class='kw'>else</span>
+            <span class='id identifier rubyid_rule'>rule</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span>
+
+    <span class='comment'># standard clean up
+</span>    <span class='id identifier rubyid_incoming_entities'>incoming_entities</span> <span class='id identifier rubyid_text'>text</span> 
+    <span class='id identifier rubyid_clean_white_space'>clean_white_space</span> <span class='id identifier rubyid_text'>text</span> 
+
+    <span class='comment'># start processor
+</span>    <span class='ivar'>@pre_list</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_rip_offtags'>rip_offtags</span> <span class='id identifier rubyid_text'>text</span>
+    <span class='id identifier rubyid_no_textile'>no_textile</span> <span class='id identifier rubyid_text'>text</span>
+    <span class='id identifier rubyid_escape_html_tags'>escape_html_tags</span> <span class='id identifier rubyid_text'>text</span>
+    <span class='comment'># need to do this before #hard_break and #blocks
+</span>    <span class='id identifier rubyid_block_textile_quotes'>block_textile_quotes</span> <span class='id identifier rubyid_text'>text</span> <span class='kw'>unless</span> <span class='ivar'>@lite_mode</span>
+    <span class='id identifier rubyid_hard_break'>hard_break</span> <span class='id identifier rubyid_text'>text</span> 
+    <span class='kw'>unless</span> <span class='ivar'>@lite_mode</span>
+        <span class='id identifier rubyid_refs'>refs</span> <span class='id identifier rubyid_text'>text</span>
+        <span class='id identifier rubyid_blocks'>blocks</span> <span class='id identifier rubyid_text'>text</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_inline'>inline</span> <span class='id identifier rubyid_text'>text</span>
+    <span class='id identifier rubyid_smooth_offtags'>smooth_offtags</span> <span class='id identifier rubyid_text'>text</span>
+
+    <span class='id identifier rubyid_retrieve'>retrieve</span> <span class='id identifier rubyid_text'>text</span>
+
+    <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_gsub!'>gsub!</span><span class='lparen'>(</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>&lt;\/?notextile&gt;</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span> <span class='rparen'>)</span>
+    <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_gsub!'>gsub!</span><span class='lparen'>(</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>x%x%</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&amp;#38;</span><span class='tstring_end'>&#39;</span></span> <span class='rparen'>)</span>
+    <span class='id identifier rubyid_clean_html'>clean_html</span> <span class='id identifier rubyid_text'>text</span> <span class='kw'>if</span> <span class='id identifier rubyid_filter_html'>filter_html</span>
+    <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_strip!'>strip!</span>
+    <span class='id identifier rubyid_text'>text</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:55 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TimeEntry
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "TimeEntry";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">TimeEntry</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TimeEntry
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">ActiveRecord::Base</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Base</li>
+          
+            <li class="next">TimeEntry</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="Redmine/SafeAttributes.html" title="Redmine::SafeAttributes (module)">Redmine::SafeAttributes</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/time_entry.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Redmine - project management software Copyright (C) 2006-2017 
+Jean-Philippe Lang</p>
+
+<p>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#visible_condition-class_method" title="visible_condition (class method)">.<strong>visible_condition</strong>(user, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a SQL conditions string used to find all time entries visible by
+the specified user.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#editable_by%3F-instance_method" title="#editable_by? (instance method)">#<strong>editable_by?</strong>(usr)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if the time entry can be edited by usr, otherwise false.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#editable_custom_field_values-instance_method" title="#editable_custom_field_values (instance method)">#<strong>editable_custom_field_values</strong>(user = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the custom_field_values that can be edited by the given user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#editable_custom_fields-instance_method" title="#editable_custom_fields (instance method)">#<strong>editable_custom_fields</strong>(user = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the custom fields that can be edited by the given user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hours-instance_method" title="#hours (instance method)">#<strong>hours</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hours=-instance_method" title="#hours= (instance method)">#<strong>hours=</strong>(h)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(attributes = nil, *args)  &#x21d2; TimeEntry </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of TimeEntry.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#safe_attributes=-instance_method" title="#safe_attributes= (instance method)">#<strong>safe_attributes=</strong>(attrs, user = User.current)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_project_if_nil-instance_method" title="#set_project_if_nil (instance method)">#<strong>set_project_if_nil</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#spent_on=-instance_method" title="#spent_on= (instance method)">#<strong>spent_on=</strong>(date)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>tyear, tmonth, tweek assigned where setting spent_on attributes these
+attributes make time aggregations easier.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_time_entry-instance_method" title="#validate_time_entry (instance method)">#<strong>validate_time_entry</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#visible%3F-instance_method" title="#visible? (instance method)">#<strong>visible?</strong>(user = nil)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if user or current user is allowed to view the time entry.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SafeAttributes.html" title="Redmine::SafeAttributes (module)">Redmine::SafeAttributes</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SafeAttributes.html#delete_unsafe_attributes-instance_method" title="Redmine::SafeAttributes#delete_unsafe_attributes (method)">#delete_unsafe_attributes</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#included-class_method" title="Redmine::SafeAttributes.included (method)">included</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute%3F-instance_method" title="Redmine::SafeAttributes#safe_attribute? (method)">#safe_attribute?</a></span>, <span class='object_link'><a href="Redmine/SafeAttributes.html#safe_attribute_names-instance_method" title="Redmine::SafeAttributes#safe_attribute_names (method)">#safe_attribute_names</a></span></p>
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(attributes = nil, *args)  &#x21d2; <tt><span class='object_link'><a href="" title="TimeEntry (class)">TimeEntry</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of TimeEntry</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93
+94
+95
+96
+97
+98
+99</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_attributes'>attributes</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='kw'>super</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_new_record?'>new_record?</span> <span class='op'>&amp;&amp;</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_activity'>activity</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_default_activity'>default_activity</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="TimeEntryActivity.html" title="TimeEntryActivity (class)">TimeEntryActivity</a></span></span><span class='period'>.</span><span class='id identifier rubyid_default'><span class='object_link'><a href="Enumeration.html#default-class_method" title="Enumeration.default (method)">default</a></span></span>
+      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_activity_id'>activity_id</span> <span class='op'>=</span> <span class='id identifier rubyid_default_activity'>default_activity</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+    <span class='kw'>end</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_hours'>hours</span> <span class='op'>=</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_hours'>hours</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="visible_condition-class_method">
+  
+    .<strong>visible_condition</strong>(user, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a SQL conditions string used to find all time entries visible by
+the specified user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_visible_condition'>visible_condition</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Project.html" title="Project (class)">Project</a></span></span><span class='period'>.</span><span class='id identifier rubyid_allowed_to_condition'><span class='object_link'><a href="Project.html#allowed_to_condition-class_method" title="Project.allowed_to_condition (method)">allowed_to_condition</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:view_time_entries</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_role'>role</span><span class='period'>.</span><span class='id identifier rubyid_time_entries_visibility'>time_entries_visibility</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>nil</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_role'>role</span><span class='period'>.</span><span class='id identifier rubyid_time_entries_visibility'>time_entries_visibility</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>own</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_logged?'>logged?</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.user_id = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>1=0</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="editable_by?-instance_method">
+  
+    #<strong>editable_by?</strong>(usr)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if the time entry can be edited by usr, otherwise false</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.7.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+164
+165
+166
+167
+168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 164</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_editable_by?'>editable_by?</span><span class='lparen'>(</span><span class='id identifier rubyid_usr'>usr</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_visible?'>visible?</span><span class='lparen'>(</span><span class='id identifier rubyid_usr'>usr</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='lparen'>(</span>
+    <span class='lparen'>(</span><span class='id identifier rubyid_usr'>usr</span> <span class='op'>==</span> <span class='id identifier rubyid_user'>user</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_usr'>usr</span><span class='period'>.</span><span class='id identifier rubyid_allowed_to?'>allowed_to?</span><span class='lparen'>(</span><span class='symbol'>:edit_own_time_entries</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='id identifier rubyid_usr'>usr</span><span class='period'>.</span><span class='id identifier rubyid_allowed_to?'>allowed_to?</span><span class='lparen'>(</span><span class='symbol'>:edit_time_entries</span><span class='comma'>,</span> <span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="editable_custom_field_values-instance_method">
+  
+    #<strong>editable_custom_field_values</strong>(user = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the custom_field_values that can be edited by the given user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.6.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+171
+172
+173</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 171</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_editable_custom_field_values'>editable_custom_field_values</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_visible_custom_field_values'>visible_custom_field_values</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="editable_custom_fields-instance_method">
+  
+    #<strong>editable_custom_fields</strong>(user = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the custom fields that can be edited by the given user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.6.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+176
+177
+178</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 176</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_editable_custom_fields'>editable_custom_fields</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_editable_custom_field_values'>editable_custom_field_values</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:custom_field</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="hours-instance_method">
+  
+    #<strong>hours</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+145
+146
+147
+148
+149
+150
+151
+152</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 145</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hours'>hours</span>
+  <span class='id identifier rubyid_h'>h</span> <span class='op'>=</span> <span class='id identifier rubyid_read_attribute'>read_attribute</span><span class='lparen'>(</span><span class='symbol'>:hours</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Float</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_h'>h</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="hours=-instance_method">
+  
+    #<strong>hours=</strong>(h)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.7.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142
+143</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 141</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hours='>hours=</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_write_attribute'>write_attribute</span> <span class='symbol'>:hours</span><span class='comma'>,</span> <span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="String.html" title="String (class)">String</a></span></span><span class='rparen'>)</span> <span class='op'>?</span> <span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_hours'>to_hours</span> <span class='op'>||</span> <span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="safe_attributes=-instance_method">
+  
+    #<strong>safe_attributes=</strong>(attrs, user = User.current)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 101</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_safe_attributes='>safe_attributes=</span><span class='lparen'>(</span><span class='id identifier rubyid_attrs'>attrs</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_attrs'>attrs</span>
+    <span class='id identifier rubyid_attrs'>attrs</span> <span class='op'>=</span> <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_attrs'>attrs</span><span class='rparen'>)</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_issue_id_changed?'>issue_id_changed?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_issue'>issue</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_visible?'>visible?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_allowed_to?'>allowed_to?</span><span class='lparen'>(</span><span class='symbol'>:log_time</span><span class='comma'>,</span> <span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_attrs'>attrs</span><span class='lbracket'>[</span><span class='symbol'>:project_id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_project_id'>project_id</span> <span class='op'>!=</span> <span class='id identifier rubyid_project_id'>project_id</span>
+          <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_project_id'>project_id</span> <span class='op'>=</span> <span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_project_id'>project_id</span>
+        <span class='kw'>end</span>
+        <span class='ivar'>@invalid_issue_id</span> <span class='op'>=</span> <span class='kw'>nil</span>
+      <span class='kw'>else</span>
+        <span class='ivar'>@invalid_issue_id</span> <span class='op'>=</span> <span class='id identifier rubyid_issue_id'>issue_id</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_attrs'>attrs</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_project_if_nil-instance_method">
+  
+    #<strong>set_project_if_nil</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 118</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_project_if_nil'>set_project_if_nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span> <span class='op'>=</span> <span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span> <span class='kw'>if</span> <span class='id identifier rubyid_issue'>issue</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="spent_on=-instance_method">
+  
+    #<strong>spent_on=</strong>(date)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>tyear, tmonth, tweek assigned where setting spent_on attributes these
+attributes make time aggregations easier</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+156
+157
+158
+159
+160
+161</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 156</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_spent_on='>spent_on=</span><span class='lparen'>(</span><span class='id identifier rubyid_date'>date</span><span class='rparen'>)</span>
+  <span class='kw'>super</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_tyear'>tyear</span> <span class='op'>=</span> <span class='id identifier rubyid_spent_on'>spent_on</span> <span class='op'>?</span> <span class='id identifier rubyid_spent_on'>spent_on</span><span class='period'>.</span><span class='id identifier rubyid_year'>year</span> <span class='op'>:</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_tmonth'>tmonth</span> <span class='op'>=</span> <span class='id identifier rubyid_spent_on'>spent_on</span> <span class='op'>?</span> <span class='id identifier rubyid_spent_on'>spent_on</span><span class='period'>.</span><span class='id identifier rubyid_month'>month</span> <span class='op'>:</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_tweek'>tweek</span> <span class='op'>=</span> <span class='id identifier rubyid_spent_on'>spent_on</span> <span class='op'>?</span> <span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_civil'>civil</span><span class='lparen'>(</span><span class='id identifier rubyid_spent_on'>spent_on</span><span class='period'>.</span><span class='id identifier rubyid_year'>year</span><span class='comma'>,</span> <span class='id identifier rubyid_spent_on'>spent_on</span><span class='period'>.</span><span class='id identifier rubyid_month'>month</span><span class='comma'>,</span> <span class='id identifier rubyid_spent_on'>spent_on</span><span class='period'>.</span><span class='id identifier rubyid_day'>day</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_cweek'>cweek</span> <span class='op'>:</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_time_entry-instance_method">
+  
+    #<strong>validate_time_entry</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 122</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_time_entry'>validate_time_entry</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_hours'>hours</span>
+    <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:hours</span><span class='comma'>,</span> <span class='symbol'>:invalid</span> <span class='kw'>if</span> <span class='id identifier rubyid_hours'>hours</span> <span class='op'>&lt;</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:hours</span><span class='comma'>,</span> <span class='symbol'>:invalid</span> <span class='kw'>if</span> <span class='id identifier rubyid_hours'>hours</span> <span class='op'>==</span> <span class='float'>0.0</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hours_changed?'>hours_changed?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='const'><span class='object_link'><a href="Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_timelog_accept_0_hours?'>timelog_accept_0_hours?</span>
+
+    <span class='id identifier rubyid_max_hours'>max_hours</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_timelog_max_hours_per_day'>timelog_max_hours_per_day</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_hours_changed?'>hours_changed?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_max_hours'>max_hours</span> <span class='op'>&gt;</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_logged_hours'>logged_hours</span> <span class='op'>=</span> <span class='id identifier rubyid_other_hours_with_same_user_and_day'>other_hours_with_same_user_and_day</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_logged_hours'>logged_hours</span> <span class='op'>+</span> <span class='id identifier rubyid_hours'>hours</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_max_hours'>max_hours</span>
+        <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:base</span><span class='comma'>,</span> <span class='const'>I18n</span><span class='period'>.</span><span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='symbol'>:error_exceeds_maximum_hours_per_day</span><span class='comma'>,</span>
+          <span class='symbol'>:logged_hours</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_format_hours'>format_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_logged_hours'>logged_hours</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='symbol'>:max_hours</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_format_hours'>format_hours</span><span class='lparen'>(</span><span class='id identifier rubyid_max_hours'>max_hours</span><span class='rparen'>)</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:project_id</span><span class='comma'>,</span> <span class='symbol'>:invalid</span> <span class='kw'>if</span> <span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:issue_id</span><span class='comma'>,</span> <span class='symbol'>:invalid</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_issue_id'>issue_id</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_issue'>issue</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lparen'>(</span><span class='id identifier rubyid_issue'>issue</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_project'>project</span><span class='op'>!=</span><span class='id identifier rubyid_issue'>issue</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='ivar'>@invalid_issue_id</span>
+  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span> <span class='symbol'>:activity_id</span><span class='comma'>,</span> <span class='symbol'>:inclusion</span> <span class='kw'>if</span> <span class='id identifier rubyid_activity_id_changed?'>activity_id_changed?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_project'>project</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_project'>project</span><span class='period'>.</span><span class='id identifier rubyid_activities'>activities</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_activity'>activity</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="visible?-instance_method">
+  
+    #<strong>visible?</strong>(user = nil)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if user or current user is allowed to view the time entry</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/time_entry.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_visible?'>visible?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_allowed_to?'>allowed_to?</span><span class='lparen'>(</span><span class='symbol'>:view_time_entries</span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_role'>role</span><span class='period'>.</span><span class='id identifier rubyid_time_entries_visibility'>time_entries_visibility</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>true</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_role'>role</span><span class='period'>.</span><span class='id identifier rubyid_time_entries_visibility'>time_entries_visibility</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>own</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='op'>==</span> <span class='id identifier rubyid_user'>user</span>
+    <span class='kw'>else</span>
+      <span class='kw'>false</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 09:45:19 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.5.3).
+</div>
+
+    </div>
+  </body>
+</html>
