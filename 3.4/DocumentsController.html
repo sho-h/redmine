@@ -671,7 +671,7 @@ Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
       <pre class="code"><span class="info file"># File 'app/controllers/documents_controller.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
-  <span class='ivar'>@sort_by</span> <span class='op'>=</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>category</span><span class='words_sep'> </span><span class='tstring_content'>date</span><span class='words_sep'> </span><span class='tstring_content'>title</span><span class='words_sep'> </span><span class='tstring_content'>author</span><span class='words_sep'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:sort_by</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:sort_by</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>category</span><span class='tstring_end'>&#39;</span></span>
+  <span class='ivar'>@sort_by</span> <span class='op'>=</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>category</span><span class='words_sep'> </span><span class='tstring_content'>date</span><span class='words_sep'> </span><span class='tstring_content'>title</span><span class='words_sep'> </span><span class='tstring_content'>author</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:sort_by</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:sort_by</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>category</span><span class='tstring_end'>&#39;</span></span>
   <span class='id identifier rubyid_documents'>documents</span> <span class='op'>=</span> <span class='ivar'>@project</span><span class='period'>.</span><span class='id identifier rubyid_documents'>documents</span><span class='period'>.</span><span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:attachments</span><span class='comma'>,</span> <span class='symbol'>:category</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
   <span class='kw'>case</span> <span class='ivar'>@sort_by</span>
   <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>date</span><span class='tstring_end'>&#39;</span></span>
@@ -850,9 +850,9 @@ Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:46 2018 by
+  Generated on Fri Dec 14 22:40:16 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>

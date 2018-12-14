@@ -391,7 +391,7 @@ acts_as_versioned</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_versioned_table'>create_versioned_table</span><span class='lparen'>(</span><span class='id identifier rubyid_create_table_options'>create_table_options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='comment'># create version column in main table if it does not exist
-</span>  <span class='kw'>if</span> <span class='op'>!</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_content_columns'>content_columns</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>version</span><span class='words_sep'> </span><span class='tstring_content'>lock_version</span><span class='words_sep'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='rbrace'>}</span>
+</span>  <span class='kw'>if</span> <span class='op'>!</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_content_columns'>content_columns</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>version</span><span class='words_sep'> </span><span class='tstring_content'>lock_version</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='rbrace'>}</span>
     <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_add_column'>add_column</span> <span class='id identifier rubyid_table_name'>table_name</span><span class='comma'>,</span> <span class='symbol'>:version</span><span class='comma'>,</span> <span class='symbol'>:integer</span>
   <span class='kw'>end</span>
 
@@ -786,9 +786,9 @@ acts_as_versioned</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:12 2018 by
+  Generated on Fri Dec 14 22:39:45 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>

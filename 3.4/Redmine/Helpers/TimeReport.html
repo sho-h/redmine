@@ -396,7 +396,7 @@
   <span class='ivar'>@criteria</span><span class='period'>.</span><span class='id identifier rubyid_uniq!'>uniq!</span>
   <span class='ivar'>@criteria</span> <span class='op'>=</span> <span class='ivar'>@criteria</span><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>3</span><span class='rbracket'>]</span>
 
-  <span class='ivar'>@columns</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span> <span class='op'>&amp;&amp;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>year</span><span class='words_sep'> </span><span class='tstring_content'>month</span><span class='words_sep'> </span><span class='tstring_content'>week</span><span class='words_sep'> </span><span class='tstring_content'>day</span><span class='words_sep'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_columns'>columns</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>month</span><span class='tstring_end'>&#39;</span></span>
+  <span class='ivar'>@columns</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span> <span class='op'>&amp;&amp;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>year</span><span class='words_sep'> </span><span class='tstring_content'>month</span><span class='words_sep'> </span><span class='tstring_content'>week</span><span class='words_sep'> </span><span class='tstring_content'>day</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_columns'>columns</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>month</span><span class='tstring_end'>&#39;</span></span>
   <span class='ivar'>@scope</span> <span class='op'>=</span> <span class='id identifier rubyid_time_entry_scope'>time_entry_scope</span>
 
   <span class='id identifier rubyid_run'>run</span>
@@ -668,9 +668,9 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:57 2018 by
+  Generated on Fri Dec 14 22:40:30 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>

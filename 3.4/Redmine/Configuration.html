@@ -329,7 +329,7 @@ Rails.env)</p>
   <span class='kw'>end</span>
 
   <span class='comment'># Compatibility mode for those who copy email.yml over configuration.yml
-</span>  <span class='qwords_beg'>%w(</span><span class='tstring_content'>delivery_method</span><span class='words_sep'> </span><span class='tstring_content'>smtp_settings</span><span class='words_sep'> </span><span class='tstring_content'>sendmail_settings</span><span class='words_sep'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_key'>key</span><span class='op'>|</span>
+</span>  <span class='qwords_beg'>%w(</span><span class='tstring_content'>delivery_method</span><span class='words_sep'> </span><span class='tstring_content'>smtp_settings</span><span class='words_sep'> </span><span class='tstring_content'>sendmail_settings</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_key'>key</span><span class='op'>|</span>
     <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='ivar'>@config</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
       <span class='ivar'>@config</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>email_delivery</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
       <span class='ivar'>@config</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>email_delivery</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_key'>key</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
@@ -408,9 +408,9 @@ Rails.env)</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:13 2018 by
+  Generated on Fri Dec 14 22:39:46 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>

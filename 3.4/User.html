@@ -163,47 +163,47 @@
         <dd><pre class="code"><span class='lbrace'>{</span>
   <span class='symbol'>:firstname_lastname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{firstname} #{lastname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>1</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:firstname_lastinitial</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{firstname} #{lastname.to_s.chars.first}.</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>2</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:firstinitial_lastname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{firstname.to_s.gsub(/(([[:alpha:]])[[:alpha:]]*\.?)/, \&#39;\2.\&#39;)} #{lastname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>2</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:firstname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{firstname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>3</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:lastname_firstname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{lastname} #{firstname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>4</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:lastnamefirstname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{lastname}#{firstname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>5</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:lastname_comma_firstname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{lastname}, #{firstname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>firstname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>6</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:lastname</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{lastname}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>lastname</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>7</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
   <span class='symbol'>:username</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
       <span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#{login}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
-      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>login</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='words_sep'>)</span><span class='comma'>,</span>
+      <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>login</span><span class='words_sep'> </span><span class='tstring_content'>id</span><span class='tstring_end'>)</span></span><span class='comma'>,</span>
       <span class='symbol'>:setting_order</span> <span class='op'>=&gt;</span> <span class='int'>8</span>
     <span class='rbrace'>}</span><span class='comma'>,</span>
 <span class='rbrace'>}</span></pre></dd>
@@ -6371,7 +6371,7 @@ used, should be deprecated</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_random_password'>random_password</span><span class='lparen'>(</span><span class='id identifier rubyid_length'>length</span><span class='op'>=</span><span class='int'>40</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_chars'>chars</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a</span><span class='tstring_end'>&quot;</span></span><span class='op'>..</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>A</span><span class='tstring_end'>&quot;</span></span><span class='op'>..</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0</span><span class='tstring_end'>&quot;</span></span><span class='op'>..</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>9</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
-  <span class='id identifier rubyid_chars'>chars</span> <span class='op'>-=</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>0</span><span class='words_sep'> </span><span class='tstring_content'>O</span><span class='words_sep'> </span><span class='tstring_content'>1</span><span class='words_sep'> </span><span class='tstring_content'>l</span><span class='words_sep'>)</span>
+  <span class='id identifier rubyid_chars'>chars</span> <span class='op'>-=</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>0</span><span class='words_sep'> </span><span class='tstring_content'>O</span><span class='words_sep'> </span><span class='tstring_content'>1</span><span class='words_sep'> </span><span class='tstring_content'>l</span><span class='tstring_end'>)</span></span>
   <span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
   <span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_times'>times</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_i'>i</span><span class='op'>|</span> <span class='id identifier rubyid_password'>password</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_chars'>chars</span><span class='lbracket'>[</span><span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_random_number'>random_number</span><span class='lparen'>(</span><span class='id identifier rubyid_chars'>chars</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='id identifier rubyid_password'>password</span>
@@ -7417,9 +7417,9 @@ form: SHA1(salt + SHA1(password))</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:19 2018 by
+  Generated on Fri Dec 14 22:39:51 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>

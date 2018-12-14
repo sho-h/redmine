@@ -401,7 +401,7 @@ Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
       <pre class="code"><span class="info file"># File 'app/helpers/workflows_helper.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_field_required?'>field_required?</span><span class='lparen'>(</span><span class='id identifier rubyid_field'>field</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="CustomField.html" title="CustomField (class)">CustomField</a></span></span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_is_required?'>is_required?</span> <span class='op'>:</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>project_id</span><span class='words_sep'> </span><span class='tstring_content'>tracker_id</span><span class='words_sep'> </span><span class='tstring_content'>subject</span><span class='words_sep'> </span><span class='tstring_content'>priority_id</span><span class='words_sep'> </span><span class='tstring_content'>is_private</span><span class='words_sep'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_field'>field</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="CustomField.html" title="CustomField (class)">CustomField</a></span></span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_is_required?'>is_required?</span> <span class='op'>:</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>project_id</span><span class='words_sep'> </span><span class='tstring_content'>tracker_id</span><span class='words_sep'> </span><span class='tstring_content'>subject</span><span class='words_sep'> </span><span class='tstring_content'>priority_id</span><span class='words_sep'> </span><span class='tstring_content'>is_private</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_field'>field</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -593,9 +593,9 @@ Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 14 21:58:07 2018 by
+  Generated on Fri Dec 14 22:39:41 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.16 (ruby-2.3.8).
+  0.9.16 (ruby-2.5.3).
 </div>
 
     </div>
