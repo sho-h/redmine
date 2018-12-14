@@ -1,0 +1,3554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: SVG::Graph::Graph
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "SVG::Graph::Graph";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (G)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../SVG.html" title="SVG (module)">SVG</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Graph.html" title="SVG::Graph (module)">Graph</a></span></span>
+     &raquo; 
+    <span class="title">Graph</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: SVG::Graph::Graph
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">SVG::Graph::Graph</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd>REXML</dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/SVG/Graph/Graph.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<h3 id="label-Base+object+for+generating+SVG+Graphs">Base object for generating SVG Graphs</h3>
+
+<h2 id="label-Synopsis">Synopsis</h2>
+
+<p>This class is only used as a superclass of specialized charts.  Do not
+attempt to use this class directly, unless creating a new chart type.</p>
+
+<p>For examples of how to subclass this class, see the existing specific
+subclasses, such as SVG::Graph::Pie.</p>
+
+<h2 id="label-Examples">Examples</h2>
+
+<p>For examples of how to use this package, see either the test files, or the
+documentation for the specific class you want to use.</p>
+<ul><li>
+<p>file:test/plot.rb</p>
+</li><li>
+<p>file:test/single.rb</p>
+</li><li>
+<p>file:test/test.rb</p>
+</li><li>
+<p>file:test/timeseries.rb</p>
+</li></ul>
+
+<h2 id="label-Description">Description</h2>
+
+<p>This package should be used as a base for creating SVG graphs.</p>
+
+<h2 id="label-Acknowledgements">Acknowledgements</h2>
+
+<p>Leo Lapworth for creating the SVG::TT::Graph package which this Ruby port
+is based on.</p>
+
+<p>Stephen Morgan for creating the TT template and SVG.</p>
+
+<h2 id="label-See">See</h2>
+<ul><li>
+<p>SVG::Graph::BarHorizontal</p>
+</li><li>
+<p>SVG::Graph::Bar</p>
+</li><li>
+<p>SVG::Graph::Line</p>
+</li><li>
+<p>SVG::Graph::Pie</p>
+</li><li>
+<p>SVG::Graph::Plot</p>
+</li><li>
+<p>SVG::Graph::TimeSeries</p>
+</li></ul>
+
+<h2 id="label-Author">Author</h2>
+
+<p>Sean E. Russell &lt;serATgermaneHYPHENsoftwareDOTcom&gt;</p>
+
+<p>Copyright 2004 Sean E. Russell This software is available under the Ruby <a
+href="LICENSE.txt">license</a></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="BarBase.html" title="SVG::Graph::BarBase (class)">BarBase</a></span>, <span class='object_link'><a href="Line.html" title="SVG::Graph::Line (class)">Line</a></span>, <span class='object_link'><a href="Pie.html" title="SVG::Graph::Pie (class)">Pie</a></span>, <span class='object_link'><a href="Plot.html" title="SVG::Graph::Plot (class)">Plot</a></span>, <span class='object_link'><a href="Schedule.html" title="SVG::Graph::Schedule (class)">Schedule</a></span></p>
+</div>
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_popups-instance_method" title="#add_popups (instance method)">#<strong>add_popups</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Add popups for the data points on some graphs.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#font_size-instance_method" title="#font_size (instance method)">#<strong>font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the font size (in points) of the data point labels.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#graph_subtitle-instance_method" title="#graph_subtitle (instance method)">#<strong>graph_subtitle</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>What the subtitle on the graph should be.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#graph_title-instance_method" title="#graph_title (instance method)">#<strong>graph_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>What the title on the graph should be.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#height-instance_method" title="#height (instance method)">#<strong>height</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the height of the graph box, this is the total height   of the SVG box
+created - not the graph it self which auto   scales to fix the space.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#key-instance_method" title="#key (instance method)">#<strong>key</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show a key, defaults to false, set to   true if you want to show
+it.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#key_font_size-instance_method" title="#key_font_size (instance method)">#<strong>key_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the key font size.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#key_position-instance_method" title="#key_position (instance method)">#<strong>key_position</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Where the key should be positioned, defaults to   :right, set to :bottom if
+you want to move it.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#min_scale_value-instance_method" title="#min_scale_value (instance method)">#<strong>min_scale_value</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The point at which the Y axis starts, defaults to &#39;0&#39;,   if set to
+nil it will default to the minimum data value.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#no_css-instance_method" title="#no_css (instance method)">#<strong>no_css</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Do not use CSS if set to true.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rotate_x_labels-instance_method" title="#rotate_x_labels (instance method)">#<strong>rotate_x_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This turns the X axis labels by 90 degrees.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rotate_y_labels-instance_method" title="#rotate_y_labels (instance method)">#<strong>rotate_y_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This turns the Y axis labels by 90 degrees.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scale_divisions-instance_method" title="#scale_divisions (instance method)">#<strong>scale_divisions</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This defines the gap between markers on the Y axis,   default is a 10th of
+the max_value, e.g.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scale_integers-instance_method" title="#scale_integers (instance method)">#<strong>scale_integers</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Ensures only whole numbers are used as the scale divisions.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_data_values-instance_method" title="#show_data_values (instance method)">#<strong>show_data_values</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>(Bool) Show the value of each element of data on the graph.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_graph_subtitle-instance_method" title="#show_graph_subtitle (instance method)">#<strong>show_graph_subtitle</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show a subtitle on the graph, defaults   to false, set to true
+to show.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_graph_title-instance_method" title="#show_graph_title (instance method)">#<strong>show_graph_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show a title on the graph, defaults   to false, set to true to
+show.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_x_guidelines-instance_method" title="#show_x_guidelines (instance method)">#<strong>show_x_guidelines</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Show guidelines for the X axis.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_x_labels-instance_method" title="#show_x_labels (instance method)">#<strong>show_x_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show labels on the X axis or not, defaults   to true, set to
+false if you want to turn them off.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_x_title-instance_method" title="#show_x_title (instance method)">#<strong>show_x_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show the title under the X axis labels,   default is false, set
+to true to show.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_y_guidelines-instance_method" title="#show_y_guidelines (instance method)">#<strong>show_y_guidelines</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Show guidelines for the Y axis.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_y_labels-instance_method" title="#show_y_labels (instance method)">#<strong>show_y_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show labels on the Y axis or not, defaults   to true, set to
+false if you want to turn them off.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show_y_title-instance_method" title="#show_y_title (instance method)">#<strong>show_y_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to show the title under the Y axis labels,   default is false, set
+to true to show.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stagger_x_labels-instance_method" title="#stagger_x_labels (instance method)">#<strong>stagger_x_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This puts the X labels at alternative levels so if they   are long field
+names they will not overlap so easily.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stagger_y_labels-instance_method" title="#stagger_y_labels (instance method)">#<strong>stagger_y_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This puts the Y labels at alternative levels so if they   are long field
+names they will not overlap so easily.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#step_include_first_x_label-instance_method" title="#step_include_first_x_label (instance method)">#<strong>step_include_first_x_label</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether to (when taking “steps” between X axis labels) step from    the
+first label (i.e. always include the first label) or step from   the X axis
+origin (i.e. start with a gap if step_x_labels is greater   than one).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#step_x_labels-instance_method" title="#step_x_labels (instance method)">#<strong>step_x_labels</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>How many “steps” to use between displayed X axis labels,   a step of one
+means display every label, a step of two results   in every other label
+being displayed (label &lt;gap&gt; label &lt;gap&gt; label),   a step of
+three results in every third label being displayed   (label &lt;gap&gt;
+&lt;gap&gt; label &lt;gap&gt; &lt;gap&gt; label) and so on.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#style_sheet-instance_method" title="#style_sheet (instance method)">#<strong>style_sheet</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the path to an external stylesheet, set to &#39;&#39; if   you want to
+revert back to using the default internal version.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subtitle_font_size-instance_method" title="#subtitle_font_size (instance method)">#<strong>subtitle_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the subtitle font size.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#title_font_size-instance_method" title="#title_font_size (instance method)">#<strong>title_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the title font size.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#width-instance_method" title="#width (instance method)">#<strong>width</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the width of the graph box, this is the total width   of the SVG box
+created - not the graph it self which auto   scales to fix the space.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#x_label_font_size-instance_method" title="#x_label_font_size (instance method)">#<strong>x_label_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the font size of the X axis labels.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#x_title-instance_method" title="#x_title (instance method)">#<strong>x_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>What the title under X axis should be, e.g.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#x_title_font_size-instance_method" title="#x_title_font_size (instance method)">#<strong>x_title_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the font size of the X axis title.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#y_label_font_size-instance_method" title="#y_label_font_size (instance method)">#<strong>y_label_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the font size of the Y axis labels.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#y_title-instance_method" title="#y_title (instance method)">#<strong>y_title</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>What the title under Y axis should be, e.g.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#y_title_font_size-instance_method" title="#y_title_font_size (instance method)">#<strong>y_title_font_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the font size of the Y axis title.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#y_title_text_direction-instance_method" title="#y_title_text_direction (instance method)">#<strong>y_title_text_direction</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Aligns writing mode for Y axis label.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_data-instance_method" title="#add_data (instance method)">#<strong>add_data</strong>(conf)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This method allows you do add data to the graph object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#burn-instance_method" title="#burn (instance method)">#<strong>burn</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This method processes the template with the data and config which has been
+set and returns the resulting SVG.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear_data-instance_method" title="#clear_data (instance method)">#<strong>clear_data</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This method removes all data from the object so that you can reuse it to
+create a new graph but with the same config options.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(config)  &#x21d2; Graph </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize the graph object with the graph settings.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(config)  &#x21d2; <tt><span class='object_link'><a href="" title="SVG::Graph::Graph (class)">Graph</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize the graph object with the graph settings.  You won&#39;t
+instantiate this class directly; see the subclass for options.</p>
+<dl class="rdoc-list label-list"><dt>width
+<dd>
+<p>500</p>
+</dd><dt>height
+<dd>
+<p>300</p>
+</dd><dt>show_x_guidelines
+<dd>
+<p>false</p>
+</dd><dt>show_y_guidelines
+<dd>
+<p>true</p>
+</dd><dt>show_data_values
+<dd>
+<p>true</p>
+</dd><dt>min_scale_value
+<dd>
+<p>0</p>
+</dd><dt>show_x_labels
+<dd>
+<p>true</p>
+</dd><dt>stagger_x_labels
+<dd>
+<p>false</p>
+</dd><dt>rotate_x_labels
+<dd>
+<p>false</p>
+</dd><dt>step_x_labels
+<dd>
+<p>1</p>
+</dd><dt>step_include_first_x_label
+<dd>
+<p>true</p>
+</dd><dt>show_y_labels
+<dd>
+<p>true</p>
+</dd><dt>rotate_y_labels
+<dd>
+<p>false</p>
+</dd><dt>scale_integers
+<dd>
+<p>false</p>
+</dd><dt>show_x_title
+<dd>
+<p>false</p>
+</dd><dt>x_title
+<dd>
+<p>&#39;X Field names&#39;</p>
+</dd><dt>show_y_title
+<dd>
+<p>false</p>
+</dd><dt>y_title_text_direction
+<dd>
+<p>:bt</p>
+</dd><dt>y_title
+<dd>
+<p>&#39;Y Scale&#39;</p>
+</dd><dt>show_graph_title
+<dd>
+<p>false</p>
+</dd><dt>graph_title
+<dd>
+<p>&#39;Graph Title&#39;</p>
+</dd><dt>show_graph_subtitle
+<dd>
+<p>false</p>
+</dd><dt>graph_subtitle
+<dd>
+<p>&#39;Graph Sub Title&#39;</p>
+</dd><dt>key
+<dd>
+<p>true,</p>
+</dd><dt>key_position
+<dd>
+<p>:right, # bottom or righ</p>
+</dd><dt>font_size
+<dd>
+<p>12</p>
+</dd><dt>title_font_size
+<dd>
+<p>16</p>
+</dd><dt>subtitle_font_size
+<dd>
+<p>14</p>
+</dd><dt>x_label_font_size
+<dd>
+<p>12</p>
+</dd><dt>x_title_font_size
+<dd>
+<p>14</p>
+</dd><dt>y_label_font_size
+<dd>
+<p>12</p>
+</dd><dt>y_title_font_size
+<dd>
+<p>14</p>
+</dd><dt>key_font_size
+<dd>
+<p>10</p>
+</dd><dt>no_css
+<dd>
+<p>false</p>
+</dd><dt>add_popups
+<dd>
+<p>false</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 100</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span> <span class='id identifier rubyid_config'>config</span> <span class='rparen'>)</span>
+  <span class='ivar'>@config</span> <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span>
+
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_top_align'>top_align</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_top_font'>top_font</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_right_align'>right_align</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_right_font'>right_font</span> <span class='op'>=</span> <span class='int'>0</span>
+
+  <span class='id identifier rubyid_init_with'>init_with</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+    <span class='symbol'>:width</span>                <span class='op'>=&gt;</span> <span class='int'>500</span><span class='comma'>,</span>
+    <span class='symbol'>:height</span>                <span class='op'>=&gt;</span> <span class='int'>300</span><span class='comma'>,</span>
+    <span class='symbol'>:show_x_guidelines</span>    <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:show_y_guidelines</span>    <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+    <span class='symbol'>:show_data_values</span>     <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+
+<span class='comment'>#          :min_scale_value      =&gt; 0,
+</span>
+    <span class='symbol'>:show_x_labels</span>        <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+    <span class='symbol'>:stagger_x_labels</span>     <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:rotate_x_labels</span>      <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:step_x_labels</span>        <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span>
+    <span class='symbol'>:step_include_first_x_label</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+
+    <span class='symbol'>:show_y_labels</span>        <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+    <span class='symbol'>:rotate_y_labels</span>      <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:stagger_y_labels</span>     <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:scale_integers</span>       <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+
+    <span class='symbol'>:show_x_title</span>         <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:x_title</span>              <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>X Field names</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+
+    <span class='symbol'>:show_y_title</span>         <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:y_title_text_direction</span> <span class='op'>=&gt;</span> <span class='symbol'>:bt</span><span class='comma'>,</span>
+    <span class='symbol'>:y_title</span>              <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Y Scale</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+
+    <span class='symbol'>:show_graph_title</span>      <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:graph_title</span>          <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Graph Title</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+    <span class='symbol'>:show_graph_subtitle</span>  <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:graph_subtitle</span>        <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Graph Sub Title</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+    <span class='symbol'>:key</span>                  <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span> 
+    <span class='symbol'>:key_position</span>          <span class='op'>=&gt;</span> <span class='symbol'>:right</span><span class='comma'>,</span> <span class='comment'># bottom or right
+</span>
+    <span class='symbol'>:font_size</span>            <span class='op'>=&gt;</span><span class='int'>12</span><span class='comma'>,</span>
+    <span class='symbol'>:title_font_size</span>      <span class='op'>=&gt;</span><span class='int'>16</span><span class='comma'>,</span>
+    <span class='symbol'>:subtitle_font_size</span>   <span class='op'>=&gt;</span><span class='int'>14</span><span class='comma'>,</span>
+    <span class='symbol'>:x_label_font_size</span>    <span class='op'>=&gt;</span><span class='int'>12</span><span class='comma'>,</span>
+    <span class='symbol'>:x_title_font_size</span>    <span class='op'>=&gt;</span><span class='int'>14</span><span class='comma'>,</span>
+    <span class='symbol'>:y_label_font_size</span>    <span class='op'>=&gt;</span><span class='int'>12</span><span class='comma'>,</span>
+    <span class='symbol'>:y_title_font_size</span>    <span class='op'>=&gt;</span><span class='int'>14</span><span class='comma'>,</span>
+    <span class='symbol'>:key_font_size</span>        <span class='op'>=&gt;</span><span class='int'>10</span><span class='comma'>,</span>
+    
+    <span class='symbol'>:no_css</span>               <span class='op'>=&gt;</span><span class='kw'>false</span><span class='comma'>,</span>
+    <span class='symbol'>:add_popups</span>           <span class='op'>=&gt;</span><span class='kw'>false</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span><span class='rparen'>)</span>
+
+				<span class='id identifier rubyid_set_defaults'>set_defaults</span> <span class='kw'>if</span> <span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='symbol'>:set_defaults</span>
+
+  <span class='id identifier rubyid_init_with'>init_with</span> <span class='id identifier rubyid_config'>config</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="add_popups=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="add_popups-instance_method">
+  
+    #<strong>add_popups</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Add popups for the data points on some graphs</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+344
+345
+346</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 344</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_popups'>add_popups</span>
+  <span class='ivar'>@add_popups</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="font_size-instance_method">
+  
+    #<strong>font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the font size (in points) of the data point labels</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+320
+321
+322</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 320</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_font_size'>font_size</span>
+  <span class='ivar'>@font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="graph_subtitle=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="graph_subtitle-instance_method">
+  
+    #<strong>graph_subtitle</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>What the subtitle on the graph should be.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+312
+313
+314</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 312</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_graph_subtitle'>graph_subtitle</span>
+  <span class='ivar'>@graph_subtitle</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="graph_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="graph_title-instance_method">
+  
+    #<strong>graph_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>What the title on the graph should be.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+307
+308
+309</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 307</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_graph_title'>graph_title</span>
+  <span class='ivar'>@graph_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="height=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="height-instance_method">
+  
+    #<strong>height</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the height of the graph box, this is the total height</p>
+
+<pre class="code ruby"><code class="ruby">of the SVG box created - not the graph it self which auto
+scales to fix the space.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+231
+232
+233</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 231</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_height'>height</span>
+  <span class='ivar'>@height</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="key=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="key-instance_method">
+  
+    #<strong>key</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show a key, defaults to false, set to</p>
+
+<pre class="code ruby"><code class="ruby">true if you want to show it.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+315
+316
+317</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 315</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_key'>key</span>
+  <span class='ivar'>@key</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="key_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="key_font_size-instance_method">
+  
+    #<strong>key_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the key font size</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+334
+335
+336</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 334</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_key_font_size'>key_font_size</span>
+  <span class='ivar'>@key_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="key_position=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="key_position-instance_method">
+  
+    #<strong>key_position</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Where the key should be positioned, defaults to</p>
+
+<pre class="code ruby"><code class="ruby">:right, set to :bottom if you want to move it.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+318
+319
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 318</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_key_position'>key_position</span>
+  <span class='ivar'>@key_position</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="min_scale_value=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="min_scale_value-instance_method">
+  
+    #<strong>min_scale_value</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The point at which the Y axis starts, defaults to &#39;0&#39;,</p>
+
+<pre class="code ruby"><code class="ruby">if set to nil it will default to the minimum data value.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+247
+248
+249</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 247</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_min_scale_value'>min_scale_value</span>
+  <span class='ivar'>@min_scale_value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="no_css=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="no_css-instance_method">
+  
+    #<strong>no_css</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Do not use CSS if set to true.  Many SVG viewers do not support CSS, but
+not using CSS can result in larger SVGs as well as making it impossible to
+change colors after the chart is generated.  Defaults to false.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+342
+343
+344</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 342</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_no_css'>no_css</span>
+  <span class='ivar'>@no_css</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rotate_x_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rotate_x_labels-instance_method">
+  
+    #<strong>rotate_x_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This turns the X axis labels by 90 degrees.</p>
+
+<pre class="code ruby"><code class="ruby">Default it false, to turn on set to true.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+261
+262
+263</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 261</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rotate_x_labels'>rotate_x_labels</span>
+  <span class='ivar'>@rotate_x_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rotate_y_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rotate_y_labels-instance_method">
+  
+    #<strong>rotate_y_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This turns the Y axis labels by 90 degrees.</p>
+
+<pre class="code ruby"><code class="ruby">Default it false, to turn on set to true.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+264
+265
+266</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 264</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rotate_y_labels'>rotate_y_labels</span>
+  <span class='ivar'>@rotate_y_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="scale_divisions=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="scale_divisions-instance_method">
+  
+    #<strong>scale_divisions</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This defines the gap between markers on the Y axis,</p>
+
+<pre class="code ruby"><code class="ruby">default is a 10th of the max_value, e.g. you will have
+10 markers on the Y axis. NOTE: do not set this too
+low - you are limited to 999 markers, after that the
+graph won&#39;t generate.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+288
+289
+290</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 288</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_scale_divisions'>scale_divisions</span>
+  <span class='ivar'>@scale_divisions</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="scale_integers=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="scale_integers-instance_method">
+  
+    #<strong>scale_integers</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Ensures only whole numbers are used as the scale divisions.</p>
+
+<pre class="code ruby"><code class="ruby">Default it false, to turn on set to true. This has no effect if 
+scale divisions are less than 1.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+282
+283
+284</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 282</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_scale_integers'>scale_integers</span>
+  <span class='ivar'>@scale_integers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_data_values=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_data_values-instance_method">
+  
+    #<strong>show_data_values</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>(Bool) Show the value of each element of data on the graph</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+244
+245
+246</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 244</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_data_values'>show_data_values</span>
+  <span class='ivar'>@show_data_values</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_graph_subtitle=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_graph_subtitle-instance_method">
+  
+    #<strong>show_graph_subtitle</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show a subtitle on the graph, defaults</p>
+
+<pre class="code ruby"><code class="ruby">to false, set to true to show.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+310
+311
+312</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 310</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_graph_subtitle'>show_graph_subtitle</span>
+  <span class='ivar'>@show_graph_subtitle</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_graph_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_graph_title-instance_method">
+  
+    #<strong>show_graph_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show a title on the graph, defaults</p>
+
+<pre class="code ruby"><code class="ruby">to false, set to true to show.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+305
+306
+307</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 305</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_graph_title'>show_graph_title</span>
+  <span class='ivar'>@show_graph_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_x_guidelines=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_x_guidelines-instance_method">
+  
+    #<strong>show_x_guidelines</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Show guidelines for the X axis</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+336
+337
+338</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 336</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_x_guidelines'>show_x_guidelines</span>
+  <span class='ivar'>@show_x_guidelines</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_x_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_x_labels-instance_method">
+  
+    #<strong>show_x_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show labels on the X axis or not, defaults</p>
+
+<pre class="code ruby"><code class="ruby">to true, set to false if you want to turn them off.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250
+251
+252</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 250</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_x_labels'>show_x_labels</span>
+  <span class='ivar'>@show_x_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_x_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_x_title-instance_method">
+  
+    #<strong>show_x_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show the title under the X axis labels,</p>
+
+<pre class="code ruby"><code class="ruby">default is false, set to true to show.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+291
+292
+293</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 291</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_x_title'>show_x_title</span>
+  <span class='ivar'>@show_x_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_y_guidelines=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_y_guidelines-instance_method">
+  
+    #<strong>show_y_guidelines</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Show guidelines for the Y axis</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+338
+339
+340</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 338</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_y_guidelines'>show_y_guidelines</span>
+  <span class='ivar'>@show_y_guidelines</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_y_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_y_labels-instance_method">
+  
+    #<strong>show_y_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show labels on the Y axis or not, defaults</p>
+
+<pre class="code ruby"><code class="ruby">to true, set to false if you want to turn them off.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+278
+279
+280</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 278</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_y_labels'>show_y_labels</span>
+  <span class='ivar'>@show_y_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="show_y_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="show_y_title-instance_method">
+  
+    #<strong>show_y_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to show the title under the Y axis labels,</p>
+
+<pre class="code ruby"><code class="ruby">default is false, set to true to show.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+296
+297
+298</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 296</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show_y_title'>show_y_title</span>
+  <span class='ivar'>@show_y_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="stagger_x_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="stagger_x_labels-instance_method">
+  
+    #<strong>stagger_x_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This puts the X labels at alternative levels so if they</p>
+
+<pre class="code ruby"><code class="ruby">are long field names they will not overlap so easily.
+Default it false, to turn on set to true.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+254
+255
+256</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 254</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stagger_x_labels'>stagger_x_labels</span>
+  <span class='ivar'>@stagger_x_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="stagger_y_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="stagger_y_labels-instance_method">
+  
+    #<strong>stagger_y_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This puts the Y labels at alternative levels so if they</p>
+
+<pre class="code ruby"><code class="ruby">are long field names they will not overlap so easily.
+Default it false, to turn on set to true.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+258
+259
+260</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 258</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stagger_y_labels'>stagger_y_labels</span>
+  <span class='ivar'>@stagger_y_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="step_include_first_x_label=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="step_include_first_x_label-instance_method">
+  
+    #<strong>step_include_first_x_label</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether to (when taking “steps” between X axis labels) step from</p>
+
+<pre class="code ruby"><code class="ruby">the first label (i.e. always include the first label) or step from
+the X axis origin (i.e. start with a gap if step_x_labels is greater
+than one).</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+275
+276
+277</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 275</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_step_include_first_x_label'>step_include_first_x_label</span>
+  <span class='ivar'>@step_include_first_x_label</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="step_x_labels=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="step_x_labels-instance_method">
+  
+    #<strong>step_x_labels</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>How many “steps” to use between displayed X axis labels,</p>
+
+<pre class="code ruby"><code class="ruby">a step of one means display every label, a step of two results
+in every other label being displayed (label &lt;gap&gt; label &lt;gap&gt; label),
+a step of three results in every third label being displayed
+(label &lt;gap&gt; &lt;gap&gt; label &lt;gap&gt; &lt;gap&gt; label) and so on.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+270
+271
+272</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 270</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_step_x_labels'>step_x_labels</span>
+  <span class='ivar'>@step_x_labels</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="style_sheet=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="style_sheet-instance_method">
+  
+    #<strong>style_sheet</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the path to an external stylesheet, set to &#39;&#39; if</p>
+
+<pre class="code ruby"><code class="ruby">you want to revert back to using the default internal version.
+
+To create an external stylesheet create a graph using the
+default internal version and copy the stylesheet section to
+an external file and edit from there.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+242
+243
+244</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 242</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_style_sheet'>style_sheet</span>
+  <span class='ivar'>@style_sheet</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="subtitle_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="subtitle_font_size-instance_method">
+  
+    #<strong>subtitle_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the subtitle font size</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+332
+333
+334</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 332</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subtitle_font_size'>subtitle_font_size</span>
+  <span class='ivar'>@subtitle_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="title_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="title_font_size-instance_method">
+  
+    #<strong>title_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the title font size</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+330
+331
+332</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 330</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_title_font_size'>title_font_size</span>
+  <span class='ivar'>@title_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="width=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="width-instance_method">
+  
+    #<strong>width</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the width of the graph box, this is the total width</p>
+
+<pre class="code ruby"><code class="ruby">of the SVG box created - not the graph it self which auto
+scales to fix the space.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+235
+236
+237</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 235</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_width'>width</span>
+  <span class='ivar'>@width</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="x_label_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="x_label_font_size-instance_method">
+  
+    #<strong>x_label_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the font size of the X axis labels</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+322
+323
+324</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 322</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_x_label_font_size'>x_label_font_size</span>
+  <span class='ivar'>@x_label_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="x_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="x_title-instance_method">
+  
+    #<strong>x_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>What the title under X axis should be, e.g. &#39;Months&#39;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+293
+294
+295</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 293</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_x_title'>x_title</span>
+  <span class='ivar'>@x_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="x_title_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="x_title_font_size-instance_method">
+  
+    #<strong>x_title_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the font size of the X axis title</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+324
+325
+326</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 324</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_x_title_font_size'>x_title_font_size</span>
+  <span class='ivar'>@x_title_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="y_label_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="y_label_font_size-instance_method">
+  
+    #<strong>y_label_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the font size of the Y axis labels</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+326
+327
+328</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 326</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_y_label_font_size'>y_label_font_size</span>
+  <span class='ivar'>@y_label_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="y_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="y_title-instance_method">
+  
+    #<strong>y_title</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>What the title under Y axis should be, e.g. &#39;Sales in thousands&#39;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+302
+303
+304</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 302</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_y_title'>y_title</span>
+  <span class='ivar'>@y_title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="y_title_font_size=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="y_title_font_size-instance_method">
+  
+    #<strong>y_title_font_size</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the font size of the Y axis title</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+328
+329
+330</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 328</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_y_title_font_size'>y_title_font_size</span>
+  <span class='ivar'>@y_title_font_size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="y_title_text_direction=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="y_title_text_direction-instance_method">
+  
+    #<strong>y_title_text_direction</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Aligns writing mode for Y axis label.</p>
+
+<pre class="code ruby"><code class="ruby">Defaults to :bt (Bottom to Top).
+Change to :tb (Top to Bottom) to reverse.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+300
+301
+302</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 300</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_y_title_text_direction'>y_title_text_direction</span>
+  <span class='ivar'>@y_title_text_direction</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_data-instance_method">
+  
+    #<strong>add_data</strong>(conf)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This method allows you do add data to the graph object. It can be called
+several times to add more data sets in.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data_sales_02'>data_sales_02</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> <span class='int'>45</span><span class='comma'>,</span> <span class='int'>21</span><span class='rbracket'>]</span><span class='semicolon'>;</span>
+
+<span class='id identifier rubyid_graph'>graph</span><span class='period'>.</span><span class='id identifier rubyid_add_data'>add_data</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+  <span class='symbol'>:data</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_data_sales_02'>data_sales_02</span><span class='comma'>,</span>
+  <span class='symbol'>:title</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Sales 2002</span><span class='tstring_end'>&#39;</span></span>
+<span class='rbrace'>}</span><span class='rparen'>)</span>
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+167
+168
+169
+170
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 167</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_data'>add_data</span> <span class='id identifier rubyid_conf'>conf</span>
+  <span class='ivar'>@data</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span> <span class='kw'>unless</span> <span class='kw'>defined?</span> <span class='ivar'>@data</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_conf'>conf</span><span class='lbracket'>[</span><span class='symbol'>:data</span><span class='rbracket'>]</span> <span class='kw'>and</span> <span class='id identifier rubyid_conf'>conf</span><span class='lbracket'>[</span><span class='symbol'>:data</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span> <span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span>
+    <span class='ivar'>@data</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_conf'>conf</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>No data provided by </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_conf'>conf</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="burn-instance_method">
+  
+    #<strong>burn</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This method processes the template with the data and config which has been
+set and returns the resulting SVG.</p>
+
+<p>This method will croak unless at least one data set has been added to the
+graph object.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_print'>print</span> <span class='id identifier rubyid_graph'>graph</span><span class='period'>.</span><span class='id identifier rubyid_burn'>burn</span>
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 194</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_burn'>burn</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>No data available</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+  
+  <span class='id identifier rubyid_calculations'>calculations</span> <span class='kw'>if</span> <span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='symbol'>:calculations</span>
+
+  <span class='id identifier rubyid_start_svg'>start_svg</span>
+  <span class='id identifier rubyid_calculate_graph_dimensions'>calculate_graph_dimensions</span>
+  <span class='ivar'>@foreground</span> <span class='op'>=</span> <span class='const'>Element</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>g</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span>
+  <span class='id identifier rubyid_draw_graph'>draw_graph</span>
+  <span class='id identifier rubyid_draw_titles'>draw_titles</span>
+  <span class='id identifier rubyid_draw_legend'>draw_legend</span>
+  <span class='id identifier rubyid_draw_data'>draw_data</span>
+  <span class='ivar'>@graph</span><span class='period'>.</span><span class='id identifier rubyid_add_element'>add_element</span><span class='lparen'>(</span> <span class='ivar'>@foreground</span> <span class='rparen'>)</span>
+  <span class='id identifier rubyid_style'>style</span>
+
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@doc</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span> <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='int'>0</span> <span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@config</span><span class='lbracket'>[</span><span class='symbol'>:compress</span><span class='rbracket'>]</span>
+    <span class='kw'>if</span> <span class='const'>Object</span><span class='period'>.</span><span class='id identifier rubyid_const_defined?'>const_defined?</span><span class='lparen'>(</span><span class='symbol'>:Zlib</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_inp'>inp</span><span class='comma'>,</span> <span class='id identifier rubyid_out'>out</span> <span class='op'>=</span> <span class='const'>IO</span><span class='period'>.</span><span class='id identifier rubyid_pipe'>pipe</span>
+      <span class='id identifier rubyid_gz'>gz</span> <span class='op'>=</span> <span class='const'>Zlib</span><span class='op'>::</span><span class='const'>GzipWriter</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span> <span class='id identifier rubyid_out'>out</span> <span class='rparen'>)</span>
+      <span class='id identifier rubyid_gz'>gz</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span> <span class='id identifier rubyid_data'>data</span>
+      <span class='id identifier rubyid_gz'>gz</span><span class='period'>.</span><span class='id identifier rubyid_close'>close</span>
+      <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_inp'>inp</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_data'>data</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;!-- Ruby Zlib not available for SVGZ --&gt;</span><span class='tstring_end'>&quot;</span></span><span class='semicolon'>;</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>return</span> <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clear_data-instance_method">
+  
+    #<strong>clear_data</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This method removes all data from the object so that you can reuse it to
+create a new graph but with the same config options.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_graph'>graph</span><span class='period'>.</span><span class='id identifier rubyid_clear_data'>clear_data</span>
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+182
+183
+184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/SVG/Graph/Graph.rb', line 182</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_clear_data'>clear_data</span> 
+  <span class='ivar'>@data</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 21:59:05 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.8).
+</div>
+
+    </div>
+  </body>
+</html>

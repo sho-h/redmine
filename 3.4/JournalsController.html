@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: JournalsController
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "JournalsController";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (J)</a> &raquo;
+    
+    
+    <span class="title">JournalsController</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: JournalsController
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActionController::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></li>
+          
+            <li class="next">JournalsController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="QueriesHelper.html" title="QueriesHelper (module)">QueriesHelper</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/controllers/journals_controller.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Redmine - project management software Copyright (C) 2006-2017 
+Jean-Philippe Lang</p>
+
+<p>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.7.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="ApplicationHelper.html" title="ApplicationHelper (module)">ApplicationHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationHelper.html#HEADING_RE-constant" title="ApplicationHelper::HEADING_RE (constant)">ApplicationHelper::HEADING_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#LINKS_RE-constant" title="ApplicationHelper::LINKS_RE (constant)">ApplicationHelper::LINKS_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#MACROS_RE-constant" title="ApplicationHelper::MACROS_RE (constant)">ApplicationHelper::MACROS_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#MACRO_SUB_RE-constant" title="ApplicationHelper::MACRO_SUB_RE (constant)">ApplicationHelper::MACRO_SUB_RE</a></span>, <span class='object_link'><a href="ApplicationHelper.html#TOC_RE-constant" title="ApplicationHelper::TOC_RE (constant)">ApplicationHelper::TOC_RE</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#diff-instance_method" title="#diff (instance method)">#<strong>diff</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit-instance_method" title="#edit (instance method)">#<strong>edit</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#index-instance_method" title="#index (instance method)">#<strong>index</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-instance_method" title="#new (instance method)">#<strong>new</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="QueriesHelper.html" title="QueriesHelper (module)">QueriesHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="QueriesHelper.html#available_block_columns_tags-instance_method" title="QueriesHelper#available_block_columns_tags (method)">#available_block_columns_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#available_totalable_columns_tags-instance_method" title="QueriesHelper#available_totalable_columns_tags (method)">#available_totalable_columns_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#column_content-instance_method" title="QueriesHelper#column_content (method)">#column_content</a></span>, <span class='object_link'><a href="QueriesHelper.html#column_header-instance_method" title="QueriesHelper#column_header (method)">#column_header</a></span>, <span class='object_link'><a href="QueriesHelper.html#column_value-instance_method" title="QueriesHelper#column_value (method)">#column_value</a></span>, <span class='object_link'><a href="QueriesHelper.html#csv_content-instance_method" title="QueriesHelper#csv_content (method)">#csv_content</a></span>, <span class='object_link'><a href="QueriesHelper.html#csv_value-instance_method" title="QueriesHelper#csv_value (method)">#csv_value</a></span>, <span class='object_link'><a href="QueriesHelper.html#filters_options_for_select-instance_method" title="QueriesHelper#filters_options_for_select (method)">#filters_options_for_select</a></span>, <span class='object_link'><a href="QueriesHelper.html#group_by_column_select_tag-instance_method" title="QueriesHelper#group_by_column_select_tag (method)">#group_by_column_select_tag</a></span>, <span class='object_link'><a href="QueriesHelper.html#grouped_query_results-instance_method" title="QueriesHelper#grouped_query_results (method)">#grouped_query_results</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_as_hidden_field_tags-instance_method" title="QueriesHelper#query_as_hidden_field_tags (method)">#query_as_hidden_field_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_available_inline_columns_options-instance_method" title="QueriesHelper#query_available_inline_columns_options (method)">#query_available_inline_columns_options</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_columns_hidden_tags-instance_method" title="QueriesHelper#query_columns_hidden_tags (method)">#query_columns_hidden_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_filters_hidden_tags-instance_method" title="QueriesHelper#query_filters_hidden_tags (method)">#query_filters_hidden_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_hidden_sort_tag-instance_method" title="QueriesHelper#query_hidden_sort_tag (method)">#query_hidden_sort_tag</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_hidden_tags-instance_method" title="QueriesHelper#query_hidden_tags (method)">#query_hidden_tags</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_links-instance_method" title="QueriesHelper#query_links (method)">#query_links</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_selected_inline_columns_options-instance_method" title="QueriesHelper#query_selected_inline_columns_options (method)">#query_selected_inline_columns_options</a></span>, <span class='object_link'><a href="QueriesHelper.html#query_to_csv-instance_method" title="QueriesHelper#query_to_csv (method)">#query_to_csv</a></span>, <span class='object_link'><a href="QueriesHelper.html#render_query_columns_selection-instance_method" title="QueriesHelper#render_query_columns_selection (method)">#render_query_columns_selection</a></span>, <span class='object_link'><a href="QueriesHelper.html#render_query_totals-instance_method" title="QueriesHelper#render_query_totals (method)">#render_query_totals</a></span>, <span class='object_link'><a href="QueriesHelper.html#render_sidebar_queries-instance_method" title="QueriesHelper#render_sidebar_queries (method)">#render_sidebar_queries</a></span>, <span class='object_link'><a href="QueriesHelper.html#retrieve_query-instance_method" title="QueriesHelper#retrieve_query (method)">#retrieve_query</a></span>, <span class='object_link'><a href="QueriesHelper.html#retrieve_query_from_session-instance_method" title="QueriesHelper#retrieve_query_from_session (method)">#retrieve_query_from_session</a></span>, <span class='object_link'><a href="QueriesHelper.html#sidebar_queries-instance_method" title="QueriesHelper#sidebar_queries (method)">#sidebar_queries</a></span>, <span class='object_link'><a href="QueriesHelper.html#total_tag-instance_method" title="QueriesHelper#total_tag (method)">#total_tag</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ApplicationHelper.html" title="ApplicationHelper (module)">ApplicationHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationHelper.html#accesskey-instance_method" title="ApplicationHelper#accesskey (method)">#accesskey</a></span>, <span class='object_link'><a href="ApplicationHelper.html#anchor-instance_method" title="ApplicationHelper#anchor (method)">#anchor</a></span>, <span class='object_link'><a href="ApplicationHelper.html#api_meta-instance_method" title="ApplicationHelper#api_meta (method)">#api_meta</a></span>, <span class='object_link'><a href="ApplicationHelper.html#authoring-instance_method" title="ApplicationHelper#authoring (method)">#authoring</a></span>, <span class='object_link'><a href="ApplicationHelper.html#authorize_for-instance_method" title="ApplicationHelper#authorize_for (method)">#authorize_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#avatar-instance_method" title="ApplicationHelper#avatar (method)">#avatar</a></span>, <span class='object_link'><a href="ApplicationHelper.html#avatar_edit_link-instance_method" title="ApplicationHelper#avatar_edit_link (method)">#avatar_edit_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#back_url-instance_method" title="ApplicationHelper#back_url (method)">#back_url</a></span>, <span class='object_link'><a href="ApplicationHelper.html#back_url_hidden_field_tag-instance_method" title="ApplicationHelper#back_url_hidden_field_tag (method)">#back_url_hidden_field_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#body_css_classes-instance_method" title="ApplicationHelper#body_css_classes (method)">#body_css_classes</a></span>, <span class='object_link'><a href="ApplicationHelper.html#breadcrumb-instance_method" title="ApplicationHelper#breadcrumb (method)">#breadcrumb</a></span>, <span class='object_link'><a href="ApplicationHelper.html#calendar_for-instance_method" title="ApplicationHelper#calendar_for (method)">#calendar_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#catch_macros-instance_method" title="ApplicationHelper#catch_macros (method)">#catch_macros</a></span>, <span class='object_link'><a href="ApplicationHelper.html#check_all_links-instance_method" title="ApplicationHelper#check_all_links (method)">#check_all_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#checked_image-instance_method" title="ApplicationHelper#checked_image (method)">#checked_image</a></span>, <span class='object_link'><a href="ApplicationHelper.html#context_menu-instance_method" title="ApplicationHelper#context_menu (method)">#context_menu</a></span>, <span class='object_link'><a href="ApplicationHelper.html#default_search_project_scope-instance_method" title="ApplicationHelper#default_search_project_scope (method)">#default_search_project_scope</a></span>, <span class='object_link'><a href="ApplicationHelper.html#delete_link-instance_method" title="ApplicationHelper#delete_link (method)">#delete_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#due_date_distance_in_words-instance_method" title="ApplicationHelper#due_date_distance_in_words (method)">#due_date_distance_in_words</a></span>, <span class='object_link'><a href="ApplicationHelper.html#email_delivery_enabled%3F-instance_method" title="ApplicationHelper#email_delivery_enabled? (method)">#email_delivery_enabled?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#error_messages_for-instance_method" title="ApplicationHelper#error_messages_for (method)">#error_messages_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon-instance_method" title="ApplicationHelper#favicon (method)">#favicon</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon_path-instance_method" title="ApplicationHelper#favicon_path (method)">#favicon_path</a></span>, <span class='object_link'><a href="ApplicationHelper.html#favicon_url-instance_method" title="ApplicationHelper#favicon_url (method)">#favicon_url</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_day-instance_method" title="ApplicationHelper#format_activity_day (method)">#format_activity_day</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_description-instance_method" title="ApplicationHelper#format_activity_description (method)">#format_activity_description</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_activity_title-instance_method" title="ApplicationHelper#format_activity_title (method)">#format_activity_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_changeset_comments-instance_method" title="ApplicationHelper#format_changeset_comments (method)">#format_changeset_comments</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_object-instance_method" title="ApplicationHelper#format_object (method)">#format_object</a></span>, <span class='object_link'><a href="ApplicationHelper.html#format_version_name-instance_method" title="ApplicationHelper#format_version_name (method)">#format_version_name</a></span>, <span class='object_link'><a href="ApplicationHelper.html#generate_csv-instance_method" title="ApplicationHelper#generate_csv (method)">#generate_csv</a></span>, <span class='object_link'><a href="ApplicationHelper.html#html_hours-instance_method" title="ApplicationHelper#html_hours (method)">#html_hours</a></span>, <span class='object_link'><a href="ApplicationHelper.html#html_title-instance_method" title="ApplicationHelper#html_title (method)">#html_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#image_tag-instance_method" title="ApplicationHelper#image_tag (method)">#image_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#include_calendar_headers_tags-instance_method" title="ApplicationHelper#include_calendar_headers_tags (method)">#include_calendar_headers_tags</a></span>, <span class='object_link'><a href="ApplicationHelper.html#include_in_api_response%3F-instance_method" title="ApplicationHelper#include_in_api_response? (method)">#include_in_api_response?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#inject_macros-instance_method" title="ApplicationHelper#inject_macros (method)">#inject_macros</a></span>, <span class='object_link'><a href="ApplicationHelper.html#javascript_heads-instance_method" title="ApplicationHelper#javascript_heads (method)">#javascript_heads</a></span>, <span class='object_link'><a href="ApplicationHelper.html#javascript_include_tag-instance_method" title="ApplicationHelper#javascript_include_tag (method)">#javascript_include_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#labelled_fields_for-instance_method" title="ApplicationHelper#labelled_fields_for (method)">#labelled_fields_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#labelled_form_for-instance_method" title="ApplicationHelper#labelled_form_for (method)">#labelled_form_for</a></span>, <span class='object_link'><a href="ApplicationHelper.html#lang_options_for_select-instance_method" title="ApplicationHelper#lang_options_for_select (method)">#lang_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_attachment-instance_method" title="ApplicationHelper#link_to_attachment (method)">#link_to_attachment</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_function-instance_method" title="ApplicationHelper#link_to_function (method)">#link_to_function</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_if_authorized-instance_method" title="ApplicationHelper#link_to_if_authorized (method)">#link_to_if_authorized</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_issue-instance_method" title="ApplicationHelper#link_to_issue (method)">#link_to_issue</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_message-instance_method" title="ApplicationHelper#link_to_message (method)">#link_to_message</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_project-instance_method" title="ApplicationHelper#link_to_project (method)">#link_to_project</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_project_settings-instance_method" title="ApplicationHelper#link_to_project_settings (method)">#link_to_project_settings</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_revision-instance_method" title="ApplicationHelper#link_to_revision (method)">#link_to_revision</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_user-instance_method" title="ApplicationHelper#link_to_user (method)">#link_to_user</a></span>, <span class='object_link'><a href="ApplicationHelper.html#link_to_version-instance_method" title="ApplicationHelper#link_to_version (method)">#link_to_version</a></span>, <span class='object_link'><a href="ApplicationHelper.html#option_tag-instance_method" title="ApplicationHelper#option_tag (method)">#option_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#other_formats_links-instance_method" title="ApplicationHelper#other_formats_links (method)">#other_formats_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#page_header_title-instance_method" title="ApplicationHelper#page_header_title (method)">#page_header_title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_headings-instance_method" title="ApplicationHelper#parse_headings (method)">#parse_headings</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_hires_images-instance_method" title="ApplicationHelper#parse_hires_images (method)">#parse_hires_images</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_inline_attachments-instance_method" title="ApplicationHelper#parse_inline_attachments (method)">#parse_inline_attachments</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_non_pre_blocks-instance_method" title="ApplicationHelper#parse_non_pre_blocks (method)">#parse_non_pre_blocks</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_redmine_links-instance_method" title="ApplicationHelper#parse_redmine_links (method)">#parse_redmine_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_sections-instance_method" title="ApplicationHelper#parse_sections (method)">#parse_sections</a></span>, <span class='object_link'><a href="ApplicationHelper.html#parse_wiki_links-instance_method" title="ApplicationHelper#parse_wiki_links (method)">#parse_wiki_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#preview_link-instance_method" title="ApplicationHelper#preview_link (method)">#preview_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#principals_check_box_tags-instance_method" title="ApplicationHelper#principals_check_box_tags (method)">#principals_check_box_tags</a></span>, <span class='object_link'><a href="ApplicationHelper.html#principals_options_for_select-instance_method" title="ApplicationHelper#principals_options_for_select (method)">#principals_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#progress_bar-instance_method" title="ApplicationHelper#progress_bar (method)">#progress_bar</a></span>, <span class='object_link'><a href="ApplicationHelper.html#project_tree-instance_method" title="ApplicationHelper#project_tree (method)">#project_tree</a></span>, <span class='object_link'><a href="ApplicationHelper.html#project_tree_options_for_select-instance_method" title="ApplicationHelper#project_tree_options_for_select (method)">#project_tree_options_for_select</a></span>, <span class='object_link'><a href="ApplicationHelper.html#projects_for_jump_box-instance_method" title="ApplicationHelper#projects_for_jump_box (method)">#projects_for_jump_box</a></span>, <span class='object_link'><a href="ApplicationHelper.html#raw_json-instance_method" title="ApplicationHelper#raw_json (method)">#raw_json</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_error_messages-instance_method" title="ApplicationHelper#render_error_messages (method)">#render_error_messages</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_flash_messages-instance_method" title="ApplicationHelper#render_flash_messages (method)">#render_flash_messages</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_page_hierarchy-instance_method" title="ApplicationHelper#render_page_hierarchy (method)">#render_page_hierarchy</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_project_jump_box-instance_method" title="ApplicationHelper#render_project_jump_box (method)">#render_project_jump_box</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_project_nested_lists-instance_method" title="ApplicationHelper#render_project_nested_lists (method)">#render_project_nested_lists</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_projects_for_jump_box-instance_method" title="ApplicationHelper#render_projects_for_jump_box (method)">#render_projects_for_jump_box</a></span>, <span class='object_link'><a href="ApplicationHelper.html#render_tabs-instance_method" title="ApplicationHelper#render_tabs (method)">#render_tabs</a></span>, <span class='object_link'><a href="ApplicationHelper.html#reorder_handle-instance_method" title="ApplicationHelper#reorder_handle (method)">#reorder_handle</a></span>, <span class='object_link'><a href="ApplicationHelper.html#reorder_links-instance_method" title="ApplicationHelper#reorder_links (method)">#reorder_links</a></span>, <span class='object_link'><a href="ApplicationHelper.html#replace_toc-instance_method" title="ApplicationHelper#replace_toc (method)">#replace_toc</a></span>, <span class='object_link'><a href="ApplicationHelper.html#robot_exclusion_tag-instance_method" title="ApplicationHelper#robot_exclusion_tag (method)">#robot_exclusion_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#sanitize_anchor_name-instance_method" title="ApplicationHelper#sanitize_anchor_name (method)">#sanitize_anchor_name</a></span>, <span class='object_link'><a href="ApplicationHelper.html#sidebar_content%3F-instance_method" title="ApplicationHelper#sidebar_content? (method)">#sidebar_content?</a></span>, <span class='object_link'><a href="ApplicationHelper.html#simple_format_without_paragraph-instance_method" title="ApplicationHelper#simple_format_without_paragraph (method)">#simple_format_without_paragraph</a></span>, <span class='object_link'><a href="ApplicationHelper.html#stylesheet_link_tag-instance_method" title="ApplicationHelper#stylesheet_link_tag (method)">#stylesheet_link_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#syntax_highlight-instance_method" title="ApplicationHelper#syntax_highlight (method)">#syntax_highlight</a></span>, <span class='object_link'><a href="ApplicationHelper.html#syntax_highlight_lines-instance_method" title="ApplicationHelper#syntax_highlight_lines (method)">#syntax_highlight_lines</a></span>, <span class='object_link'><a href="ApplicationHelper.html#textilizable-instance_method" title="ApplicationHelper#textilizable (method)">#textilizable</a></span>, <span class='object_link'><a href="ApplicationHelper.html#thumbnail_tag-instance_method" title="ApplicationHelper#thumbnail_tag (method)">#thumbnail_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#time_tag-instance_method" title="ApplicationHelper#time_tag (method)">#time_tag</a></span>, <span class='object_link'><a href="ApplicationHelper.html#title-instance_method" title="ApplicationHelper#title (method)">#title</a></span>, <span class='object_link'><a href="ApplicationHelper.html#to_path_param-instance_method" title="ApplicationHelper#to_path_param (method)">#to_path_param</a></span>, <span class='object_link'><a href="ApplicationHelper.html#toggle_checkboxes_link-instance_method" title="ApplicationHelper#toggle_checkboxes_link (method)">#toggle_checkboxes_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#toggle_link-instance_method" title="ApplicationHelper#toggle_link (method)">#toggle_link</a></span>, <span class='object_link'><a href="ApplicationHelper.html#truncate_lines-instance_method" title="ApplicationHelper#truncate_lines (method)">#truncate_lines</a></span>, <span class='object_link'><a href="ApplicationHelper.html#truncate_single_line_raw-instance_method" title="ApplicationHelper#truncate_single_line_raw (method)">#truncate_single_line_raw</a></span>, <span class='object_link'><a href="ApplicationHelper.html#view_layouts_base_sidebar_hook_response-instance_method" title="ApplicationHelper#view_layouts_base_sidebar_hook_response (method)">#view_layouts_base_sidebar_hook_response</a></span>, <span class='object_link'><a href="ApplicationHelper.html#wiki_page_path-instance_method" title="ApplicationHelper#wiki_page_path (method)">#wiki_page_path</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Helpers/URL.html" title="Redmine::Helpers::URL (module)">Redmine::Helpers::URL</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Helpers/URL.html#uri_with_safe_scheme%3F-instance_method" title="Redmine::Helpers::URL#uri_with_safe_scheme? (method)">#uri_with_safe_scheme?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Hook/Helper.html" title="Redmine::Hook::Helper (module)">Redmine::Hook::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Hook/Helper.html#call_hook-instance_method" title="Redmine::Hook::Helper#call_hook (method)">#call_hook</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Themes/Helper.html" title="Redmine::Themes::Helper (module)">Redmine::Themes::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Themes/Helper.html#current_theme-instance_method" title="Redmine::Themes::Helper#current_theme (method)">#current_theme</a></span>, <span class='object_link'><a href="Redmine/Themes/Helper.html#heads_for_theme-instance_method" title="Redmine::Themes::Helper#heads_for_theme (method)">#heads_for_theme</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SudoMode/Helper.html" title="Redmine::SudoMode::Helper (module)">Redmine::SudoMode::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SudoMode/Helper.html#hash_to_hidden_fields-instance_method" title="Redmine::SudoMode::Helper#hash_to_hidden_fields (method)">#hash_to_hidden_fields</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Pagination/Helper.html" title="Redmine::Pagination::Helper (module)">Redmine::Pagination::Helper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Pagination/Helper.html#pagination_links_each-instance_method" title="Redmine::Pagination::Helper#pagination_links_each (method)">#pagination_links_each</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#pagination_links_full-instance_method" title="Redmine::Pagination::Helper#pagination_links_full (method)">#pagination_links_full</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#per_page_links-instance_method" title="Redmine::Pagination::Helper#per_page_links (method)">#per_page_links</a></span>, <span class='object_link'><a href="Redmine/Pagination/Helper.html#per_page_options-instance_method" title="Redmine::Pagination::Helper#per_page_options (method)">#per_page_options</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/I18n.html" title="Redmine::I18n (module)">Redmine::I18n</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/I18n.html#current_language-instance_method" title="Redmine::I18n#current_language (method)">#current_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_letter-instance_method" title="Redmine::I18n#day_letter (method)">#day_letter</a></span>, <span class='object_link'><a href="Redmine/I18n.html#day_name-instance_method" title="Redmine::I18n#day_name (method)">#day_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#find_language-instance_method" title="Redmine::I18n#find_language (method)">#find_language</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_date-instance_method" title="Redmine::I18n#format_date (method)">#format_date</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_hours-instance_method" title="Redmine::I18n#format_hours (method)">#format_hours</a></span>, <span class='object_link'><a href="Redmine/I18n.html#format_time-instance_method" title="Redmine::I18n#format_time (method)">#format_time</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l-instance_method" title="Redmine::I18n#l (method)">#l</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours-instance_method" title="Redmine::I18n#l_hours (method)">#l_hours</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_hours_short-instance_method" title="Redmine::I18n#l_hours_short (method)">#l_hours_short</a></span>, <span class='object_link'><a href="Redmine/I18n.html#l_or_humanize-instance_method" title="Redmine::I18n#l_or_humanize (method)">#l_or_humanize</a></span>, <span class='object_link'><a href="Redmine/I18n.html#languages_options-instance_method" title="Redmine::I18n#languages_options (method)">#languages_options</a></span>, <span class='object_link'><a href="Redmine/I18n.html#ll-instance_method" title="Redmine::I18n#ll (method)">#ll</a></span>, <span class='object_link'><a href="Redmine/I18n.html#lu-instance_method" title="Redmine::I18n#lu (method)">#lu</a></span>, <span class='object_link'><a href="Redmine/I18n.html#month_name-instance_method" title="Redmine::I18n#month_name (method)">#month_name</a></span>, <span class='object_link'><a href="Redmine/I18n.html#set_language_if_valid-instance_method" title="Redmine::I18n#set_language_if_valid (method)">#set_language_if_valid</a></span>, <span class='object_link'><a href="Redmine/I18n.html#valid_languages-instance_method" title="Redmine::I18n#valid_languages (method)">#valid_languages</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="GravatarHelper/PublicMethods.html" title="GravatarHelper::PublicMethods (module)">GravatarHelper::PublicMethods</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar-instance_method" title="GravatarHelper::PublicMethods#gravatar (method)">#gravatar</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_api_url-instance_method" title="GravatarHelper::PublicMethods#gravatar_api_url (method)">#gravatar_api_url</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_for-instance_method" title="GravatarHelper::PublicMethods#gravatar_for (method)">#gravatar_for</a></span>, <span class='object_link'><a href="GravatarHelper/PublicMethods.html#gravatar_url-instance_method" title="GravatarHelper::PublicMethods#gravatar_url (method)">#gravatar_url</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html" title="Redmine::WikiFormatting::Macros::Definitions (module)">Redmine::WikiFormatting::Macros::Definitions</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#exec_macro-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#exec_macro (method)">#exec_macro</a></span>, <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#extract_macro_options-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#extract_macro_options (method)">#extract_macro_options</a></span>, <span class='object_link'><a href="Redmine/WikiFormatting/Macros/Definitions.html#macro_exists%3F-instance_method" title="Redmine::WikiFormatting::Macros::Definitions#macro_exists? (method)">#macro_exists?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#_include_layout%3F-instance_method" title="ApplicationController#_include_layout? (method)">#_include_layout?</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_api_auth-class_method" title="ApplicationController.accept_api_auth (method)">accept_api_auth</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_api_auth%3F-instance_method" title="ApplicationController#accept_api_auth? (method)">#accept_api_auth?</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_rss_auth-class_method" title="ApplicationController.accept_rss_auth (method)">accept_rss_auth</a></span>, <span class='object_link'><a href="ApplicationController.html#accept_rss_auth%3F-instance_method" title="ApplicationController#accept_rss_auth? (method)">#accept_rss_auth?</a></span>, <span class='object_link'><a href="ApplicationController.html#api_key_from_request-instance_method" title="ApplicationController#api_key_from_request (method)">#api_key_from_request</a></span>, <span class='object_link'><a href="ApplicationController.html#api_offset_and_limit-instance_method" title="ApplicationController#api_offset_and_limit (method)">#api_offset_and_limit</a></span>, <span class='object_link'><a href="ApplicationController.html#api_request%3F-instance_method" title="ApplicationController#api_request? (method)">#api_request?</a></span>, <span class='object_link'><a href="ApplicationController.html#api_switch_user_from_request-instance_method" title="ApplicationController#api_switch_user_from_request (method)">#api_switch_user_from_request</a></span>, <span class='object_link'><a href="ApplicationController.html#authorize-instance_method" title="ApplicationController#authorize (method)">#authorize</a></span>, <span class='object_link'><a href="ApplicationController.html#authorize_global-instance_method" title="ApplicationController#authorize_global (method)">#authorize_global</a></span>, <span class='object_link'><a href="ApplicationController.html#autologin_cookie_name-instance_method" title="ApplicationController#autologin_cookie_name (method)">#autologin_cookie_name</a></span>, <span class='object_link'><a href="ApplicationController.html#back_url-instance_method" title="ApplicationController#back_url (method)">#back_url</a></span>, <span class='object_link'><a href="ApplicationController.html#check_if_login_required-instance_method" title="ApplicationController#check_if_login_required (method)">#check_if_login_required</a></span>, <span class='object_link'><a href="ApplicationController.html#check_password_change-instance_method" title="ApplicationController#check_password_change (method)">#check_password_change</a></span>, <span class='object_link'><a href="ApplicationController.html#check_project_privacy-instance_method" title="ApplicationController#check_project_privacy (method)">#check_project_privacy</a></span>, <span class='object_link'><a href="ApplicationController.html#deny_access-instance_method" title="ApplicationController#deny_access (method)">#deny_access</a></span>, <span class='object_link'><a href="ApplicationController.html#filename_for_content_disposition-instance_method" title="ApplicationController#filename_for_content_disposition (method)">#filename_for_content_disposition</a></span>, <span class='object_link'><a href="ApplicationController.html#find_attachments-instance_method" title="ApplicationController#find_attachments (method)">#find_attachments</a></span>, <span class='object_link'><a href="ApplicationController.html#find_current_user-instance_method" title="ApplicationController#find_current_user (method)">#find_current_user</a></span>, <span class='object_link'><a href="ApplicationController.html#find_issue-instance_method" title="ApplicationController#find_issue (method)">#find_issue</a></span>, <span class='object_link'><a href="ApplicationController.html#find_issues-instance_method" title="ApplicationController#find_issues (method)">#find_issues</a></span>, <span class='object_link'><a href="ApplicationController.html#find_model_object-instance_method" title="ApplicationController#find_model_object (method)">#find_model_object</a></span>, <span class='object_link'><a href="ApplicationController.html#find_optional_project-instance_method" title="ApplicationController#find_optional_project (method)">#find_optional_project</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project-instance_method" title="ApplicationController#find_project (method)">#find_project</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project_by_project_id-instance_method" title="ApplicationController#find_project_by_project_id (method)">#find_project_by_project_id</a></span>, <span class='object_link'><a href="ApplicationController.html#find_project_from_association-instance_method" title="ApplicationController#find_project_from_association (method)">#find_project_from_association</a></span>, <span class='object_link'><a href="ApplicationController.html#handle_unverified_request-instance_method" title="ApplicationController#handle_unverified_request (method)">#handle_unverified_request</a></span>, <span class='object_link'><a href="ApplicationController.html#logged_user=-instance_method" title="ApplicationController#logged_user= (method)">#logged_user=</a></span>, <span class='object_link'><a href="ApplicationController.html#logout_user-instance_method" title="ApplicationController#logout_user (method)">#logout_user</a></span>, <span class='object_link'><a href="ApplicationController.html#missing_template-instance_method" title="ApplicationController#missing_template (method)">#missing_template</a></span>, <span class='object_link'><a href="ApplicationController.html#model_object-class_method" title="ApplicationController.model_object (method)">model_object</a></span>, <span class='object_link'><a href="ApplicationController.html#parse_params_for_bulk_update-instance_method" title="ApplicationController#parse_params_for_bulk_update (method)">#parse_params_for_bulk_update</a></span>, <span class='object_link'><a href="ApplicationController.html#parse_qvalues-instance_method" title="ApplicationController#parse_qvalues (method)">#parse_qvalues</a></span>, <span class='object_link'><a href="ApplicationController.html#per_page_option-instance_method" title="ApplicationController#per_page_option (method)">#per_page_option</a></span>, <span class='object_link'><a href="ApplicationController.html#query_statement_invalid-instance_method" title="ApplicationController#query_statement_invalid (method)">#query_statement_invalid</a></span>, <span class='object_link'><a href="ApplicationController.html#redirect_back_or_default-instance_method" title="ApplicationController#redirect_back_or_default (method)">#redirect_back_or_default</a></span>, <span class='object_link'><a href="ApplicationController.html#redirect_to_referer_or-instance_method" title="ApplicationController#redirect_to_referer_or (method)">#redirect_to_referer_or</a></span>, <span class='object_link'><a href="ApplicationController.html#render_403-instance_method" title="ApplicationController#render_403 (method)">#render_403</a></span>, <span class='object_link'><a href="ApplicationController.html#render_404-instance_method" title="ApplicationController#render_404 (method)">#render_404</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_errors-instance_method" title="ApplicationController#render_api_errors (method)">#render_api_errors</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_head-instance_method" title="ApplicationController#render_api_head (method)">#render_api_head</a></span>, <span class='object_link'><a href="ApplicationController.html#render_api_ok-instance_method" title="ApplicationController#render_api_ok (method)">#render_api_ok</a></span>, <span class='object_link'><a href="ApplicationController.html#render_attachment_warning_if_needed-instance_method" title="ApplicationController#render_attachment_warning_if_needed (method)">#render_attachment_warning_if_needed</a></span>, <span class='object_link'><a href="ApplicationController.html#render_error-instance_method" title="ApplicationController#render_error (method)">#render_error</a></span>, <span class='object_link'><a href="ApplicationController.html#render_feed-instance_method" title="ApplicationController#render_feed (method)">#render_feed</a></span>, <span class='object_link'><a href="ApplicationController.html#render_validation_errors-instance_method" title="ApplicationController#render_validation_errors (method)">#render_validation_errors</a></span>, <span class='object_link'><a href="ApplicationController.html#require_admin-instance_method" title="ApplicationController#require_admin (method)">#require_admin</a></span>, <span class='object_link'><a href="ApplicationController.html#require_admin_or_api_request-instance_method" title="ApplicationController#require_admin_or_api_request (method)">#require_admin_or_api_request</a></span>, <span class='object_link'><a href="ApplicationController.html#require_login-instance_method" title="ApplicationController#require_login (method)">#require_login</a></span>, <span class='object_link'><a href="ApplicationController.html#session_expiration-instance_method" title="ApplicationController#session_expiration (method)">#session_expiration</a></span>, <span class='object_link'><a href="ApplicationController.html#session_expired%3F-instance_method" title="ApplicationController#session_expired? (method)">#session_expired?</a></span>, <span class='object_link'><a href="ApplicationController.html#set_localization-instance_method" title="ApplicationController#set_localization (method)">#set_localization</a></span>, <span class='object_link'><a href="ApplicationController.html#start_user_session-instance_method" title="ApplicationController#start_user_session (method)">#start_user_session</a></span>, <span class='object_link'><a href="ApplicationController.html#try_to_autologin-instance_method" title="ApplicationController#try_to_autologin (method)">#try_to_autologin</a></span>, <span class='object_link'><a href="ApplicationController.html#use_layout-instance_method" title="ApplicationController#use_layout (method)">#use_layout</a></span>, <span class='object_link'><a href="ApplicationController.html#user_setup-instance_method" title="ApplicationController#user_setup (method)">#user_setup</a></span>, <span class='object_link'><a href="ApplicationController.html#verify_authenticity_token-instance_method" title="ApplicationController#verify_authenticity_token (method)">#verify_authenticity_token</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/SudoMode/Controller.html" title="Redmine::SudoMode::Controller (module)">Redmine::SudoMode::Controller</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/SudoMode/Controller.html#process_sudo_form-instance_method" title="Redmine::SudoMode::Controller#process_sudo_form (method)">#process_sudo_form</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#render_sudo_form-instance_method" title="Redmine::SudoMode::Controller#render_sudo_form (method)">#render_sudo_form</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#require_sudo_mode-instance_method" title="Redmine::SudoMode::Controller#require_sudo_mode (method)">#require_sudo_mode</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#sudo_mode-instance_method" title="Redmine::SudoMode::Controller#sudo_mode (method)">#sudo_mode</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#sudo_timestamp_valid%3F-instance_method" title="Redmine::SudoMode::Controller#sudo_timestamp_valid? (method)">#sudo_timestamp_valid?</a></span>, <span class='object_link'><a href="Redmine/SudoMode/Controller.html#update_sudo_timestamp!-instance_method" title="Redmine::SudoMode::Controller#update_sudo_timestamp! (method)">#update_sudo_timestamp!</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/MenuManager/MenuController.html" title="Redmine::MenuManager::MenuController (module)">Redmine::MenuManager::MenuController</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/MenuManager/MenuController.html#current_menu-instance_method" title="Redmine::MenuManager::MenuController#current_menu (method)">#current_menu</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#current_menu_item-instance_method" title="Redmine::MenuManager::MenuController#current_menu_item (method)">#current_menu_item</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#menu_items-instance_method" title="Redmine::MenuManager::MenuController#menu_items (method)">#menu_items</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#redirect_to_menu_item-instance_method" title="Redmine::MenuManager::MenuController#redirect_to_menu_item (method)">#redirect_to_menu_item</a></span>, <span class='object_link'><a href="Redmine/MenuManager/MenuController.html#redirect_to_project_menu_item-instance_method" title="Redmine::MenuManager::MenuController#redirect_to_project_menu_item (method)">#redirect_to_project_menu_item</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Search/Controller.html" title="Redmine::Search::Controller (module)">Redmine::Search::Controller</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Search/Controller.html#default_search_scope-instance_method" title="Redmine::Search::Controller#default_search_scope (method)">#default_search_scope</a></span>, <span class='object_link'><a href="Redmine/Search/Controller.html#default_search_scopes-instance_method" title="Redmine::Search::Controller#default_search_scopes (method)">#default_search_scopes</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="RoutesHelper.html" title="RoutesHelper (module)">RoutesHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="RoutesHelper.html#_new_project_issue_path-instance_method" title="RoutesHelper#_new_project_issue_path (method)">#_new_project_issue_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_new_time_entry_path-instance_method" title="RoutesHelper#_new_time_entry_path (method)">#_new_time_entry_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_calendar_path-instance_method" title="RoutesHelper#_project_calendar_path (method)">#_project_calendar_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_gantt_path-instance_method" title="RoutesHelper#_project_gantt_path (method)">#_project_gantt_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_issues_path-instance_method" title="RoutesHelper#_project_issues_path (method)">#_project_issues_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_project_news_path-instance_method" title="RoutesHelper#_project_news_path (method)">#_project_news_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_report_time_entries_path-instance_method" title="RoutesHelper#_report_time_entries_path (method)">#_report_time_entries_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#_time_entries_path-instance_method" title="RoutesHelper#_time_entries_path (method)">#_time_entries_path</a></span>, <span class='object_link'><a href="RoutesHelper.html#board_path-instance_method" title="RoutesHelper#board_path (method)">#board_path</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Redmine/Pagination.html" title="Redmine::Pagination (module)">Redmine::Pagination</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Redmine/Pagination.html#paginate-instance_method" title="Redmine::Pagination#paginate (method)">#paginate</a></span>, <span class='object_link'><a href="Redmine/Pagination.html#paginator-instance_method" title="Redmine::Pagination#paginator (method)">#paginator</a></span></p>
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="diff-instance_method">
+  
+    #<strong>diff</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/journals_controller.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_diff'>diff</span>
+  <span class='ivar'>@issue</span> <span class='op'>=</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_issue'>issue</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:detail_id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='ivar'>@detail</span> <span class='op'>=</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_details'>details</span><span class='period'>.</span><span class='id identifier rubyid_find_by_id'>find_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:detail_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='ivar'>@detail</span> <span class='op'>=</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_details'>details</span><span class='period'>.</span><span class='id identifier rubyid_detect'>detect</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_d'>d</span><span class='op'>|</span> <span class='id identifier rubyid_d'>d</span><span class='period'>.</span><span class='id identifier rubyid_property'>property</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>attr</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_d'>d</span><span class='period'>.</span><span class='id identifier rubyid_prop_key'>prop_key</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>description</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+  <span class='kw'>unless</span> <span class='ivar'>@issue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@detail</span>
+    <span class='id identifier rubyid_render_404'>render_404</span>
+    <span class='kw'>return</span> <span class='kw'>false</span>
+  <span class='kw'>end</span>
+  <span class='kw'>if</span> <span class='ivar'>@detail</span><span class='period'>.</span><span class='id identifier rubyid_property'>property</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cf</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>unless</span> <span class='ivar'>@detail</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@detail</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_visible_by?'>visible_by?</span><span class='lparen'>(</span><span class='ivar'>@issue</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='op'>::</span><span class='const'><span class='object_link'><a href="Unauthorized.html" title="Unauthorized (class)">Unauthorized</a></span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@diff</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Helpers.html" title="Redmine::Helpers (module)">Helpers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Redmine/Helpers/Diff.html" title="Redmine::Helpers::Diff (class)">Diff</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Redmine/Helpers/Diff.html#initialize-instance_method" title="Redmine::Helpers::Diff#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='ivar'>@detail</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='ivar'>@detail</span><span class='period'>.</span><span class='id identifier rubyid_old_value'>old_value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit-instance_method">
+  
+    #<strong>edit</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/journals_controller.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_render_403'>render_403</span><span class='semicolon'>;</span> <span class='kw'>return</span> <span class='kw'>false</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_editable_by?'>editable_by?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='comment'># TODO: implement non-JS journal update
+</span>    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_js'>js</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="index-instance_method">
+  
+    #<strong>index</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/journals_controller.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
+  <span class='id identifier rubyid_retrieve_query'>retrieve_query</span>
+  <span class='kw'>if</span> <span class='ivar'>@query</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span>
+    <span class='ivar'>@journals</span> <span class='op'>=</span> <span class='ivar'>@query</span><span class='period'>.</span><span class='id identifier rubyid_journals'>journals</span><span class='lparen'>(</span><span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="Journal.html" title="Journal (class)">Journal</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.created_on DESC</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+                                <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='int'>25</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@title</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@project</span> <span class='op'>?</span> <span class='ivar'>@project</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='op'>:</span> <span class='const'><span class='object_link'><a href="Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_app_title'>app_title</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='lparen'>(</span><span class='ivar'>@query</span><span class='period'>.</span><span class='id identifier rubyid_new_record?'>new_record?</span> <span class='op'>?</span> <span class='id identifier rubyid_l'>l</span><span class='lparen'>(</span><span class='symbol'>:label_changes_details</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='ivar'>@query</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:layout</span> <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='symbol'>:content_type</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/atom+xml</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="ActiveRecord.html" title="ActiveRecord (module)">ActiveRecord</a></span></span><span class='op'>::</span><span class='const'>RecordNotFound</span>
+  <span class='id identifier rubyid_render_404'>render_404</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new-instance_method">
+  
+    #<strong>new</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/journals_controller.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
+  <span class='ivar'>@journal</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Journal.html" title="Journal (class)">Journal</a></span></span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:journal_id</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:journal_id</span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@journal</span>
+    <span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span>
+    <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_notes'>notes</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@issue</span><span class='period'>.</span><span class='id identifier rubyid_author'>author</span>
+    <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='ivar'>@issue</span><span class='period'>.</span><span class='id identifier rubyid_description'>description</span>
+  <span class='kw'>end</span>
+  <span class='comment'># Replaces pre blocks with [...]
+</span>  <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>%r{</span><span class='tstring_content'>&lt;pre&gt;(.*?)&lt;/pre&gt;</span><span class='regexp_end'>}m</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>[...]</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='ivar'>@content</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_ll'>ll</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Setting.html" title="Setting (class)">Setting</a></span></span><span class='period'>.</span><span class='id identifier rubyid_default_language'>default_language</span><span class='comma'>,</span> <span class='symbol'>:text_user_wrote</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n&gt; </span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@content</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>(\r?\n|\r\n?)</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n&gt; </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>rescue</span> <span class='const'><span class='object_link'><a href="ActiveRecord.html" title="ActiveRecord (module)">ActiveRecord</a></span></span><span class='op'>::</span><span class='const'>RecordNotFound</span>
+  <span class='id identifier rubyid_render_404'>render_404</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    #<strong>update</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/journals_controller.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_render_403'>render_403</span><span class='semicolon'>;</span> <span class='kw'>return</span> <span class='kw'>false</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_editable_by?'>editable_by?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="User.html" title="User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'><span class='object_link'><a href="User.html#current-class_method" title="User.current (method)">current</a></span></span><span class='rparen'>)</span>
+  <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_safe_attributes'>safe_attributes</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:journal</span><span class='rbracket'>]</span>
+  <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+  <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span> <span class='kw'>if</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_details'>details</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_notes'>notes</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
+  <span class='id identifier rubyid_call_hook'>call_hook</span><span class='lparen'>(</span><span class='symbol'>:controller_journals_edit_post</span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='symbol'>:journal</span> <span class='op'>=&gt;</span> <span class='ivar'>@journal</span><span class='comma'>,</span> <span class='symbol'>:params</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_params'>params</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_issue_path'>issue_path</span><span class='lparen'>(</span><span class='ivar'>@journal</span><span class='period'>.</span><span class='id identifier rubyid_journalized'>journalized</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_format'>format</span><span class='period'>.</span><span class='id identifier rubyid_js'>js</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 21:58:44 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.8).
+</div>
+
+    </div>
+  </body>
+</html>

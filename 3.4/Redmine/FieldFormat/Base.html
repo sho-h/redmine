@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Redmine::FieldFormat::Base
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Redmine::FieldFormat::Base";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (B)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Redmine.html" title="Redmine (module)">Redmine</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../FieldFormat.html" title="Redmine::FieldFormat (module)">FieldFormat</a></span></span>
+     &raquo; 
+    <span class="title">Base</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Redmine::FieldFormat::Base
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Redmine::FieldFormat::Base</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd>ERB::Util, <span class='object_link'><a href="../Helpers/URL.html" title="Redmine::Helpers::URL (module)">Helpers::URL</a></span>, <span class='object_link'><a href="../I18n.html" title="Redmine::I18n (module)">I18n</a></span>, Singleton</dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/redmine/field_format.rb</dd>
+  </dl>
+  
+</div>
+
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="AttachmentFormat.html" title="Redmine::FieldFormat::AttachmentFormat (class)">AttachmentFormat</a></span>, <span class='object_link'><a href="List.html" title="Redmine::FieldFormat::List (class)">List</a></span>, <span class='object_link'><a href="Unbounded.html" title="Redmine::FieldFormat::Unbounded (class)">Unbounded</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#field_attributes-class_method" title="field_attributes (class method)">.<strong>field_attributes</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#after_save_custom_value-instance_method" title="#after_save_custom_value (instance method)">#<strong>after_save_custom_value</strong>(custom_field, custom_value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>CustomValue after_save callback.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#before_custom_field_save-instance_method" title="#before_custom_field_save (instance method)">#<strong>before_custom_field_save</strong>(custom_field)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bulk_edit_tag-instance_method" title="#bulk_edit_tag (instance method)">#<strong>bulk_edit_tag</strong>(view, tag_id, tag_name, custom_field, objects, value, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cast_custom_value-instance_method" title="#cast_custom_value (instance method)">#<strong>cast_custom_value</strong>(custom_value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cast_single_value-instance_method" title="#cast_single_value (instance method)">#<strong>cast_single_value</strong>(custom_field, value, customized = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cast_value-instance_method" title="#cast_value (instance method)">#<strong>cast_value</strong>(custom_field, value, customized = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_tag-instance_method" title="#edit_tag (instance method)">#<strong>edit_tag</strong>(view, tag_id, tag_name, custom_value, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#formatted_custom_value-instance_method" title="#formatted_custom_value (instance method)">#<strong>formatted_custom_value</strong>(view, custom_value, html = false)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#formatted_value-instance_method" title="#formatted_value (instance method)">#<strong>formatted_value</strong>(view, custom_field, value, customized = nil, html = false)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#group_statement-instance_method" title="#group_statement (instance method)">#<strong>group_statement</strong>(custom_field)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a GROUP BY clause that can used to group by custom value Returns
+nil if the custom field can not be used for grouping.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#join_for_order_statement-instance_method" title="#join_for_order_statement (instance method)">#<strong>join_for_order_statement</strong>(custom_field)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a JOIN clause that is added to the query when sorting by custom
+values.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#label-instance_method" title="#label (instance method)">#<strong>label</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#order_statement-instance_method" title="#order_statement (instance method)">#<strong>order_statement</strong>(custom_field)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a ORDER BY clause that can used to sort customized objects by their
+value of the custom field.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#possible_custom_value_options-instance_method" title="#possible_custom_value_options (instance method)">#<strong>possible_custom_value_options</strong>(custom_value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#possible_values_options-instance_method" title="#possible_values_options (instance method)">#<strong>possible_values_options</strong>(custom_field, object = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#query_filter_options-instance_method" title="#query_filter_options (instance method)">#<strong>query_filter_options</strong>(custom_field, query)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_custom_field_value-instance_method" title="#set_custom_field_value (instance method)">#<strong>set_custom_field_value</strong>(custom_field, custom_field_value, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#target_class-instance_method" title="#target_class (instance method)">#<strong>target_class</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_custom_field-instance_method" title="#validate_custom_field (instance method)">#<strong>validate_custom_field</strong>(custom_field)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the validation errors for custom_field Should return an empty array
+if custom_field is valid.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_custom_value-instance_method" title="#validate_custom_value (instance method)">#<strong>validate_custom_value</strong>(custom_value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the validation error messages for custom_value Should return an
+empty array if custom_value is valid custom_value is a CustomFieldValue.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_single_value-instance_method" title="#validate_single_value (instance method)">#<strong>validate_single_value</strong>(custom_field, value, customized = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value_from_keyword-instance_method" title="#value_from_keyword (instance method)">#<strong>value_from_keyword</strong>(custom_field, keyword, object)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../Helpers/URL.html" title="Redmine::Helpers::URL (module)">Helpers::URL</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Helpers/URL.html#uri_with_safe_scheme%3F-instance_method" title="Redmine::Helpers::URL#uri_with_safe_scheme? (method)">#uri_with_safe_scheme?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../I18n.html" title="Redmine::I18n (module)">I18n</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../I18n.html#current_language-instance_method" title="Redmine::I18n#current_language (method)">#current_language</a></span>, <span class='object_link'><a href="../I18n.html#day_letter-instance_method" title="Redmine::I18n#day_letter (method)">#day_letter</a></span>, <span class='object_link'><a href="../I18n.html#day_name-instance_method" title="Redmine::I18n#day_name (method)">#day_name</a></span>, <span class='object_link'><a href="../I18n.html#find_language-instance_method" title="Redmine::I18n#find_language (method)">#find_language</a></span>, <span class='object_link'><a href="../I18n.html#format_date-instance_method" title="Redmine::I18n#format_date (method)">#format_date</a></span>, <span class='object_link'><a href="../I18n.html#format_hours-instance_method" title="Redmine::I18n#format_hours (method)">#format_hours</a></span>, <span class='object_link'><a href="../I18n.html#format_time-instance_method" title="Redmine::I18n#format_time (method)">#format_time</a></span>, <span class='object_link'><a href="../I18n.html#l-instance_method" title="Redmine::I18n#l (method)">#l</a></span>, <span class='object_link'><a href="../I18n.html#l_hours-instance_method" title="Redmine::I18n#l_hours (method)">#l_hours</a></span>, <span class='object_link'><a href="../I18n.html#l_hours_short-instance_method" title="Redmine::I18n#l_hours_short (method)">#l_hours_short</a></span>, <span class='object_link'><a href="../I18n.html#l_or_humanize-instance_method" title="Redmine::I18n#l_or_humanize (method)">#l_or_humanize</a></span>, <span class='object_link'><a href="../I18n.html#languages_options-instance_method" title="Redmine::I18n#languages_options (method)">#languages_options</a></span>, <span class='object_link'><a href="../I18n.html#ll-instance_method" title="Redmine::I18n#ll (method)">#ll</a></span>, <span class='object_link'><a href="../I18n.html#lu-instance_method" title="Redmine::I18n#lu (method)">#lu</a></span>, <span class='object_link'><a href="../I18n.html#month_name-instance_method" title="Redmine::I18n#month_name (method)">#month_name</a></span>, <span class='object_link'><a href="../I18n.html#set_language_if_valid-instance_method" title="Redmine::I18n#set_language_if_valid (method)">#set_language_if_valid</a></span>, <span class='object_link'><a href="../I18n.html#valid_languages-instance_method" title="Redmine::I18n#valid_languages (method)">#valid_languages</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="field_attributes-class_method">
+  
+    .<strong>field_attributes</strong>(*args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 107</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_field_attributes'>field_attributes</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="../../CustomField.html" title="CustomField (class)">CustomField</a></span></span><span class='period'>.</span><span class='id identifier rubyid_store_accessor'>store_accessor</span> <span class='symbol'>:format_store</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="after_save_custom_value-instance_method">
+  
+    #<strong>after_save_custom_value</strong>(custom_field, custom_value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>CustomValue after_save callback</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+236
+237</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 236</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_after_save_custom_value'>after_save_custom_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="before_custom_field_save-instance_method">
+  
+    #<strong>before_custom_field_save</strong>(custom_field)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+315
+316</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 315</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_before_custom_field_save'>before_custom_field_save</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="bulk_edit_tag-instance_method">
+  
+    #<strong>bulk_edit_tag</strong>(view, tag_id, tag_name, custom_field, objects, value, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+294
+295
+296
+297</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 294</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_bulk_edit_tag'>bulk_edit_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_id'>tag_id</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_name'>tag_name</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_view'>view</span><span class='period'>.</span><span class='id identifier rubyid_text_field_tag'>text_field_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag_name'>tag_name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_tag_id'>tag_id</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>+</span>
+    <span class='id identifier rubyid_bulk_clear_tag'>bulk_clear_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_id'>tag_id</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_name'>tag_name</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cast_custom_value-instance_method">
+  
+    #<strong>cast_custom_value</strong>(custom_value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+134
+135
+136</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 134</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cast_custom_value'>cast_custom_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_cast_value'>cast_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cast_single_value-instance_method">
+  
+    #<strong>cast_single_value</strong>(custom_field, value, customized = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 151</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cast_single_value'>cast_single_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cast_value-instance_method">
+  
+    #<strong>cast_value</strong>(custom_field, value, customized = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cast_value'>cast_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
+    <span class='kw'>nil</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_casted'>casted</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+      <span class='id identifier rubyid_cast_single_value'>cast_single_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_casted'>casted</span><span class='period'>.</span><span class='id identifier rubyid_compact'>compact</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_cast_single_value'>cast_single_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit_tag-instance_method">
+  
+    #<strong>edit_tag</strong>(view, tag_id, tag_name, custom_value, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+290
+291
+292</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 290</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_tag'>edit_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_id'>tag_id</span><span class='comma'>,</span> <span class='id identifier rubyid_tag_name'>tag_name</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_view'>view</span><span class='period'>.</span><span class='id identifier rubyid_text_field_tag'>text_field_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag_name'>tag_name</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_tag_id'>tag_id</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="formatted_custom_value-instance_method">
+  
+    #<strong>formatted_custom_value</strong>(view, custom_value, html = false)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+239
+240
+241</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 239</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_formatted_custom_value'>formatted_custom_value</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='comma'>,</span> <span class='id identifier rubyid_html'>html</span><span class='op'>=</span><span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_formatted_value'>formatted_value</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_customized'>customized</span><span class='comma'>,</span> <span class='id identifier rubyid_html'>html</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="formatted_value-instance_method">
+  
+    #<strong>formatted_value</strong>(view, custom_field, value, customized = nil, html = false)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 243</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_formatted_value'>formatted_value</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_html'>html</span><span class='op'>=</span><span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_casted'>casted</span> <span class='op'>=</span> <span class='id identifier rubyid_cast_value'>cast_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_html'>html</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_url_pattern'>url_pattern</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_texts_and_urls'>texts_and_urls</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap'>wrap</span><span class='lparen'>(</span><span class='id identifier rubyid_casted'>casted</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_single_value'>single_value</span><span class='op'>|</span>
+      <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='id identifier rubyid_view'>view</span><span class='period'>.</span><span class='id identifier rubyid_format_object'>format_object</span><span class='lparen'>(</span><span class='id identifier rubyid_single_value'>single_value</span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+      <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_url_from_pattern'>url_from_pattern</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_single_value'>single_value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+      <span class='lbracket'>[</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_links'>links</span> <span class='op'>=</span> <span class='id identifier rubyid_texts_and_urls'>texts_and_urls</span><span class='period'>.</span><span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:first</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='op'>|</span> <span class='id identifier rubyid_view'>view</span><span class='period'>.</span><span class='id identifier rubyid_link_to_if'>link_to_if</span> <span class='id identifier rubyid_uri_with_safe_scheme?'>uri_with_safe_scheme?</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_links'>links</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>, </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_html_safe'>html_safe</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_casted'>casted</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="group_statement-instance_method">
+  
+    #<strong>group_statement</strong>(custom_field)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a GROUP BY clause that can used to group by custom value Returns
+nil if the custom field can not be used for grouping.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+328
+329
+330</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 328</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_group_statement'>group_statement</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="join_for_order_statement-instance_method">
+  
+    #<strong>join_for_order_statement</strong>(custom_field)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a JOIN clause that is added to the query when sorting by custom
+values</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 333</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_join_for_order_statement'>join_for_order_statement</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_alias_name'>alias_name</span> <span class='op'>=</span> <span class='id identifier rubyid_join_alias'>join_alias</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LEFT OUTER JOIN </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../../CustomValue.html" title="CustomValue (class)">CustomValue</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> ON </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.customized_type = &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_customized_class'>customized_class</span><span class='period'>.</span><span class='id identifier rubyid_base_class'>base_class</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.customized_id = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_customized_class'>customized_class</span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.id</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.custom_field_id = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND (</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_visibility_by_project_condition'>visibility_by_project_condition</span><span class='embexpr_end'>}</span><span class='tstring_content'>)</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.value &lt;&gt; &#39;&#39;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.id = (SELECT max(</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_2.id) FROM </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../../CustomValue.html" title="CustomValue (class)">CustomValue</a></span></span><span class='period'>.</span><span class='id identifier rubyid_table_name'>table_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_2</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> WHERE </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_2.customized_type = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.customized_type</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_2.customized_id = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.customized_id</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> AND </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_2.custom_field_id = </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_alias_name'>alias_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.custom_field_id)</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="label-instance_method">
+  
+    #<strong>label</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+117
+118
+119</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 117</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_label'>label</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>label_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+113
+114
+115</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 113</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_format_name'>format_name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="order_statement-instance_method">
+  
+    #<strong>order_statement</strong>(custom_field)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a ORDER BY clause that can used to sort customized objects by their
+value of the custom field. Returns nil if the custom field can not be used
+for sorting.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+321
+322
+323
+324</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 321</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_order_statement'>order_statement</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+  <span class='comment'># COALESCE is here to make sure that blank and NULL values are sorted equally
+</span>  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>COALESCE(</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_join_alias'>join_alias</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='embexpr_end'>}</span><span class='tstring_content'>.value, &#39;&#39;)</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="possible_custom_value_options-instance_method">
+  
+    #<strong>possible_custom_value_options</strong>(custom_value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 159</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_possible_custom_value_options'>possible_custom_value_options</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_possible_values_options'>possible_values_options</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="possible_values_options-instance_method">
+  
+    #<strong>possible_values_options</strong>(custom_field, object = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 163</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_possible_values_options'>possible_values_options</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="query_filter_options-instance_method">
+  
+    #<strong>query_filter_options</strong>(custom_field, query)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+311
+312
+313</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 311</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_query_filter_options'>query_filter_options</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_query'>query</span><span class='rparen'>)</span>
+  <span class='lbrace'>{</span><span class='symbol'>:type</span> <span class='op'>=&gt;</span> <span class='symbol'>:string</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_custom_field_value-instance_method">
+  
+    #<strong>set_custom_field_value</strong>(custom_field, custom_field_value, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 121</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_custom_field_value'>set_custom_field_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_field_value'>custom_field_value</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_reject'>reject</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='id identifier rubyid_v'>v</span><span class='op'>==</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+      <span class='id identifier rubyid_value'>value</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="target_class-instance_method">
+  
+    #<strong>target_class</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156
+157</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 155</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_target_class'>target_class</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_custom_field-instance_method">
+  
+    #<strong>validate_custom_field</strong>(custom_field)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the validation errors for custom_field Should return an empty array
+if custom_field is valid</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+211
+212
+213
+214
+215
+216
+217
+218</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 211</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_custom_field'>validate_custom_field</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_errors'>errors</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_pattern'>pattern</span> <span class='op'>=</span> <span class='id identifier rubyid_custom_field'>custom_field</span><span class='period'>.</span><span class='id identifier rubyid_url_pattern'>url_pattern</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_pattern'>pattern</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_uri_with_safe_scheme?'>uri_with_safe_scheme?</span><span class='lparen'>(</span><span class='id identifier rubyid_url_pattern_without_tokens'>url_pattern_without_tokens</span><span class='lparen'>(</span><span class='id identifier rubyid_pattern'>pattern</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_errors'>errors</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='symbol'>:url_pattern</span><span class='comma'>,</span> <span class='symbol'>:invalid</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_errors'>errors</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_custom_value-instance_method">
+  
+    #<strong>validate_custom_value</strong>(custom_value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the validation error messages for custom_value Should return an
+empty array if custom_value is valid custom_value is a CustomFieldValue.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+223
+224
+225
+226
+227
+228
+229</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 223</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_custom_value'>validate_custom_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_values'>values</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span><span class='period'>.</span><span class='id identifier rubyid_wrap'>wrap</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_reject'>reject</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span> <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_errors'>errors</span> <span class='op'>=</span> <span class='id identifier rubyid_values'>values</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_validate_single_value'>validate_single_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_custom_value'>custom_value</span><span class='period'>.</span><span class='id identifier rubyid_customized'>customized</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_single_value-instance_method">
+  
+    #<strong>validate_single_value</strong>(custom_field, value, customized = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.5.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+231
+232
+233</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 231</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_single_value'>validate_single_value</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_customized'>customized</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="value_from_keyword-instance_method">
+  
+    #<strong>value_from_keyword</strong>(custom_field, keyword, object)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redmine/field_format.rb', line 167</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_value_from_keyword'>value_from_keyword</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_keyword'>keyword</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_possible_values_options'>possible_values_options</span> <span class='op'>=</span> <span class='id identifier rubyid_possible_values_options'>possible_values_options</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_possible_values_options'>possible_values_options</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_parse_keyword'>parse_keyword</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_field'>custom_field</span><span class='comma'>,</span> <span class='id identifier rubyid_keyword'>keyword</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='op'>|</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_v'>v</span> <span class='op'>=</span> <span class='id identifier rubyid_possible_values_options'>possible_values_options</span><span class='period'>.</span><span class='id identifier rubyid_detect'>detect</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='op'>|</span> <span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_casecmp'>casecmp</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='int'>0</span><span class='rbrace'>}</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_v'>v</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../../Array.html" title="Array (class)">Array</a></span></span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_v'>v</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_v'>v</span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_keyword'>keyword</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 21:58:53 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.8).
+</div>
+
+    </div>
+  </body>
+</html>

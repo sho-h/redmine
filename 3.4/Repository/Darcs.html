@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Repository::Darcs
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Repository::Darcs";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (D)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Repository.html" title="Repository (class)">Repository</a></span></span>
+     &raquo; 
+    <span class="title">Darcs</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Repository::Darcs
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Repository.html" title="Repository (class)">Repository</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="../Repository.html" title="Repository (class)">Repository</a></span></li>
+          
+            <li class="next">Repository::Darcs</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/repository/darcs.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.5.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants inherited
+     from <span class='object_link'><a href="../Repository.html" title="Repository (class)">Repository</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Repository.html#IDENTIFIER_MAX_LENGTH-constant" title="Repository::IDENTIFIER_MAX_LENGTH (constant)">IDENTIFIER_MAX_LENGTH</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#human_attribute_name-class_method" title="human_attribute_name (class method)">.<strong>human_attribute_name</strong>(attribute_key_name, *args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scm_adapter_class-class_method" title="scm_adapter_class (class method)">.<strong>scm_adapter_class</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scm_name-class_method" title="scm_name (class method)">.<strong>scm_name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cat-instance_method" title="#cat (instance method)">#<strong>cat</strong>(path, identifier = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#diff-instance_method" title="#diff (instance method)">#<strong>diff</strong>(path, rev, rev_to)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#entry-instance_method" title="#entry (instance method)">#<strong>entry</strong>(path = nil, identifier = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fetch_changesets-instance_method" title="#fetch_changesets (instance method)">#<strong>fetch_changesets</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#supports_directory_revisions%3F-instance_method" title="#supports_directory_revisions? (instance method)">#<strong>supports_directory_revisions?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Repository.html" title="Repository (class)">Repository</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Repository.html#<=>-instance_method" title="Repository#&lt;=&gt; (method)">#<=></a></span>, <span class='object_link'><a href="../Repository.html#available_scm-class_method" title="Repository.available_scm (method)">available_scm</a></span>, <span class='object_link'><a href="../Repository.html#branches-instance_method" title="Repository#branches (method)">#branches</a></span>, <span class='object_link'><a href="../Repository.html#committer_ids=-instance_method" title="Repository#committer_ids= (method)">#committer_ids=</a></span>, <span class='object_link'><a href="../Repository.html#committers-instance_method" title="Repository#committers (method)">#committers</a></span>, <span class='object_link'><a href="../Repository.html#default_branch-instance_method" title="Repository#default_branch (method)">#default_branch</a></span>, <span class='object_link'><a href="../Repository.html#diff_format_revisions-instance_method" title="Repository#diff_format_revisions (method)">#diff_format_revisions</a></span>, <span class='object_link'><a href="../Repository.html#entries-instance_method" title="Repository#entries (method)">#entries</a></span>, <span class='object_link'><a href="../Repository.html#extra_info-instance_method" title="Repository#extra_info (method)">#extra_info</a></span>, <span class='object_link'><a href="../Repository.html#factory-class_method" title="Repository.factory (method)">factory</a></span>, <span class='object_link'><a href="../Repository.html#fetch_changesets-class_method" title="Repository.fetch_changesets (method)">fetch_changesets</a></span>, <span class='object_link'><a href="../Repository.html#find_by_identifier_param-class_method" title="Repository.find_by_identifier_param (method)">find_by_identifier_param</a></span>, <span class='object_link'><a href="../Repository.html#find_changeset_by_name-instance_method" title="Repository#find_changeset_by_name (method)">#find_changeset_by_name</a></span>, <span class='object_link'><a href="../Repository.html#find_committer_user-instance_method" title="Repository#find_committer_user (method)">#find_committer_user</a></span>, <span class='object_link'><a href="../Repository.html#identifier=-instance_method" title="Repository#identifier= (method)">#identifier=</a></span>, <span class='object_link'><a href="../Repository.html#identifier_frozen%3F-instance_method" title="Repository#identifier_frozen? (method)">#identifier_frozen?</a></span>, <span class='object_link'><a href="../Repository.html#identifier_param-instance_method" title="Repository#identifier_param (method)">#identifier_param</a></span>, <span class='object_link'><a href="../Repository.html#latest_changeset-instance_method" title="Repository#latest_changeset (method)">#latest_changeset</a></span>, <span class='object_link'><a href="../Repository.html#latest_changesets-instance_method" title="Repository#latest_changesets (method)">#latest_changesets</a></span>, <span class='object_link'><a href="../Repository.html#merge_extra_info-instance_method" title="Repository#merge_extra_info (method)">#merge_extra_info</a></span>, <span class='object_link'><a href="../Repository.html#name-instance_method" title="Repository#name (method)">#name</a></span>, <span class='object_link'><a href="../Repository.html#password-instance_method" title="Repository#password (method)">#password</a></span>, <span class='object_link'><a href="../Repository.html#password=-instance_method" title="Repository#password= (method)">#password=</a></span>, <span class='object_link'><a href="../Repository.html#properties-instance_method" title="Repository#properties (method)">#properties</a></span>, <span class='object_link'><a href="../Repository.html#relative_path-instance_method" title="Repository#relative_path (method)">#relative_path</a></span>, <span class='object_link'><a href="../Repository.html#repo_create_validation-instance_method" title="Repository#repo_create_validation (method)">#repo_create_validation</a></span>, <span class='object_link'><a href="../Repository.html#repo_log_encoding-instance_method" title="Repository#repo_log_encoding (method)">#repo_log_encoding</a></span>, <span class='object_link'><a href="../Repository.html#report_last_commit-instance_method" title="Repository#report_last_commit (method)">#report_last_commit</a></span>, <span class='object_link'><a href="../Repository.html#repository_class-class_method" title="Repository.repository_class (method)">repository_class</a></span>, <span class='object_link'><a href="../Repository.html#root_url=-instance_method" title="Repository#root_url= (method)">#root_url=</a></span>, <span class='object_link'><a href="../Repository.html#same_commits_in_scope-instance_method" title="Repository#same_commits_in_scope (method)">#same_commits_in_scope</a></span>, <span class='object_link'><a href="../Repository.html#scan_changesets_for_issue_ids-class_method" title="Repository.scan_changesets_for_issue_ids (method)">scan_changesets_for_issue_ids</a></span>, <span class='object_link'><a href="../Repository.html#scan_changesets_for_issue_ids-instance_method" title="Repository#scan_changesets_for_issue_ids (method)">#scan_changesets_for_issue_ids</a></span>, <span class='object_link'><a href="../Repository.html#scm-instance_method" title="Repository#scm (method)">#scm</a></span>, <span class='object_link'><a href="../Repository.html#scm_adapter-instance_method" title="Repository#scm_adapter (method)">#scm_adapter</a></span>, <span class='object_link'><a href="../Repository.html#scm_available-class_method" title="Repository.scm_available (method)">scm_available</a></span>, <span class='object_link'><a href="../Repository.html#scm_command-class_method" title="Repository.scm_command (method)">scm_command</a></span>, <span class='object_link'><a href="../Repository.html#scm_name-instance_method" title="Repository#scm_name (method)">#scm_name</a></span>, <span class='object_link'><a href="../Repository.html#scm_version_string-class_method" title="Repository.scm_version_string (method)">scm_version_string</a></span>, <span class='object_link'><a href="../Repository.html#set_as_default%3F-instance_method" title="Repository#set_as_default? (method)">#set_as_default?</a></span>, <span class='object_link'><a href="../Repository.html#stats_by_author-instance_method" title="Repository#stats_by_author (method)">#stats_by_author</a></span>, <span class='object_link'><a href="../Repository.html#supports_all_revisions%3F-instance_method" title="Repository#supports_all_revisions? (method)">#supports_all_revisions?</a></span>, <span class='object_link'><a href="../Repository.html#supports_annotate%3F-instance_method" title="Repository#supports_annotate? (method)">#supports_annotate?</a></span>, <span class='object_link'><a href="../Repository.html#supports_cat%3F-instance_method" title="Repository#supports_cat? (method)">#supports_cat?</a></span>, <span class='object_link'><a href="../Repository.html#supports_revision_graph%3F-instance_method" title="Repository#supports_revision_graph? (method)">#supports_revision_graph?</a></span>, <span class='object_link'><a href="../Repository.html#tags-instance_method" title="Repository#tags (method)">#tags</a></span>, <span class='object_link'><a href="../Repository.html#url=-instance_method" title="Repository#url= (method)">#url=</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../Redmine/SafeAttributes.html" title="Redmine::SafeAttributes (module)">Redmine::SafeAttributes</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Redmine/SafeAttributes.html#delete_unsafe_attributes-instance_method" title="Redmine::SafeAttributes#delete_unsafe_attributes (method)">#delete_unsafe_attributes</a></span>, <span class='object_link'><a href="../Redmine/SafeAttributes.html#safe_attribute%3F-instance_method" title="Redmine::SafeAttributes#safe_attribute? (method)">#safe_attribute?</a></span>, <span class='object_link'><a href="../Redmine/SafeAttributes.html#safe_attribute_names-instance_method" title="Redmine::SafeAttributes#safe_attribute_names (method)">#safe_attribute_names</a></span>, <span class='object_link'><a href="../Redmine/SafeAttributes.html#safe_attributes=-instance_method" title="Redmine::SafeAttributes#safe_attributes= (method)">#safe_attributes=</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="../Redmine/Ciphering.html" title="Redmine::Ciphering (module)">Redmine::Ciphering</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Redmine/Ciphering.html#cipher_key-class_method" title="Redmine::Ciphering.cipher_key (method)">cipher_key</a></span>, <span class='object_link'><a href="../Redmine/Ciphering.html#decrypt_text-class_method" title="Redmine::Ciphering.decrypt_text (method)">decrypt_text</a></span>, <span class='object_link'><a href="../Redmine/Ciphering.html#encrypt_text-class_method" title="Redmine::Ciphering.encrypt_text (method)">encrypt_text</a></span>, <span class='object_link'><a href="../Redmine/Ciphering.html#logger-class_method" title="Redmine::Ciphering.logger (method)">logger</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="human_attribute_name-class_method">
+  
+    .<strong>human_attribute_name</strong>(attribute_key_name, *args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_human_attribute_name'>human_attribute_name</span><span class='lparen'>(</span><span class='id identifier rubyid_attribute_key_name'>attribute_key_name</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_attr_name'>attr_name</span> <span class='op'>=</span> <span class='id identifier rubyid_attribute_key_name'>attribute_key_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_attr_name'>attr_name</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>url</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_attr_name'>attr_name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>path_to_repository</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_attr_name'>attr_name</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scm_adapter_class-class_method">
+  
+    .<strong>scm_adapter_class</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_scm_adapter_class'>scm_adapter_class</span>
+  <span class='const'><span class='object_link'><a href="../Redmine.html" title="Redmine (module)">Redmine</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Redmine/Scm.html" title="Redmine::Scm (module)">Scm</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Redmine/Scm/Adapters.html" title="Redmine::Scm::Adapters (module)">Adapters</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Redmine/Scm/Adapters/DarcsAdapter.html" title="Redmine::Scm::Adapters::DarcsAdapter (class)">DarcsAdapter</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scm_name-class_method">
+  
+    .<strong>scm_name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_scm_name'>scm_name</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Darcs</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cat-instance_method">
+  
+    #<strong>cat</strong>(path, identifier = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cat'>cat</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_patch'>patch</span> <span class='op'>=</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_changesets'>changesets</span><span class='period'>.</span><span class='id identifier rubyid_find_by_revision'>find_by_revision</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_scm'>scm</span><span class='period'>.</span><span class='id identifier rubyid_cat'>cat</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_patch'>patch</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_patch'>patch</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="diff-instance_method">
+  
+    #<strong>diff</strong>(path, rev, rev_to)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+78
+79
+80
+81
+82
+83
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 78</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_diff'>diff</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_rev_to'>rev_to</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_patch_from'>patch_from</span> <span class='op'>=</span> <span class='id identifier rubyid_changesets'>changesets</span><span class='period'>.</span><span class='id identifier rubyid_find_by_revision'>find_by_revision</span><span class='lparen'>(</span><span class='id identifier rubyid_rev'>rev</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_patch_from'>patch_from</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_patch_to'>patch_to</span> <span class='op'>=</span> <span class='id identifier rubyid_changesets'>changesets</span><span class='period'>.</span><span class='id identifier rubyid_find_by_revision'>find_by_revision</span><span class='lparen'>(</span><span class='id identifier rubyid_rev_to'>rev_to</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_rev_to'>rev_to</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_path'>path</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
+    <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='id identifier rubyid_patch_from'>patch_from</span><span class='period'>.</span><span class='id identifier rubyid_filechanges'>filechanges</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_change'>change</span><span class='op'>|</span> <span class='id identifier rubyid_change'>change</span><span class='period'>.</span><span class='id identifier rubyid_path'>path</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_patch_from'>patch_from</span> <span class='op'>?</span> <span class='id identifier rubyid_scm'>scm</span><span class='period'>.</span><span class='id identifier rubyid_diff'>diff</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_patch_from'>patch_from</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span><span class='comma'>,</span> <span class='id identifier rubyid_patch_to'>patch_to</span> <span class='op'>?</span> <span class='id identifier rubyid_patch_to'>patch_to</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span> <span class='op'>:</span> <span class='kw'>nil</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="entry-instance_method">
+  
+    #<strong>entry</strong>(path = nil, identifier = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.8.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_entry'>entry</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_patch'>patch</span> <span class='op'>=</span> <span class='id identifier rubyid_identifier'>identifier</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_changesets'>changesets</span><span class='period'>.</span><span class='id identifier rubyid_find_by_revision'>find_by_revision</span><span class='lparen'>(</span><span class='id identifier rubyid_identifier'>identifier</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_scm'>scm</span><span class='period'>.</span><span class='id identifier rubyid_entry'>entry</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_patch'>patch</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_patch'>patch</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fetch_changesets-instance_method">
+  
+    #<strong>fetch_changesets</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fetch_changesets'>fetch_changesets</span>
+  <span class='id identifier rubyid_scm_info'>scm_info</span> <span class='op'>=</span> <span class='id identifier rubyid_scm'>scm</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_scm_info'>scm_info</span>
+    <span class='id identifier rubyid_db_last_id'>db_last_id</span> <span class='op'>=</span> <span class='id identifier rubyid_latest_changeset'>latest_changeset</span> <span class='op'>?</span> <span class='id identifier rubyid_latest_changeset'>latest_changeset</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span> <span class='op'>:</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_next_rev'>next_rev</span>   <span class='op'>=</span> <span class='id identifier rubyid_latest_changeset'>latest_changeset</span> <span class='op'>?</span> <span class='id identifier rubyid_latest_changeset'>latest_changeset</span><span class='period'>.</span><span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>+</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>1</span>
+    <span class='comment'># latest revision in the repository
+</span>    <span class='id identifier rubyid_scm_revision'>scm_revision</span> <span class='op'>=</span> <span class='id identifier rubyid_scm_info'>scm_info</span><span class='period'>.</span><span class='id identifier rubyid_lastrev'>lastrev</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span>
+    <span class='kw'>unless</span> <span class='id identifier rubyid_changesets'>changesets</span><span class='period'>.</span><span class='id identifier rubyid_find_by_scmid'>find_by_scmid</span><span class='lparen'>(</span><span class='id identifier rubyid_scm_revision'>scm_revision</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_revisions'>revisions</span> <span class='op'>=</span> <span class='id identifier rubyid_scm'>scm</span><span class='period'>.</span><span class='id identifier rubyid_revisions'>revisions</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_db_last_id'>db_last_id</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='symbol'>:with_path</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_transaction'>transaction</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_revisions'>revisions</span><span class='period'>.</span><span class='id identifier rubyid_reverse_each'>reverse_each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_revision'>revision</span><span class='op'>|</span>
+          <span class='id identifier rubyid_changeset'>changeset</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Changeset.html" title="Changeset (class)">Changeset</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='symbol'>:repository</span>   <span class='op'>=&gt;</span> <span class='kw'>self</span><span class='comma'>,</span>
+                                       <span class='symbol'>:revision</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_next_rev'>next_rev</span><span class='comma'>,</span>
+                                       <span class='symbol'>:scmid</span>        <span class='op'>=&gt;</span> <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_scmid'>scmid</span><span class='comma'>,</span>
+                                       <span class='symbol'>:committer</span>    <span class='op'>=&gt;</span> <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_author'>author</span><span class='comma'>,</span>
+                                       <span class='symbol'>:committed_on</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_time'>time</span><span class='comma'>,</span>
+                                       <span class='symbol'>:comments</span>     <span class='op'>=&gt;</span> <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_revision'>revision</span><span class='period'>.</span><span class='id identifier rubyid_paths'>paths</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_change'>change</span><span class='op'>|</span>
+            <span class='id identifier rubyid_changeset'>changeset</span><span class='period'>.</span><span class='id identifier rubyid_create_change'>create_change</span><span class='lparen'>(</span><span class='id identifier rubyid_change'>change</span><span class='rparen'>)</span>
+          <span class='kw'>end</span>
+          <span class='id identifier rubyid_next_rev'>next_rev</span> <span class='op'>+=</span> <span class='int'>1</span>
+        <span class='kw'>end</span> <span class='kw'>if</span> <span class='id identifier rubyid_revisions'>revisions</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="supports_directory_revisions?-instance_method">
+  
+    #<strong>supports_directory_revisions?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/repository/darcs.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_supports_directory_revisions?'>supports_directory_revisions?</span>
+  <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Dec 14 21:58:36 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.8).
+</div>
+
+    </div>
+  </body>
+</html>
